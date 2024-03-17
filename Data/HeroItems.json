@@ -3599,7 +3599,7 @@
     "slug": "charge_strike_yakas_fury"
    }
   ],
-  "description": "Grants immunity to Burning.",
+  "description": "Grants immunity to Flames of the Universe.",
   "name": "Yaka's Fury",
   "tier": "Tier IV",
   "tier_numerals": "IV",
@@ -3843,6 +3843,9 @@
    },
    {
     "slug": "quick_stab_staff_of_decay"
+   },
+   {
+    "slug": "healing_sap_staff_of_decay"
    }
   ],
   "icon": "staff_of_decay",
@@ -3868,6 +3871,9 @@
    },
    {
     "slug": "quick_stab_staff_of_blossoms"
+   },
+   {
+    "slug": "mass_plague_staff_of_blossoms"
    }
   ],
   "icon": "staff_of_blossoms",
@@ -3893,6 +3899,9 @@
    },
    {
     "slug": "quick_stab_staff_of_radiance"
+   },
+   {
+    "slug": "mass_heal_staff_of_radiance"
    }
   ],
   "icon": "staff_of_radiance",
@@ -3940,6 +3949,9 @@
    },
    {
     "slug": "quick_stab_chaos_orb"
+   },
+   {
+    "slug": "chaos_brand_chaos_orb"
    }
   ],
   "icon": "chaos_orb",
@@ -4967,6 +4979,9 @@
    },
    {
     "slug": "quick_stab_satirical_orb"
+   },
+   {
+    "slug": "attuned_cast_satirical_orb"
    }
   ],
   "icon": "magical_orb_3",
@@ -5686,6 +5701,9 @@
    },
    {
     "slug": "quick_stab_cosmic_orb"
+   },
+   {
+    "slug": "forbidden_tome_cosmic_orb"
    }
   ],
   "icon": "cosmic_orb",
@@ -5708,6 +5726,9 @@
    },
    {
     "slug": "quick_stab_arcfire_orb"
+   },
+   {
+    "slug": "astral_membrane"
    }
   ],
   "icon": "magical_orb_4",

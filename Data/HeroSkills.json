@@ -675,7 +675,7 @@
   "type": "normal",
   "abilities": [
    {
-    "slug": "ascended_sorcerer"
+    "slug": "forbidden_tome_ascension_sorcerer"
    }
   ],
   "resid": 5003636900792
@@ -810,7 +810,7 @@
   "type": "normal",
   "abilities": [
    {
-    "slug": "giant_hunter"
+    "slug": "giant_slayer"
    }
   ],
   "resid": 5003636900344
@@ -917,7 +917,7 @@
   "icon": "lord_of_production",
   "type": "normal",
   "resid": 4578435140336,
-  "description": "The city of which this hero is governor gains 25 <structureprod></structureprod> <hyperlink>Production</hyperlink> income.<br></br><br></br>Only one hero can be this Lord at any time."
+  "description": "The city of which this hero is governor gains 50 <structureprod></structureprod> <hyperlink>Production</hyperlink> income.<br></br>Only one hero can be this Lord at any time."
  },
  {
   "id": "lord_of_magic",
@@ -928,7 +928,7 @@
   "icon": "lord_of_magic",
   "type": "normal",
   "resid": 4578435140333,
-  "description": "The city of which this hero is governor gains 25 <mana></mana> <hyperlink>Mana</hyperlink> income.<br></br><br></br>Only one hero can be this Lord at any time."
+  "description": "The city of which this hero is governor gains 50 <mana></mana> <hyperlink>Mana</hyperlink> income.<br></br>Only one hero can be this Lord at any time."
  },
  {
   "id": "lord_of_knowledge",
@@ -939,18 +939,18 @@
   "icon": "lord_of_production",
   "type": "normal",
   "resid": 4578435140330,
-  "description": "The city of which this hero is governor gains 15 <knowledge></knowledge><hyperlink>Knowledge</hyperlink> income.<br></br><br></br>Only one hero can be this Lord at any time."
+  "description": "The city of which this hero is governor gains 50 <knowledge></knowledge><hyperlink>Knowledge</hyperlink> income.<br></br>Only one hero can be this Lord at any time."
  },
  {
-  "id": "lord_of_crops",
+  "id": "lord_of_lords",
   "category_name": "Feudal Lord",
   "group_name": "Feudal Lords - Hero Skill Group",
-  "name": "Lord of Crops",
+  "name": "Lord of Lords",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "lord_of_crops",
+  "icon": "lord_of_lords",
   "type": "normal",
   "resid": 4578435140320,
-  "description": "The city of which this hero is governor gains 40 <food></food> <hyperlink>Food</hyperlink> income.<br></br><br></br>Only one hero can be this Lord at any time."
+  "description": "The city of which this hero is governor gains +10 <influence></influence> <hyperlink>Imperium</hyperlink> income.<br></br><br></br>Only one hero can be this Lord at any time."
  },
  {
   "id": "lord_of_war",
@@ -1057,31 +1057,31 @@
   "resid": 4514010634590
  },
  {
-  "id": "condemn",
-  "category_name": "Battle Magic",
-  "group_name": "Hero Skill Group - Inquisition",
-  "name": "Condemn",
-  "level_name": "<hyperlink>Adept Hero Skill</hyperlink>",
-  "icon": "condemn_condemn",
-  "type": "normal",
-  "abilities": [
-   {
-    "slug": "condemn_condemn"
-   }
-  ],
-  "resid": 4514010634564
- },
- {
   "id": "zeal",
-  "category_name": "Battle Magic",
-  "group_name": "Hero Skill Group - Zeal",
+  "category_name": "Warfare",
+  "group_name": "Hero Skill Group - Inquisition",
   "name": "Zeal",
-  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "level_name": "<hyperlink>Adept Hero Skill</hyperlink>",
   "icon": "zeal_2",
   "type": "normal",
   "abilities": [
    {
     "slug": "zeal"
+   }
+  ],
+  "resid": 4514010634564
+ },
+ {
+  "id": "condemn",
+  "category_name": "Battle Magic",
+  "group_name": "Hero Skill Group - Zeal",
+  "name": "Condemn",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "condemn_condemn",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "condemn_condemn"
    }
   ],
   "resid": 4514010634538
@@ -1177,7 +1177,7 @@
   "icon": "maximized_magic",
   "type": "normal",
   "resid": 4514010632903,
-  "description": "Grants <hyperlink>Magic</hyperlink> attacks:<bulletlist><bullet>+40% <hyperlink>Critical Hit</hyperlink> chance</bullet><bullet>+20% <hyperlink>Accuracy</hyperlink></bullet></bulletlist>"
+  "description": "Grants <hyperlink>Magic</hyperlink> attacks:<bulletlist><bullet>+100% <hyperlink>Critical Hit</hyperlink> chance</bullet><bullet>+20% <hyperlink>Accuracy</hyperlink></bullet></bulletlist>"
  },
  {
   "id": "magic_deflection",
@@ -1304,7 +1304,7 @@
   "icon": "sundering_strikes",
   "type": "normal",
   "resid": 4514010632240,
-  "description": "Makes base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks gain:<bulletlist><bullet>Base 60% chance of inflicting Sundered Defense.</bullet><bullet>Demolisher.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks."
+  "description": "Makes base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks gain:<bulletlist><bullet>Base 90% chance of inflicting Sundered Defense.</bullet><bullet>Demolisher.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks."
  },
  {
   "id": "avenging_winds",
@@ -1673,7 +1673,7 @@
   "group_name": "Dark Culture - Hero Skill Group",
   "name": "Cull the Weak",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "cull_the_weak_2",
+  "icon": "cull_the_weak",
   "type": "normal",
   "abilities": [
    {
@@ -1681,6 +1681,17 @@
    }
   ],
   "resid": 4514010630552
+ },
+ {
+  "id": "grim_executioner",
+  "category_name": "Warfare",
+  "group_name": "Dark Culture - Hero Skill Group",
+  "name": "Grim Executioner",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "grim_executioner",
+  "type": "normal",
+  "resid": 4514010630533,
+  "description": "When this unit kills another, it gains 3 Fortune."
  },
  {
   "id": "sundering_curse",
@@ -2928,7 +2939,7 @@
   "type": "normal",
   "resid": 4273492487197,
   "DLC": "DRAGONLORDS ",
-  "description": "The Tail Swing ability now has a base 90% of stunning units hit."
+  "description": "The Tail Swing ability now:<bulletlist><bullet>Displaces units hit up to 2 hexes.</bullet><bullet>Has a base 60% of stunning units hit.</bullet></bulletlist>"
  },
  {
   "id": "quickened_breath",
@@ -2940,7 +2951,7 @@
   "type": "normal",
   "resid": 4273492487190,
   "DLC": "DRAGONLORDS ",
-  "description": "Cooldown of the breath attack is reduced by 1 <turn></turn>."
+  "description": "Cooldown of the breath attack is reduced by 3 <turn></turn>."
  },
  {
   "id": "ancient_governor_ii",
@@ -2952,7 +2963,7 @@
   "type": "normal",
   "resid": 4273492487187,
   "DLC": "DRAGONLORDS ",
-  "description": "When Governor, grants the city:<bulletlist><bullet>+15 <knowledge></knowledge><hyperlink>Knowledge</hyperlink></bullet><bullet>+20 <happiness></happiness> <hyperlink>City Stability</hyperlink></bullet><bullet>+10 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist><br></br>For Dark culture reduces <happiness></happiness> <hyperlink>City Stability</hyperlink> by the same amount instead of increasing it."
+  "description": "When Governor, grants the city:<bulletlist><bullet>+15 <knowledge></knowledge><hyperlink>Knowledge</hyperlink></bullet><bullet>+20 <happiness></happiness> <hyperlink>City Stability</hyperlink></bullet><bullet>+20 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>"
  },
  {
   "id": "ancient_governor_i",
@@ -2964,7 +2975,7 @@
   "type": "normal",
   "resid": 4273492487183,
   "DLC": "DRAGONLORDS ",
-  "description": "When Governor, grants the city:<bulletlist><bullet>+10 <knowledge></knowledge><hyperlink>Knowledge</hyperlink></bullet><bullet>+15 <happiness></happiness> <hyperlink>City Stability</hyperlink></bullet><bullet>+10 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist><br></br>For Dark culture reduces <happiness></happiness> <hyperlink>City Stability</hyperlink> by the same amount instead of increasing it."
+  "description": "When Governor, grants the city:<bulletlist><bullet>+10 <knowledge></knowledge><hyperlink>Knowledge</hyperlink></bullet><bullet>+15 <happiness></happiness> <hyperlink>City Stability</hyperlink></bullet><bullet>+15 <garrison></garrison><hyperlink>Fortification Health</hyperlink></bullet></bulletlist>"
  },
  {
   "id": "tail_swipe",
@@ -2983,16 +2994,28 @@
   "DLC": "DRAGONLORDS "
  },
  {
+  "id": "heightened_senses_ii",
+  "category_name": "Dragon Lord",
+  "group_name": "Dragon Lord - Hero Skill Group",
+  "name": "Heightened Senses II",
+  "level_name": "<hyperlink>Adept Hero Skill</hyperlink>",
+  "icon": "heightened_senses_ii",
+  "type": "normal",
+  "resid": 4273492487176,
+  "DLC": "DRAGONLORDS ",
+  "description": "<bulletlist><bullet>All-round Awareness</bullet><bullet>+2 <hyperlink>Vision Range</hyperlink></bullet><bullet>+2 <hyperlink>Sensing Range</hyperlink></bullet></bulletlist>"
+ },
+ {
   "id": "heightened_senses_i",
   "category_name": "Dragon Lord",
   "group_name": "Dragon Lord - Hero Skill Group",
   "name": "Heightened Senses I",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "heightened_senses_i",
+  "icon": "heightened_senses_ii",
   "type": "normal",
   "resid": 4273492487169,
   "DLC": "DRAGONLORDS ",
-  "description": "<bulletlist><bullet>Truesight</bullet><bullet>All-round Awareness</bullet><bullet>+4 <hyperlink>Vision Range</hyperlink></bullet><bullet>+4 <hyperlink>Sensing Range</hyperlink></bullet></bulletlist>"
+  "description": "<bulletlist><bullet>Truesight</bullet><bullet>+2 <hyperlink>Vision Range</hyperlink></bullet><bullet>+2 <hyperlink>Sensing Range</hyperlink></bullet></bulletlist>"
  },
  {
   "id": "fire_bomb",
@@ -3091,7 +3114,7 @@
   "icon": "leaden_blows",
   "type": "normal",
   "resid": 4273492483260,
-  "description": "Makes base <hyperlink>Melee</hyperlink> attacks gain:<bulletlist><bullet>+2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Base 90% chance of inflicting Immobilized.</bullet><bullet>Demolisher.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks."
+  "description": "Makes base <hyperlink>Melee</hyperlink> attacks gain:<bulletlist><bullet>+4 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Base 90% chance of inflicting Immobilized.</bullet><bullet>Demolisher.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks."
  },
  {
   "id": "obsidian_weaponry",
@@ -3102,7 +3125,7 @@
   "icon": "obsidian_weaponry",
   "type": "normal",
   "resid": 4273492483188,
-  "description": "Base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks:<bulletlist><bullet>Deal 2 additional <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink></bullet><bullet>gain a base 60% chance of inflicting Bleeding.</bullet></bulletlist>"
+  "description": "Base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks gain a base 60% chance of inflicting Bleeding.<br></br><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks."
  },
  {
   "abilities": [
@@ -3515,15 +3538,19 @@
   "description": "<hyperlink>Magic</hyperlink> attacks:<bulletlist><bullet>Ignore up to 1 <statuseffectresistance></statuseffectresistance> <hyperlink>Status Resistance</hyperlink></bullet><bullet>Gain +10% <hyperlink>Accuracy</hyperlink></bullet></bulletlist>"
  },
  {
-  "id": "supreme_warrior",
+  "id": "killing_momentum",
   "category_name": "Warfare",
   "group_name": "Generic Hero Skills",
-  "name": "Supreme Warrior",
+  "name": "Killing Momentum",
   "level_name": "<hyperlink>Master Hero Skill</hyperlink>",
-  "icon": "supreme_warrior",
+  "icon": "killing_momentum_2",
   "type": "normal",
-  "resid": 4273492481279,
-  "description": "This unit gains: <bulletlist><bullet>+10% damage on <hyperlink>Melee</hyperlink> attacks.</bullet><bullet>+10 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink>.</bullet></bulletlist>"
+  "abilities": [
+   {
+    "slug": "killing_momentum"
+   }
+  ],
+  "resid": 4273492481279
  },
  {
   "id": "eagle_eye",
@@ -3608,7 +3635,7 @@
   "icon": "fighting_ii",
   "type": "normal",
   "resid": 4273492481227,
-  "description": "This unit gains: <bulletlist><bullet>+10% damage on <hyperlink>Melee</hyperlink> attacks.</bullet><bullet>+5 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet></bulletlist>"
+  "description": "<hyperlink>Melee</hyperlink> attacks gain +10% damage."
  },
  {
   "id": "fighting_i",
@@ -3619,7 +3646,7 @@
   "icon": "fighting_ii",
   "type": "normal",
   "resid": 4273492481222,
-  "description": "This unit gains: <bulletlist><bullet>+10% damage on <hyperlink>Melee</hyperlink> attacks.</bullet><bullet>+5 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet></bulletlist>"
+  "description": "<hyperlink>Melee</hyperlink> attacks gain +10% damage."
  },
  {
   "id": "resistance_iii",
@@ -3745,7 +3772,7 @@
   "type": "normal",
   "abilities": [
    {
-    "slug": "draconic_rage"
+    "slug": "berserkers_rage"
    }
   ],
   "resid": 4264902531965
@@ -3811,55 +3838,880 @@
   "resid": 4264902531958
  },
  {
-  "id": "hex",
+  "id": "calamitys_chosen",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Calamity's Chosen",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "calamitys_chosen",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "calamitys_chosen_calamitys_chosen"
+   }
+  ],
+  "resid": -733933881375324612
+ },
+ {
+  "id": "angel_of_death",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Angel Of Death",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "angel_of_death",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "hyper_drive_angel_of_death"
+   }
+  ],
+  "resid": -733933881375324700
+ },
+ {
+  "id": "corpsepiler",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Corpsepiler",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "corpsepiler",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "hurricane_corpsepiler"
+   }
+  ],
+  "resid": -733933881375324733
+ },
+ {
+  "id": "blademaster",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Blademaster",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "blademaster",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "blademaster"
+   }
+  ],
+  "resid": -733933881375324749
+ },
+ {
+  "id": "by_fire_be_purged!",
   "category_name": "Battle Magic",
-  "group_name": "Dark Culture - Hero Skill Group",
-  "name": "Hex",
-  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "hex_hex",
+  "group_name": "Generic Hero Skills",
+  "name": "BY FIRE BE PURGED!",
+  "level_name": "<hyperlink>Adept Hero Skill</hyperlink>",
+  "icon": "by_fire_be_purged!",
   "type": "normal",
   "abilities": [
    {
-    "slug": "hex_hex"
+    "slug": "by_fire_be_purged!_by_fire_be_purged!"
    }
   ],
-  "resid": -453398252667010630
+  "resid": -733933881375324756
  },
  {
-  "id": "general",
-  "category_name": "Origin",
+  "id": "worldweaver",
+  "category_name": "Dark Lord's Chosen",
   "group_name": "Generic Hero Skills",
-  "name": "General",
+  "name": "Worldweaver",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "general",
+  "icon": "worldweaver",
   "type": "normal",
   "abilities": [
    {
-    "slug": "general"
+    "slug": "dimensional_shift_worldweaver"
    }
   ],
-  "resid": -453398252667010804
+  "resid": -733933881375324778
  },
  {
-  "id": "emperor",
-  "category_name": "Origin",
+  "id": "brothers_of_calamity",
+  "category_name": "Dark Lord's Chosen",
   "group_name": "Generic Hero Skills",
-  "name": "Emperor",
+  "name": "Brothers of Calamity",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "emperor",
+  "icon": "brothers_of_calamity",
   "type": "normal",
-  "resid": -453398252667010806,
-  "description": "Throne city gains:<bulletlist><bullet>+15% <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, <unitprod></unitprod> <hyperlink>Draft</hyperlink>, <gold></gold> <hyperlink>Gold</hyperlink> and <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>+30 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet></bulletlist>"
+  "abilities": [
+   {
+    "slug": "brothers_of_calamity_brothers_of_calamity"
+   }
+  ],
+  "resid": -733933881375324977
  },
  {
-  "id": "hero",
-  "category_name": "Origin",
+  "id": "heart_of_darkness",
+  "category_name": "Dark Lord's Chosen",
   "group_name": "Generic Hero Skills",
-  "name": "Hero",
+  "name": "Heart Of Darkness",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "hero",
+  "icon": "heart_of_darkness_2",
   "type": "normal",
-  "resid": -453398252667010812,
-  "description": "Hero gains: <bulletlist><bullet>+20% damage.</bullet><bullet>+10 maximum <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>+2 <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>+2 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>"
+  "abilities": [
+   {
+    "slug": "heart_of_darkness"
+   }
+  ],
+  "resid": -733933881375325018
+ },
+ {
+  "id": "hate_is_in_the_heart",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Hate is In The Heart",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "hate_is_in_the_heart",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "hate_is_in_the_heart"
+   }
+  ],
+  "resid": -733933881375325024
+ },
+ {
+  "id": "lich_lord",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Lich Lord",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "lich_lord",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "immortality"
+   }
+  ],
+  "resid": -733933881375325029
+ },
+ {
+  "id": "channeling_chaos",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Channeling Chaos",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "channeling_chaos",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "channeling_chaos_channeling_chaos"
+   }
+  ],
+  "resid": -733933881375325037
+ },
+ {
+  "id": "call_of_calamity",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Call of Calamity",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "call_of_calamity",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "brimstone_nova_call_of_calamity"
+   }
+  ],
+  "resid": -733933881375325058
+ },
+ {
+  "id": "soul_eater",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Soul Eater",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "soul_eater_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "soul_eater"
+   }
+  ],
+  "resid": -733933881375325065
+ },
+ {
+  "id": "soul_thunder",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Soul Thunder",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "soul_thunder",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "soul_thunder"
+   }
+  ],
+  "resid": -733933881375325066
+ },
+ {
+  "id": "wrath_of_kos",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Wrath of Kos",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "wrath_of_kos_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "wrath_of_kos"
+   }
+  ],
+  "resid": -733933881375325108
+ },
+ {
+  "id": "lunar_presence",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Lunar Presence",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "lunar_presence",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "curse_of_the_astral_clocktower"
+   }
+  ],
+  "resid": -733933881375325119
+ },
+ {
+  "id": "take_the_plunge",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Take The Plunge",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "take_the_plunge",
+  "type": "normal",
+  "resid": -733933881375325168,
+  "description": "Unlocks The Descent. (WIP don't pick this yet)"
+ },
+ {
+  "id": "infinite_speed",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Infinite Speed",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "infinite_speed",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "greater_phase_infinite_speed"
+   }
+  ],
+  "resid": -733933881375325176
+ },
+ {
+  "id": "gladiator",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Gladiator",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "gladiator",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "evasion_slash_gladiator"
+   }
+  ],
+  "resid": -733933881375325226
+ },
+ {
+  "id": "soul_shooter",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Soul Shooter",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "soul_shooter",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "master_skirmisher"
+   }
+  ],
+  "resid": -733933881375325230
+ },
+ {
+  "id": "destined_shots",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Destined Shots",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "destined_shots",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "tracking_arrows_destined_shots"
+   }
+  ],
+  "resid": -733933881375325244
+ },
+ {
+  "id": "black_out_the_sky",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Black out the Sky",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "black_out_the_sky",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "rain_of_arrows_black_out_the_sky"
+   }
+  ],
+  "resid": -733933881375325248
+ },
+ {
+  "id": "deadeye",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Deadeye",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "destined_shots",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "execution_deadeye"
+   }
+  ],
+  "resid": -733933881375325252
+ },
+ {
+  "id": "lethal_precision",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Lethal Precision",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "lethal_precision",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "lethal_precision"
+   }
+  ],
+  "resid": -733933881375325268
+ },
+ {
+  "id": "demigod",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Demigod",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "demigod",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "absorb_soul_demigod"
+   }
+  ],
+  "resid": -733933881375325274
+ },
+ {
+  "id": "dragonlord",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Dragonlord",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "dragonlord",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "dragonflight_dragonlord"
+   }
+  ],
+  "resid": -733933881375325283
+ },
+ {
+  "id": "mind_bender",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Mind Bender",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "mind_bender",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "cascading_madness_mind_bender"
+   }
+  ],
+  "resid": -733933881375325285
+ },
+ {
+  "id": "shadowcaster",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Shadowcaster",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "shadowcaster",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "wormhole_shadowcaster"
+   }
+  ],
+  "resid": -733933881375325294
+ },
+ {
+  "id": "voidcaster",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Voidcaster",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "voidcaster",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "black_hole_voidcaster"
+   }
+  ],
+  "resid": -733933881375325305
+ },
+ {
+  "id": "blood_magic",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Blood Magic",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "infinite_speed",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "implosion_blood_magic"
+   }
+  ],
+  "resid": -733933881375325312
+ },
+ {
+  "id": "ultra_speed",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Ultra Speed",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "ultra_speed",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "shocking_phase_ultra_speed"
+   }
+  ],
+  "resid": -733933881375325313
+ },
+ {
+  "id": "black_magic",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Black Magic",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "black_magic",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "black_magic"
+   }
+  ],
+  "resid": -733933881375325322
+ },
+ {
+  "id": "time_warp",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Time Warp",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "time_warp_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "time_warp"
+   }
+  ],
+  "resid": -733933881375325338
+ },
+ {
+  "id": "skybreaker",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Skybreaker",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "skybreaker",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "skybreaker_skybreaker"
+   }
+  ],
+  "resid": -733933881375325383
+ },
+ {
+  "id": "whirling_death",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Whirling Death",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "whirling_death_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "whirling_death"
+   }
+  ],
+  "resid": -733933881375325396
+ },
+ {
+  "id": "godslayers_inferno",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Godslayer's Inferno",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "godslayers_inferno",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "godslayers_inferno_godslayers_inferno"
+   }
+  ],
+  "resid": -733933881375325400
+ },
+ {
+  "id": "moon_god",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Moon God",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "moon_god",
+  "type": "normal",
+  "resid": -733933881375325438,
+  "description": "Passively grants Breaching and +50% Damage to Magic Attacks."
+ },
+ {
+  "id": "deathborne",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Deathborne",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "deathborne_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "deathborne"
+   }
+  ],
+  "resid": -733933881375325443
+ },
+ {
+  "id": "moon_lord",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Moon Lord",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "moon_lord",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "halfmoon_slash_moon_lord"
+   }
+  ],
+  "resid": -733933881375325449
+ },
+ {
+  "id": "lady_deaths_embrace",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Lady Death's Embrace",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "lady_deaths_embrace",
+  "type": "normal",
+  "resid": -733933881375325468,
+  "description": "Her Cold Embrace empowers this Hero, allowing them to ignore all the defensive stats and modifiers of targeted enemy units."
+ },
+ {
+  "id": "dark_whispers",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Dark Whispers",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "dark_whispers",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "dark_whispers_dark_whispers"
+   }
+  ],
+  "resid": -733933881375325474
+ },
+ {
+  "id": "initiation",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Initiation",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "initiation",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "forbidden_tome_initiation"
+   }
+  ],
+  "resid": -733933881375325477
+ },
+ {
+  "id": "ashen_one",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Ashen One",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "ashen_one",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "estus_flask"
+   }
+  ],
+  "resid": -733933881375325485
+ },
+ {
+  "id": "summon_shadow_realm",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Summon Shadow Realm",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "summon_shadow_realm",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "encroaching_darkness_summon_shadow_realm"
+   }
+  ],
+  "resid": -733933881375325513
+ },
+ {
+  "id": "one_with_the_void",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "One With The Void",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "one_with_the_void",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "ethereal"
+   },
+   {
+    "slug": "pillar_of_darkness"
+   }
+  ],
+  "resid": -733933881375325526
+ },
+ {
+  "id": "line_drive",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Line Drive",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "line_drive",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "line_drive_line_drive"
+   }
+  ],
+  "resid": -733933881375325563
+ },
+ {
+  "id": "bladestorm",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Bladestorm",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "bladestorm",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "bladestorm_bladestorm"
+   }
+  ],
+  "resid": -733933881375325564
+ },
+ {
+  "id": "dancing_blades",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Dancing Blades",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "dancing_blades",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "dancing_blades_dancing_blades"
+   }
+  ],
+  "resid": -733933881375325565
+ },
+ {
+  "id": "blinding_speed",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Blinding Speed",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "blinding_speed",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "bladestorm_blinding_speed"
+   }
+  ],
+  "resid": -733933881375325568
+ },
+ {
+  "id": "godslayer",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Godslayer",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "godslayer",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "slip_away"
+   }
+  ],
+  "resid": -733933881375325569
+ },
+ {
+  "id": "blinding_speed",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Blinding Speed",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "ultra_speed",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "demonic_momentum"
+   }
+  ],
+  "resid": -733933881375325570
+ },
+ {
+  "id": "curse_of_the_pale_rider",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Curse of The Pale Rider",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "curse_of_the_pale_rider",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "brand_of_the_pale_rider_curse_of_the_pale_rider"
+   }
+  ],
+  "resid": -733933881375325582
+ },
+ {
+  "id": "gravelord",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Gravelord",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "gravelord",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "reign_of_darkness_gravelord"
+   }
+  ],
+  "resid": -733933881375325583
+ },
+ {
+  "id": "blinding_speed",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Blinding Speed",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "blinding_speed",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "bladestorm_blinding_speed"
+   }
+  ],
+  "resid": -733933881375325630
+ },
+ {
+  "id": "beyond_perfection",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Beyond Perfection",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "hollow_vessel_beyond_perfection",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "hollow_vessel_beyond_perfection"
+   }
+  ],
+  "resid": -733933881375325807
+ },
+ {
+  "id": "godslayer",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Godslayer",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "godslayer",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "natural_regeneration"
+   },
+   {
+    "slug": "terrifying_aura"
+   },
+   {
+    "slug": "weakening_aura"
+   },
+   {
+    "slug": "slip_away"
+   }
+  ],
+  "resid": -733933881375325814
+ },
+ {
+  "id": "tyrant_king",
+  "category_name": "Ascension",
+  "group_name": "Generic Hero Skills",
+  "name": "Tyrant King",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "tyrant_king",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "tyrants_will_tyrant_king"
+   }
+  ],
+  "resid": -733933881375325915
+ },
+ {
+  "id": "divine_herald",
+  "category_name": "Ascension",
+  "group_name": "Generic Hero Skills",
+  "name": "Divine Herald",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "divine_herald",
+  "type": "normal",
+  "resid": -733933881375325919,
+  "description": "Your <hyperlink>Throne City</hyperlink> gains +30 <influence></influence> <hyperlink>Imperium</hyperlink> and <happiness></happiness> <hyperlink>City Stability</hyperlink> income."
+ },
+ {
+  "id": "legendary_warrior",
+  "category_name": "Ascension",
+  "group_name": "Generic Hero Skills",
+  "name": "Legendary Warrior",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "legendary_warrior",
+  "type": "normal",
+  "resid": -733933881375325925,
+  "description": "Provides the following effects:<bulletlist><bullet>+30 <hyperlink><hp></hp> Hit Point</hyperlink></bullet><bullet> +3 <defense></defense> <hyperlink>Defense</hyperlink> and <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>The Piercing Property, which allows this unit to ignore up to 50% of a target's <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+30% Damage.</bullet></bulletlist>"
  }
 ]

@@ -2,7 +2,7 @@
  {
   "lore_description": "<helpcolor>Mounted units are more common and gain an Eagle mount.</helpcolor>",
   "biography_description": "They soar through the skies on giant eagles.",
-  "point_cost": 4,
+  "point_cost": 3,
   "id": "eagle_mounts",
   "name": "Eagle Mounts",
   "screen_description": "",
@@ -19,7 +19,7 @@
   "front_end": true,
   "icon": "eagle_mounts",
   "type": "form",
-  "display_order": -2
+  "display_order": -1
  },
  {
   "lore_description": "<helpcolor>Mounted units are more common</helpcolor>",
@@ -38,19 +38,19 @@
   "front_end": true,
   "icon": "mount_masters",
   "type": "form",
-  "display_order": 1
+  "display_order": 2
  },
  {
   "biography_description": "They share a deep kinship with mighty Elephants.",
   "lore_description": "<helpcolor>Mounted units are more common and gain an Elephant mount </helpcolor>",
   "DLC": "PRIMALFURY ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "elephant_mounts",
   "name": "Elephant Mounts",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+20 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+15 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
     "name": "Gain the Juggernaut ability."
@@ -67,19 +67,19 @@
   "group_name": "MOUNT",
   "front_end": true,
   "icon": "elephant_mounts",
-  "display_order": -1
+  "display_order": 0
  },
  {
   "biography_description": "They have tamed the furry Mammoths from the tundra.",
   "lore_description": "<helpcolor>Mounted units are more common and gain a Mammoth mount.</helpcolor>",
   "DLC": "PRIMALFURY ",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "mammoth_mounts",
   "name": "Mammoth Mounts",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+15 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+10 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
     "name": "+4 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink>."
@@ -99,12 +99,12 @@
   "group_name": "MOUNT",
   "front_end": true,
   "icon": "mammoth_mounts",
-  "display_order": -1
+  "display_order": 0
  },
  {
   "lore_description": "<helpcolor>Units can consume plants in order to heal and strengthen themselves.</helpcolor>",
   "biography_description": "They consume plants to revitalize themselves.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "herbivore",
   "name": "Herbivore",
   "screen_description": "",
@@ -118,12 +118,12 @@
   "front_end": true,
   "icon": "herbivore",
   "type": "form",
-  "display_order": 3
+  "display_order": 4
  },
  {
   "lore_description": "<helpcolor>Deal more damage to enemies surrounded by your units.</helpcolor>",
   "biography_description": "They surround and overrun their enemies.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "pack_tactics",
   "name": "Pack Tactics",
   "screen_description": "",
@@ -177,7 +177,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+5 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+10 <hyperlink><hp></hp> Hit Points</hyperlink>."
    },
    {
     "name": "Gains the Overwhelm passive."
@@ -205,7 +205,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Unit has +3 <hyperlink>Vision Range</hyperlink> and <hyperlink>Sensing Range</hyperlink>."
+    "name": "Unit has +5 <hyperlink>Vision Range</hyperlink> and <hyperlink>Sensing Range</hyperlink>."
    }
   ],
   "enabled": true,
@@ -213,7 +213,7 @@
   "front_end": true,
   "icon": "sharp_eyes",
   "type": "form",
-  "display_order": 4
+  "display_order": 5
  },
  {
   "lore_description": "<helpcolor>Allows for better positioning by being able to move through friendly units.</helpcolor>",
@@ -232,12 +232,12 @@
   "front_end": true,
   "icon": "light_footed",
   "type": "form",
-  "display_order": 4
+  "display_order": 3
  },
  {
   "lore_description": "<helpcolor>Reduces the resistance to magic and status effects of nearby units.</helpcolor>",
   "biography_description": "They have a grisly stench following them.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "hideous_stench",
   "name": "Hideous Stench",
   "screen_description": "",
@@ -251,12 +251,12 @@
   "front_end": true,
   "icon": "hideous_stench",
   "type": "form",
-  "display_order": 3
+  "display_order": 1
  },
  {
   "affinities": [
    {
-    "name": "1<nature></nature> Nature Affinity"
+    "name": "5<nature></nature> Nature Affinity"
    }
   ],
   "biography_description": "Caretakers of the natural order, maintaining a carefully tended biome.",
@@ -267,10 +267,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain <bulletlist><bullet>+30% <food></food> <hyperlink>Food</hyperlink> if the city core province contains Grasslands or Fungus Fields.</bullet><bullet>+30% <structureprod></structureprod> <hyperlink>Production</hyperlink> if the city core province contains Forest, Rocky or Mountains.</bullet><bullet>+15% <gold></gold> <hyperlink>Gold</hyperlink> if the city core province contains Ashlands.</bullet><bullet>+15% <mana></mana> <hyperlink>Mana</hyperlink> if the city core province contains Snow, Ice or Sand.</bullet></bulletlist>"
+    "name": "<hyperlink>Cities</hyperlink> gain <bulletlist><bullet>+20% <food></food> <hyperlink>Food</hyperlink> if the city core province contains Grasslands or Fungus Fields.</bullet><bullet>+20% <structureprod></structureprod> <hyperlink>Production</hyperlink> if the city core province contains Forest, Rocky or Mountains.</bullet><bullet>+10% <gold></gold> <hyperlink>Gold</hyperlink> if the city core province contains Ashlands.</bullet><bullet>+10% <mana></mana> <hyperlink>Mana</hyperlink> if the city core province contains Snow, Ice or Sand.</bullet></bulletlist>"
    },
    {
-    "name": "Terraforming spells cost -50% less <mana></mana> <hyperlink>Mana</hyperlink> and <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink> to cast."
+    "name": "Terraforming spells cost -25% less <mana></mana> <hyperlink>Mana</hyperlink> and <caststrategic></caststrategic> <hyperlink>World Map Casting Point</hyperlink> to cast."
    },
    {
     "name": "-20% <hyperlink>Unit Upkeep</hyperlink> for Elemental Units."
@@ -289,35 +289,23 @@
   "icon": "_pantheon___druidic_terraformers"
  },
  {
-  "biography_description": "They are merciless, viewing life as another prize to be claimed.",
-  "lore_description": "They are merciless; to them, life is a commodity that may be taken by blade or chain.",
-  "point_cost": 1,
-  "id": "_pantheon___merciless_slavers__evilact__",
-  "name": "<Pantheon></Pantheon> Merciless Slavers <evilact></evilact>",
-  "incompatible_society_traits": [
+  "affinities": [
    {
-    "name": "Chosen Uniters <goodact></goodact>"
+    "name": "3<chaos></chaos> Chaos Affinity"
    },
    {
-    "name": "Devotees of Good <goodact></goodact>"
-   },
-   {
-    "name": "<Pantheon></Pantheon> Relentless Crusaders <goodact></goodact>"
+    "name": "-50<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
    }
   ],
+  "biography_description": "Cower before the bringers of Calamity, servants of the Brimstone Queen. They are maddened, vengeful cultists full of resentment that wish nothing more than to see the world burn before their very eyes.",
+  "lore_description": "Cower before the bringers of Calamity, servants of the Brimstone Queen. They are maddened, vengeful cultists full of resentment that wish nothing more than to see the world burn before their very eyes.",
+  "point_cost": 1,
+  "id": "worldburners",
+  "name": "Worldburners",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "All racial units gain Slave Collars ability."
-   },
-   {
-    "name": "<hyperlink>Routing</hyperlink> <hyperlink>Units</hyperlink> are <hyperlink>Captured</hyperlink> if your side is victorious in <hyperlink>Combat</hyperlink>."
-   },
-   {
-    "name": "Adding captured units to your army is much cheaper."
-   },
-   {
-    "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>"
+    "name": "-50 <evilact></evilact> <hyperlink>Alignment</hyperlink>"
    }
   ],
   "enabled": true,
@@ -325,54 +313,37 @@
   "group_name": "",
   "front_end": false,
   "display_order": 5,
-  "affinities": [
-   {
-    "name": "1<chaos></chaos> Chaos Affinity"
-   },
-   {
-    "name": "-10<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
-   }
-  ],
   "starting_bonuses": [
    {
     "empire_progression_slug": "war_slaves"
+   },
+   {
+    "empire_progression_slug": "reign_of_destruction"
+   },
+   {
+    "empire_progression_slug": "skilled_raiders"
    }
   ],
-  "icon": "_pantheon___merciless_slavers__evilact__"
+  "icon": "worldburners"
  },
  {
+  "affinities": [
+   {
+    "name": "1<order></order> Order Affinity"
+   },
+   {
+    "name": "50<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
+   }
+  ],
   "biography_description": "They are absolute in their crusade to root out evil.",
   "lore_description": "They are absolute in their dedication to rooting out evil, sparing no mercy for the wicked.",
   "point_cost": 1,
   "id": "_pantheon___relentless_crusaders__goodact__",
   "name": "<Pantheon></Pantheon> Relentless Crusaders <goodact></goodact>",
-  "incompatible_society_traits": [
-   {
-    "name": "<Pantheon></Pantheon> Chosen Destroyers <evilact></evilact>"
-   },
-   {
-    "name": "<Pantheon></Pantheon> Merciless Slavers <evilact></evilact>"
-   },
-   {
-    "name": "Ritual Cannibals <evilact></evilact>"
-   },
-   {
-    "name": "Ruthless Raiders <evilact></evilact>"
-   },
-   {
-    "name": "Scions of Evil <evilact></evilact>"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain 1 <influence></influence> <hyperlink>Imperium</hyperlink> for each <hyperlink>Unit</hyperlink> killed after successful combat. This reward increases to 4 if they belong to the <hyperlink>Empire</hyperlink> and further by +2 for each level of <evilact></evilact>evil <hyperlink>Alignment</hyperlink> of the Faction they belonged to."
-   },
-   {
-    "name": "Gain +30 <casusBelli></casusBelli> <hyperlink>Grievances</hyperlink> against players with an <evilact></evilact>evil <hyperlink>Alignment</hyperlink>."
-   },
-   {
-    "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>"
+    "name": "<bulletlist><bullet>Gain 3 <influence></influence> <hyperlink>Imperium</hyperlink> for each <hyperlink>Unit</hyperlink> killed after successful combat.</bullet><bullet>This reward increases by 2 for each level of Tier of the unit.</bullet><bullet>Gain +50 <casusBelli></casusBelli> <hyperlink>Grievances</hyperlink> against players with an <evilact></evilact>evil <hyperlink>Alignment</hyperlink>.</bullet><bullet>+50 <goodact></goodact> Alignment.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -380,14 +351,6 @@
   "group_name": "",
   "front_end": false,
   "display_order": 6,
-  "affinities": [
-   {
-    "name": "1<order></order> Order Affinity"
-   },
-   {
-    "name": "10<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
-   }
-  ],
   "icon": "_pantheon___relentless_crusaders__goodact__"
  },
  {
@@ -404,7 +367,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +15% <knowledge></knowledge><hyperlink>Knowledge</hyperlink>, +15% <food></food> <hyperlink>Food</hyperlink>, +15% <structureprod></structureprod> <hyperlink>Production</hyperlink>, and +20 <happiness></happiness> <hyperlink>City Stability</hyperlink> income when their <hyperlink>Domain</hyperlink> does not border the <hyperlink>Domain</hyperlink> of any other <hyperlink>City</hyperlink> or <hyperlink>Outpost</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +30% <knowledge></knowledge><hyperlink>Knowledge</hyperlink> and +30 <happiness></happiness> <hyperlink>City Stability</hyperlink> income when their <hyperlink>Domain</hyperlink> does not border the <hyperlink>Domain</hyperlink> of any unowned <hyperlink>City</hyperlink> or <hyperlink>Outpost</hyperlink>. Dark Culture gains -10 <happiness></happiness> <hyperlink>City Stability</hyperlink> instead."
    },
    {
     "name": "Grievances inflicted by other empires encroaching on your territory are increased by +100%."
@@ -425,7 +388,7 @@
  {
   "affinities": [
    {
-    "name": "1<matter></matter> Materium Affinity"
+    "name": "3<matter></matter> Materium Affinity"
    }
   ],
   "biography_description": "They believe everything must be reclaimed and reforged stronger.",
@@ -468,10 +431,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain a tier II-III Hero Item after clearing an <hyperlink>Ancient Wonder</hyperlink> or an <hyperlink>Infestation</hyperlink>."
-   },
-   {
-    "name": "Gain extra <mana></mana> <hyperlink>Mana</hyperlink> with Hero Items via the <hyperlink>Artifact Hoard</hyperlink>."
+    "name": "<bulletlist><bullet>Gain a Tier II-IV Hero Item after clearing an <hyperlink>Ancient Wonder</hyperlink> or an <hyperlink>Infestation</hyperlink>.</bullet><bullet>Gain extra <mana></mana> <hyperlink>Mana</hyperlink> with Hero Items via the <hyperlink>Artifact Hoard</hyperlink>.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -487,20 +447,20 @@
   "icon": "artifact_hoarders"
  },
  {
+  "affinities": [
+   {
+    "name": "1<order></order> Order Affinity"
+   }
+  ],
   "biography_description": "They value and cultivate good relationships with their vassals.",
   "lore_description": "They value and cultivate good relationships with their vassals, raising their banners in times of war.",
   "point_cost": 1,
   "id": "_pantheon___bannerlords",
   "name": "<Pantheon></Pantheon> Bannerlords",
-  "incompatible_society_traits": [
-   {
-    "name": "<Pantheon></Pantheon> Chosen Destroyers <evilact></evilact>"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Rally of the Lieges</hyperlink> occur twice as often"
+    "name": "<bulletlist><bullet>Rally of the lieges occurs five times as often.</bullet><bullet>Units recruited from Rally of the Lieges have +1 Rank and cost 25% less.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -508,14 +468,9 @@
   "group_name": "",
   "front_end": false,
   "display_order": 6,
-  "affinities": [
-   {
-    "name": "1<order></order> Order Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
-    "description": "Start with the nearest <minorcity></minorcity><hyperlink>Free City</hyperlink> revealed and gain +45 <hyperlink><allegiance></allegiance>Allegiance</hyperlink> with them."
+    "description": "Start with the nearest <minorcity></minorcity><hyperlink>Free City</hyperlink> revealed and gain +25 <hyperlink><allegiance></allegiance>Allegiance</hyperlink> with them."
    }
   ],
   "icon": "_pantheon___bannerlords"
@@ -534,10 +489,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "All <hyperlink>Units</hyperlink> gain Attunement: Mana Addicted."
-   },
-   {
-    "name": "Racial Battle Mage Units and Support Units have +1 Rank."
+    "name": "Racial <hyperlink>Units</hyperlink> gain the following effects: <bulletlist><bullet>Attunement: Mana Addicted.</bullet><bullet>Arcane Surge.</bullet><bullet>Omni-Attunement.</bullet><bullet><hyperlink>Combat Spell</hyperlink> are 50% more expensive to cast.</bullet>"
    }
   ],
   "enabled": true,
@@ -566,10 +518,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "City Structures cost 50% more <structureprod></structureprod> Production but grant +2 <happiness></happiness> City Stability and +5 <gold></gold> Gold in addition to their normal effects."
-   },
-   {
-    "name": "Racial <hyperlink>Unit tier</hyperlink> 3 Units have +1 Rank"
+    "name": "<bulletlist><bullet>City Structures grant +1 <happiness></happiness> City Stability and +15 <gold></gold> Gold in addition to their normal effects.</bullet><bullet><hyperlink>City Cap</hyperlink> is decreased by -1.</bullet><bullet>Racial <hyperlink>Unit tier</hyperlink> III Units have +4 Ranks.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -598,7 +547,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> gain +7 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge><hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
+    "name": "<hyperlink>Cities</hyperlink> gain +12 <gold></gold> <hyperlink>Gold</hyperlink>, <mana></mana> <hyperlink>Mana</hyperlink>, <knowledge></knowledge><hyperlink>Knowledge</hyperlink>, <food></food> <hyperlink>Food</hyperlink>, <structureprod></structureprod> <hyperlink>Production</hyperlink>, and <unitprod></unitprod> <hyperlink>Draft</hyperlink> for each <hyperlink>Magic Material</hyperlink> in their <hyperlink>Domain</hyperlink>."
    }
   ],
   "enabled": true,
@@ -645,16 +594,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Razing cities grant a permanent +40 <gold></gold> <hyperlink>Gold</hyperlink>, +40 <mana></mana> <hyperlink>Mana</hyperlink>, and +40 <knowledge></knowledge><hyperlink>Knowledge</hyperlink> income."
-   },
-   {
-    "name": "Can not obtain new <hyperlink>Cities</hyperlink> and conquered cities can only be razed."
-   },
-   {
-    "name": "Suffer -300 <hyperlink>Relations</hyperlink> with all <minorcity></minorcity><hyperlink>Free Cities</hyperlink> and -300 <hyperlink>Empire Relations</hyperlink> with all other <hyperlink>Empires</hyperlink>"
-   },
-   {
-    "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>"
+    "name": "<bulletlist><bullet>Razing cities grant a permanent +50 <gold></gold> <hyperlink>Gold</hyperlink>, +50 <mana></mana> <hyperlink>Mana</hyperlink>, and +50 <knowledge></knowledge><hyperlink>Knowledge</hyperlink> income.</bullet><bullet>-50 <evilact></evilact> Alignment.</bullet><bullet>Suffer -300 <hyperlink>Relations</hyperlink> with all <minorcity></minorcity><hyperlink>Free Cities</hyperlink> and -300 <hyperlink>Empire Relations</hyperlink> with all other <hyperlink>Empires</hyperlink></bullet><bullet>Can not obtain new <hyperlink>Cities</hyperlink> and conquered cities can only be razed.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -664,32 +604,29 @@
   "display_order": 5,
   "affinities": [
    {
-    "name": "1<chaos></chaos> Chaos Affinity"
+    "name": "3<chaos></chaos> Chaos Affinity"
    },
    {
-    "name": "-10<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
+    "name": "-50<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
    }
   ],
   "icon": "_pantheon___chosen_destroyers__evilact__"
  },
  {
+  "affinities": [
+   {
+    "name": "2<shadow></shadow> Shadow Affinity"
+   }
+  ],
   "biography_description": "They know when to flatter and when to extort, elevating intrigue itself to a lucrative art.",
   "lore_description": "They know when to flatter and when to extort, elevating intrigue itself to a lucrative art.",
   "point_cost": 1,
   "id": "_pantheon___silver_tongued",
   "name": "<Pantheon></Pantheon> Silver Tongued",
-  "incompatible_society_traits": [
-   {
-    "name": "<Pantheon></Pantheon> Chosen Destroyers <evilact></evilact>"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Pronouncements</hyperlink> cost -50% less"
-   },
-   {
-    "name": "<hyperlink>Trade</hyperlink> with <minorcity></minorcity><hyperlink>Free Cities</hyperlink> costs you -100% resources. (Cost increases from other sources still apply!)"
+    "name": "<bulletlist><bullet><hyperlink>Trade</hyperlink> deals with <minorcity></minorcity><hyperlink>Free Cities</hyperlink> and <hyperlink>Pronouncement</hyperlink> cost you -100% resources.</bullet><bullet>Gain +3 <whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink>.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -697,51 +634,40 @@
   "group_name": "",
   "front_end": false,
   "display_order": 1,
-  "affinities": [
-   {
-    "name": "1<shadow></shadow> Shadow Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
     "description": "Start with an extra Scout Unit."
    },
    {
+    "empire_progression_slug": "court_of_whispers"
+   },
+   {
     "empire_progression_slug": "all-seeing"
+   },
+   {
+    "empire_progression_slug": "stolen_power"
    }
   ],
   "icon": "_pantheon___silver_tongued"
  },
  {
+  "affinities": [
+   {
+    "name": "50<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
+   },
+   {
+    "name": "1<order></order> Order Affinity"
+   }
+  ],
   "biography_description": "They believe it is their calling to unite all societies.",
   "lore_description": "They strive to build a realm based on cooperation, but will not hesitate to defend it.",
   "point_cost": 1,
   "id": "chosen_uniters__goodact__",
   "name": "Chosen Uniters <goodact></goodact>",
-  "incompatible_society_traits": [
-   {
-    "name": "Ruthless Raiders <evilact></evilact>"
-   },
-   {
-    "name": "Scions of Evil <evilact></evilact>"
-   },
-   {
-    "name": "Ritual Cannibals <evilact></evilact>"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain +30% income from <hyperlink>Vassals</hyperlink>."
-   },
-   {
-    "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>"
-   },
-   {
-    "name": "Racial Shield Units and Polearm Units have +1 Rank."
-   },
-   {
-    "name": "Gain +1 <whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink>."
+    "name": "<bulletlist><bullet>Gain +150% income from <hyperlink>Vassals</hyperlink>.</bullet><bullet>Racial Shield Units and Polearm Units have +2 Ranks.</bullet><bullet>+50 <goodact></goodact> Alignment.</bullet><bullet>+1 <whisperingStone></whisperingStone> <hyperlink>Whispering Stone</hyperlink>. </bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -749,14 +675,6 @@
   "group_name": "",
   "front_end": true,
   "display_order": 6,
-  "affinities": [
-   {
-    "name": "10<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
-   },
-   {
-    "name": "1<order></order> Order Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
     "description": "Start with an extra Shield Unit or Polearm Unit."
@@ -1025,7 +943,7 @@
   "front_end": true,
   "icon": "tenacious",
   "type": "form",
-  "display_order": 4
+  "display_order": 3
  },
  {
   "lore_description": "<helpcolor>Great for mobile hit and run tactics.</helpcolor>",
@@ -1049,7 +967,7 @@
  {
   "lore_description": "<helpcolor>Units normally only have 32 movement.</helpcolor>",
   "biography_description": "Trained in long distance running, they are exceptionally fast.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "athletics",
   "name": "Athletics",
   "screen_description": "",
@@ -1059,16 +977,16 @@
    }
   ],
   "enabled": true,
-  "group_name": "MOUNT",
+  "group_name": "",
   "front_end": true,
   "icon": "athletics",
   "type": "form",
-  "display_order": 0
+  "display_order": 1
  },
  {
   "lore_description": "<helpcolor>Units become tougher when standing next to allies.</helpcolor>",
   "biography_description": "They have trained to cover any gaps in their defensive formations.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "defensive_tactics",
   "name": "Defensive Tactics",
   "screen_description": "",
@@ -1082,12 +1000,12 @@
   "front_end": true,
   "icon": "defensive_tactics",
   "type": "form",
-  "display_order": 3
+  "display_order": 2
  },
  {
   "lore_description": "<helpcolor>Units deal more damage when fighting in groups.</helpcolor>",
   "biography_description": "They work together to bring down even the largest of foes.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "overwhelm_tactics",
   "name": "Overwhelm Tactics",
   "screen_description": "",
@@ -1101,7 +1019,7 @@
   "front_end": true,
   "icon": "overwhelm_tactics",
   "type": "form",
-  "display_order": 3
+  "display_order": 2
  },
  {
   "lore_description": "<helpcolor>Encourages a slow and steady play style.</helpcolor>",
@@ -1120,12 +1038,12 @@
   "front_end": true,
   "icon": "bulwark",
   "type": "form",
-  "display_order": 3
+  "display_order": 4
  },
  {
   "lore_description": "<helpcolor>Useful for armies focusing on battle mages.</helpcolor>",
   "biography_description": "They prefer to fight using magic.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "arcane_focus",
   "name": "Arcane Focus",
   "screen_description": "",
@@ -1150,7 +1068,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+4 Status Resistance."
+    "name": "+2 Status Resistance."
+   },
+   {
+    "name": "Negative status effects last -1 <turn></turn> Turn, with a minimum of 1."
    }
   ],
   "enabled": true,
@@ -1158,7 +1079,7 @@
   "front_end": true,
   "icon": "resilient",
   "type": "form",
-  "display_order": 4
+  "display_order": 1
  },
  {
   "lore_description": "<helpcolor>Your units can take a little more damage.</helpcolor>",
@@ -1169,7 +1090,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+5 <hyperlink><hp></hp> Hit Points</hyperlink>."
+    "name": "+8 <hyperlink><hp></hp> Hit Points</hyperlink>."
    }
   ],
   "enabled": true,
@@ -1177,35 +1098,23 @@
   "front_end": true,
   "icon": "hardy",
   "type": "form",
-  "display_order": 4
+  "display_order": 5
  },
  {
+  "affinities": [
+   {
+    "name": "4<shadow></shadow> Shadow Affinity"
+   }
+  ],
   "biography_description": "They are talented spies, sneaking past enemy lines to gain precious information.",
   "lore_description": "They are talented spies, sneaking past enemy lines to gain precious information.",
   "point_cost": 1,
   "id": "devious_watchers",
   "name": "Devious Watchers",
-  "incompatible_society_traits": [
-   {
-    "name": "Ancient Wise Ones"
-   },
-   {
-    "name": "Gifted Casters"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Cities and Provinces have +2 Vision Range."
-   },
-   {
-    "name": "Scout Units have Universal Camouflage."
-   },
-   {
-    "name": "<hyperlink>Outposts</hyperlink> start with the Watch Tower upgrade built."
-   },
-   {
-    "name": "Racial Scout Units have Legend Rank."
+    "name": "<bulletlist><bullet>Cities and Provinces have +15 Vision Range.</bullet><bullet><hyperlink>Outposts</hyperlink> start with the Watchtower upgrade built.</bullet><bullet>Scout Units have +3 Ranks and start with Universal Camouflage, Wisp Summoner and Outpost Builder.</bullet><bullet>Start with 3 extra Scout Unit.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1213,11 +1122,6 @@
   "group_name": "",
   "front_end": true,
   "display_order": 1,
-  "affinities": [
-   {
-    "name": "1<shadow></shadow> Shadow Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
     "description": "Wayfinder Enchantment is already active and costs no upkeep."
@@ -1242,10 +1146,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Racial Battle Mage Units and Support Units have +1 Rank."
+    "name": "Battle Mage Units and Support Units provide +5% increased damage for Combat Damage Spells and grant 10 <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> at the start of combat."
    },
    {
-    "name": "Battle Mage Units and Support Units increase tactical spells damage by +6% per unit. This effect stacks."
+    "name": "Racial Battle Mage Units and Support Units have +3 Ranks."
    }
   ],
   "enabled": true,
@@ -1277,16 +1181,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Cities gain +10 <unitprod></unitprod> Draft, +5 <gold></gold> Gold and your empire gains +5 <influence></influence> Imperium per level of Evil Alignment."
-   },
-   {
-    "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>"
-   },
-   {
-    "name": "Units are recruited with +1 Rank when you are at the maximum evil <hyperlink>Alignment</hyperlink>."
-   },
-   {
-    "name": "Racial Shock Units and Shield Units have +1 Rank."
+    "name": "<bulletlist><bullet>Cities gain +15 <unitprod></unitprod> Draft and your empire gains +10 <influence></influence> Imperium per level of Evil Alignment.</bullet><bullet>While having Evil Alignment, gain +15% <influence></influence> <hyperlink>Imperium</hyperlink>.</bullet><bullet>Units are recruited with +3 Ranks when you are at the maximum evil <hyperlink>Alignment</hyperlink>.</bullet><bullet>-10 <evilact></evilact> Alignment.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1315,10 +1210,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Ancient Wonders do not require <population></population> Population in order to be annexed to a City."
-   },
-   {
-    "name": "Cities gain +30% <structureprod></structureprod> <hyperlink>Production</hyperlink> per annexed <hyperlink>Ancient Wonders</hyperlink>."
+    "name": "<bulletlist><bullet>Ancient Wonders do not require <population></population> Population in order to be annexed to a City.</bullet><bullet>Cities gain +10% <structureprod></structureprod> <hyperlink>Production</hyperlink> <gold></gold> <hyperlink>Gold</hyperlink> <mana></mana> <hyperlink>Mana</hyperlink> <knowledge></knowledge><hyperlink>Knowledge</hyperlink> and +20 <happiness></happiness> <hyperlink>City Stability</hyperlink> per annexed <hyperlink>Ancient Wonders</hyperlink>.</bullet>"
    }
   ],
   "enabled": true,
@@ -1347,13 +1239,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<caststrategic></caststrategic> Unit Enchantment Research cost -30% <knowledge></knowledge> Knowledge to unlock."
-   },
-   {
-    "name": "<caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -60% upkeep."
-   },
-   {
-    "name": "Racial Shield Units and Polearm Units have +1 Rank."
+    "name": "<bulletlist><bullet><caststrategic></caststrategic> Unit Enchantment Research cost -75% <knowledge></knowledge> Knowledge to unlock.</bullet><bullet><caststrategic></caststrategic> <hyperlink>Unit Enchantments</hyperlink> cost -100% upkeep.</bullet><bullet>Racial Polearm Units and Shield Unit have +3 Ranks.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1371,7 +1257,7 @@
  {
   "affinities": [
    {
-    "name": "1<matter></matter> Materium Affinity"
+    "name": "2<matter></matter> Materium Affinity"
    }
   ],
   "biography_description": "They honor their builders and artisans, taking pride in their grand constructions.",
@@ -1382,10 +1268,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Quarries yield +5 <structureprod></structureprod> <hyperlink>Production</hyperlink> +2 <gold></gold> <hyperlink>Gold</hyperlink>."
-   },
-   {
-    "name": "Special Province Improvements cost -50% <structureprod></structureprod> <hyperlink>Production</hyperlink> and <gold></gold> <hyperlink>Gold</hyperlink>."
+    "name": "<bulletlist><bullet>Quarries yield +10 <gold></gold> <hyperlink>Gold</hyperlink> and +5 <structureprod></structureprod> <hyperlink>Production</hyperlink>.</bullet><bullet>Special Province Improvements are FREE!</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1399,6 +1282,9 @@
    },
    {
     "structure_upgrade_slug": "stone_walls"
+   },
+   {
+    "structure_upgrade_slug": "stonemason"
    }
   ],
   "icon": "great_builders"
@@ -1417,10 +1303,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Coast, River, and Underground Lake provinces yield +4 <gold></gold> Gold, +4 <food></food> Food, and +4 <unitprod></unitprod> Draft."
+    "name": "Coast and River provinces yield +5 <gold></gold> Gold, +5 <food></food> Food, +5 <structureprod></structureprod> <hyperlink>Production</hyperlink> and +5 <unitprod></unitprod> Draft."
    },
    {
-    "name": "Embarked units:<bulletlist><bullet>Deal +20% damage</bullet><bullet>Gain +20% <hyperlink><xp></xp> Experience</hyperlink></bullet></bulletlist>"
+    "name": "Embarked units:<bulletlist><bullet>Deal +75% damage</bullet><bullet>Gain +75% <hyperlink><xp></xp> Experience</hyperlink></bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1436,23 +1322,20 @@
   "icon": "experienced_seafarers"
  },
  {
+  "affinities": [
+   {
+    "name": "1<nature></nature> Nature Affinity"
+   }
+  ],
   "biography_description": "They are pioneers and settlers, founding cities wherever they go.",
   "lore_description": "They are pioneers and settlers, founding cities wherever they go.",
   "point_cost": 1,
   "id": "adept_settlers",
   "name": "Adept Settlers",
-  "incompatible_society_traits": [
-   {
-    "name": "Imperialists"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Founding cities costs -40% less <influence></influence> <hyperlink>Imperium</hyperlink>."
-   },
-   {
-    "name": "Newly founded cities gain +1 <population></population> <hyperlink>Population</hyperlink>."
+    "name": "<bulletlist><bullet>Founding cities costs -75% less <influence></influence> <hyperlink>Imperium</hyperlink>.</bullet><bullet>Newly founded cities gain +3 <population></population> <hyperlink>Population</hyperlink>.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1460,11 +1343,6 @@
   "group_name": "",
   "front_end": true,
   "display_order": 3,
-  "affinities": [
-   {
-    "name": "1<nature></nature> Nature Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
     "empire_progression_slug": "expanded_governance"
@@ -1532,7 +1410,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Gain +75% resources from clearing an <hyperlink>Infestation</hyperlink>, <hyperlink>Ancient Wonder</hyperlink>, or <hyperlink>Resource Node</hyperlink>."
+    "name": "Gain +100% resources from clearing an <hyperlink>Infestation</hyperlink>, <hyperlink>Ancient Wonder</hyperlink>, or <hyperlink>Resource Node</hyperlink>."
    },
    {
     "name": "Racial Ranged Units and Skirmisher Units have +1 Rank."
@@ -1564,10 +1442,10 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Summoning Spells cost -50% <mana></mana> Mana and <caststrategic></caststrategic> World Map Casting Points to cast."
+    "name": "Summoning Spells cost 50% less <caststrategic></caststrategic> World Map Casting Point to cast."
    },
    {
-    "name": "Summoned Magic Origin units have +1 Rank."
+    "name": "Summoned Magic Origin units have +3 Ranks."
    }
   ],
   "enabled": true,
@@ -1583,29 +1461,20 @@
   "icon": "mana_channelers"
  },
  {
+  "affinities": [
+   {
+    "name": "1<arcana></arcana> Astral Affinity"
+   }
+  ],
   "biography_description": "They are blessed with an innate talent for spellcasting.",
   "lore_description": "They are blessed with an innate talent for spellcasting, rarely encountering problems that can't be solved by an abundant use of magic.",
   "point_cost": 1,
   "id": "gifted_casters",
   "name": "Gifted Casters",
-  "incompatible_society_traits": [
-   {
-    "name": "Ancient Wise Ones"
-   },
-   {
-    "name": "Devious Watchers"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "+10 <optactical></optactical> Combat Casting Points"
-   },
-   {
-    "name": "+10 <caststrategic></caststrategic> World Map Casting Points."
-   },
-   {
-    "name": "<hyperlink>Combat Spells</hyperlink> cost 20% less <mana></mana> <hyperlink>Mana</hyperlink> and <optactical></optactical> Combat Casting Points to cast."
+    "name": "<bulletlist><bullet>+25 <caststrategic></caststrategic> World Map Casting Points.</bullet><bullet>+25 <optactical></optactical> <hyperlink> Combat Casting Point</hyperlink>.</bullet><bullet>ALL Spells cost 25% less to cast.</bullet>"
    }
   ],
   "enabled": true,
@@ -1613,14 +1482,9 @@
   "group_name": "",
   "front_end": true,
   "display_order": 4,
-  "affinities": [
-   {
-    "name": "1<arcana></arcana> Astral Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
-    "description": "100<mana></mana> 50<knowledge></knowledge> "
+    "description": "Start with 1 extra Combat Spell unlocked."
    }
   ],
   "icon": "gifted_casters"
@@ -1642,13 +1506,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "Units gain the Corpse Eating ability."
-   },
-   {
-    "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>"
-   },
-   {
-    "name": "The nearest City owned gains +6 <mana></mana> <hyperlink>Mana</hyperlink> and +6 <food></food> <hyperlink>Food</hyperlink> per tier of units killed or lost after successful combat."
+    "name": "<bulletlist><bullet>Units of this Race gain Greater Corpse Consumption.</bullet><bullet>-10 <evilact></evilact> Alignment.</bullet>"
    }
   ],
   "enabled": true,
@@ -1667,18 +1525,21 @@
     "name": "-10<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
    }
   ],
-  "biography_description": "They murder without remorse. For them, loot and plunder are more important than right or wrong.",
-  "lore_description": "They murder without remorse, more interested in loot and plunder than right or wrong.",
+  "biography_description": "They have plundered the World Vault, earning themselves countless Legendary Artifacts in the process.",
+  "lore_description": "They have plundered the World Vault, earning themselves countless Legendary Artifacts in the process.",
   "point_cost": 1,
-  "id": "ruthless_raiders__evilact__",
-  "name": "Ruthless Raiders <evilact></evilact>",
+  "id": "world_vault_raiders",
+  "name": "World Vault Raiders",
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "The nearest City owned gains +6 <gold></gold> <hyperlink>Gold</hyperlink> and +6 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
+    "name": "The nearest City owned gains +3 <gold></gold> <hyperlink>Gold</hyperlink> and +3 <unitprod></unitprod> <hyperlink>Draft</hyperlink> per tier of units killed after successful combat."
    },
    {
     "name": "-10 <evilact></evilact> <hyperlink>Alignment</hyperlink>"
+   },
+   {
+    "name": "The items gained from this trait are guaranteed to include 8 Weapons and 12 Armor/Misc items. They are also guaranteed to be Tier IV."
    }
   ],
   "enabled": true,
@@ -1688,26 +1549,26 @@
   "display_order": 5,
   "starting_bonuses": [
    {
-    "empire_progression_slug": "skilled_raiders"
+    "description": "Get 20 random hero items."
    }
   ],
-  "icon": "ruthless_raiders__evilact__"
+  "icon": "world_vault_raiders"
  },
  {
+  "affinities": [
+   {
+    "name": "3<order></order> Order Affinity"
+   }
+  ],
   "biography_description": "They are known imperialists, proud of their people and their developed culture.",
   "lore_description": "They are focused on the glory of their empire and the development of their cities.",
   "point_cost": 1,
   "id": "imperialists",
   "name": "Imperialists",
-  "incompatible_society_traits": [
-   {
-    "name": "Adept Settlers"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "The <hyperlink>Throne City</hyperlink> and cities that share a border with the Throne City gain +20 <happiness></happiness> <hyperlink>City Stability</hyperlink> and +30 <gold></gold> <hyperlink>Gold</hyperlink> income."
+    "name": "The <hyperlink>Throne City</hyperlink> and cities that share a border with the Throne City gain +50 <happiness></happiness> <hyperlink>City Stability</hyperlink> and +50% <gold></gold> <hyperlink>Gold</hyperlink> income."
    }
   ],
   "enabled": true,
@@ -1715,52 +1576,14 @@
   "group_name": "",
   "front_end": true,
   "display_order": 6,
-  "affinities": [
-   {
-    "name": "1<order></order> Order Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
-    "description": "Capital city starts with +1 <population></population> Population."
+    "description": "Capital city starts with +3 <population></population> Population."
    }
   ],
   "icon": "imperialists"
  },
  {
-  "biography_description": "They share pure intentions, compassion and an unerring devotion to the good cause.",
-  "lore_description": "They share pure intentions, compassion and an unerring devotion to the cause of Good.",
-  "point_cost": 1,
-  "id": "devotees_of_good__goodact__",
-  "name": "Devotees of Good <goodact></goodact>",
-  "incompatible_society_traits": [
-   {
-    "name": "Ruthless Raiders <evilact></evilact>"
-   },
-   {
-    "name": "Scions of Evil <evilact></evilact>"
-   },
-   {
-    "name": "Ritual Cannibals <evilact></evilact>"
-   }
-  ],
-  "screen_description": "",
-  "effect_descriptions": [
-   {
-    "name": "Cities gain +10 <happiness></happiness> <hyperlink>City Stability</hyperlink>, +20 <gold></gold> <hyperlink>Gold</hyperlink> and your empire gains +5 <influence></influence> Imperium per level of Good Alignment."
-   },
-   {
-    "name": "+10 <goodact></goodact> <hyperlink>Alignment</hyperlink>"
-   },
-   {
-    "name": "Racial Support Units and Polearm Units have +1 Rank."
-   }
-  ],
-  "enabled": true,
-  "type": "society",
-  "group_name": "",
-  "front_end": true,
-  "display_order": 6,
   "affinities": [
    {
     "name": "1<order></order> Order Affinity"
@@ -1769,6 +1592,22 @@
     "name": "10<reputation4></reputation4> <hyperlink>Alignment</hyperlink>"
    }
   ],
+  "biography_description": "They share pure intentions, compassion and an unerring devotion to the good cause.",
+  "lore_description": "They share pure intentions, compassion and an unerring devotion to the cause of Good.",
+  "point_cost": 1,
+  "id": "devotees_of_good__goodact__",
+  "name": "Devotees of Good <goodact></goodact>",
+  "screen_description": "",
+  "effect_descriptions": [
+   {
+    "name": "<bulletlist><bullet>Cities gain +20 <happiness></happiness> <hyperlink>City Stability</hyperlink>.</bullet><bullet>Gain +15 <influence></influence> Imperium per level of Good Alignment.</bullet><bullet>While having Good Alignment, gain +30% <influence></influence> Imperium.</bullet><bullet>Support Units have +3 Ranks.</bullet><bullet>+10 <goodact></goodact> Alignment.</bullet></bulletlist>"
+   }
+  ],
+  "enabled": true,
+  "type": "society",
+  "group_name": "",
+  "front_end": true,
+  "display_order": 6,
   "starting_bonuses": [
    {
     "description": "Start with an extra Support Unit or Polearm Unit."
@@ -1790,13 +1629,7 @@
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "<hyperlink>Cities</hyperlink> require -30% <food></food> <hyperlink>Food</hyperlink> for gaining a new <population></population> <hyperlink>Population</hyperlink>."
-   },
-   {
-    "name": "Racial Tier I and II units have +1 Rank."
-   },
-   {
-    "name": "Non-Magic Origin units require -20% <hyperlink>Unit Upkeep</hyperlink>."
+    "name": "<bulletlist><bullet>Your Heroes receive a -100% <hyperlink><hp></hp> Hit Point</hyperlink> Penalty.</bullet><bullet>However, your Cities gain +200% <gold></gold> <hyperlink>Gold</hyperlink>, <food></food> <hyperlink>Food</hyperlink> and <unitprod></unitprod> <hyperlink>Draft</hyperlink>.</bullet><bullet>Your units cost -50% Upkeep.</bullet></bulletlist>"
    }
   ],
   "enabled": true,
@@ -1806,7 +1639,7 @@
   "display_order": 5,
   "starting_bonuses": [
    {
-    "description": "Start with two extra Tier I units."
+    "description": "Start with an extra Tier I unit."
    }
   ],
   "icon": "prolific_swarmers"
@@ -1890,12 +1723,12 @@
   "front_end": true,
   "icon": "ferocious",
   "type": "form",
-  "display_order": 4
+  "display_order": 3
  },
  {
   "lore_description": "<helpcolor>Increases the damage of melee and ranged units.</helpcolor>",
   "biography_description": "They pride themselves on their strength and musculature.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "strong",
   "name": "Strong",
   "screen_description": "",
@@ -1914,7 +1747,7 @@
  {
   "lore_description": "<helpcolor>Reduce damage from magical attacks.</helpcolor>",
   "biography_description": "They have a natural armor against magical damage.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "resistant",
   "name": "Resistant",
   "screen_description": "",
@@ -1928,26 +1761,23 @@
   "front_end": true,
   "icon": "resistant",
   "type": "form",
-  "display_order": 2
+  "display_order": 4
  },
  {
+  "affinities": [
+   {
+    "name": "1<arcana></arcana> Astral Affinity"
+   }
+  ],
   "biography_description": "They harbor knowledge dating back to the beginning of time.",
   "lore_description": "They have been around since the start of history, honing their minds in the pursuit of arcane knowledge.",
   "point_cost": 1,
   "id": "ancient_wise_ones",
   "name": "Ancient Wise Ones",
-  "incompatible_society_traits": [
-   {
-    "name": "Gifted Casters"
-   },
-   {
-    "name": "Devious Watchers"
-   }
-  ],
   "screen_description": "",
   "effect_descriptions": [
    {
-    "name": "When a Tome is unlocked, a random skill from that Tome costs -60% <knowledge></knowledge> Knowledge."
+    "name": "When a Tome is unlocked, a random skill from that Tome costs 100% less <knowledge></knowledge> Knowledge."
    }
   ],
   "enabled": true,
@@ -1955,14 +1785,9 @@
   "group_name": "",
   "front_end": true,
   "display_order": 4,
-  "affinities": [
-   {
-    "name": "1<arcana></arcana> Astral Affinity"
-   }
-  ],
   "starting_bonuses": [
    {
-    "description": "100<knowledge></knowledge> "
+    "description": "1 random research skill is already unlocked."
    }
   ],
   "icon": "ancient_wise_ones"
@@ -2178,7 +2003,7 @@
  {
   "lore_description": "<helpcolor>Melee attackers have a chance of being poisoned.</helpcolor>",
   "biography_description": "They have poison glands which they use to ward off attackers.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "poisonous",
   "name": "Poisonous",
   "screen_description": "",
@@ -2187,7 +2012,7 @@
     "name": "+2 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink>."
    },
    {
-    "name": "Melee attackers have a base 90% chance of becoming Poisoned."
+    "name": "Melee attackers have a base 60% chance of becoming Poisoned."
    },
    {
     "name": "Immunity to becoming Poisoned."
@@ -2217,7 +2042,7 @@
   "front_end": true,
   "icon": "cold_blooded",
   "type": "form",
-  "display_order": 4
+  "display_order": 5
  },
  {
   "lore_description": "<helpcolor>Units grow strong at a faster rate from winning fights.</helpcolor>",
@@ -2225,10 +2050,10 @@
   "point_cost": 1,
   "id": "adaptable",
   "name": "Adaptable",
-  "screen_description": "",
+  "screen_description": "Units gain +20% <hyperlink><xp></xp> Experience</hyperlink>.",
   "effect_descriptions": [
    {
-    "name": "Non-hero units gain +50% <hyperlink><xp></xp> Experience</hyperlink>."
+    "name": "Units gain +20% <hyperlink><xp></xp> Experience</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2241,13 +2066,13 @@
  {
   "lore_description": "<helpcolor>Rewards smart positioning in combat.</helpcolor>",
   "biography_description": "They love to sneak around to find weak spots in their enemies' defenses.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "sneaky",
   "name": "Sneaky",
-  "screen_description": "",
+  "screen_description": "+15% damage on <hyperlink><flank></flank> Flanking</hyperlink> attacks.",
   "effect_descriptions": [
    {
-    "name": "+25% damage on <hyperlink><flank></flank> Flanking</hyperlink> attacks."
+    "name": "+15% damage on <hyperlink><flank></flank> Flanking</hyperlink> attacks."
    }
   ],
   "enabled": true,
@@ -2260,7 +2085,7 @@
  {
   "lore_description": "<helpcolor>Useful for approaching enemy ranged units.</helpcolor>",
   "biography_description": "They move with uncanny agility, much to the jealousy of other beings.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "quick_reflexes",
   "name": "Quick Reflexes",
   "screen_description": "",
@@ -2279,7 +2104,7 @@
  {
   "lore_description": "<helpcolor>Ranged shots hit more often.</helpcolor>",
   "biography_description": "Their keen vision makes for great feats of archery.",
-  "point_cost": 2,
+  "point_cost": 1,
   "id": "keen-sighted",
   "name": "Keen-Sighted",
   "screen_description": "",
@@ -2298,7 +2123,7 @@
  {
   "lore_description": "<helpcolor>Units take less damage from physical attacks.</helpcolor>",
   "biography_description": "They are tough and used to taking a few hits in battle.",
-  "point_cost": 3,
+  "point_cost": 2,
   "id": "tough",
   "name": "Tough",
   "screen_description": "",
@@ -2312,7 +2137,7 @@
   "front_end": true,
   "icon": "tough",
   "type": "form",
-  "display_order": 2
+  "display_order": 4
  },
  {
   "lore_description": "<helpcolor>Armies can fight longer on the world map.</helpcolor>",
@@ -2320,10 +2145,10 @@
   "point_cost": 1,
   "id": "fast_recuperation",
   "name": "Fast Recuperation",
-  "screen_description": "",
+  "screen_description": "Regenerate an additional 15 <hyperlink><hp></hp> Hit Point</hyperlink> per <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>.",
   "effect_descriptions": [
    {
-    "name": "Regenerate an additional +10 <hyperlink><hp></hp> Hit Points</hyperlink> per <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>."
+    "name": "Regenerate an additional 15 <hyperlink><hp></hp> Hit Point</hyperlink> per <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink>."
    }
   ],
   "enabled": true,
@@ -2331,7 +2156,7 @@
   "front_end": true,
   "icon": "fast_recuperation",
   "type": "form",
-  "display_order": 4
+  "display_order": 3
  },
  {
   "affinities": [
@@ -2482,5 +2307,37 @@
   "front_end": false,
   "display_order": -1,
   "icon": "mark_of_the_conflux"
+ },
+ {
+  "affinities": [
+   {
+    "name": "4<shadow></shadow> Shadow Affinity"
+   }
+  ],
+  "biography_description": "",
+  "lore_description": "The select few of the Dark Lord manipulating the threads of Fate from beyond the Void itself, they are Legendary, almost Godlike beings, and they refuse to co-exist with pitiful, unworthy cretins that live worthless, ignorant lives, unable to surmount their limited comprehension.",
+  "point_cost": 2,
+  "id": "the_chosen_ones",
+  "name": "The Chosen Ones",
+  "screen_description": "",
+  "effect_descriptions": [
+   {
+    "name": "<bulletlist><bullet>Your Heroes gain Dark Lord's Chosen, an effect that allows them to reap the souls of the fallen in combat, increasing their stats, and, more importantly, unlocking the Dark Lord's Chosen Hero Skill Tree, which is unique to them and contains several extremely powerful abilities.</bullet><bullet>However, they also cannot co-exist with other, inferior lifeforms, so any non-hero ALLIED unit they enter combat with will instantly die upon combat start.</bullet><bullet>Your Heroes receive -50% <hyperlink><xp></xp> Experience</hyperlink>, as the limitless potential of the Dark Lord's Chosen Skills requires several lifetimes to master.</bullet><bullet>The Item generated by this trait is always a Tier IV Weapon.</bullet></bulletlist>"
+   }
+  ],
+  "enabled": true,
+  "type": "society",
+  "group_name": "",
+  "front_end": true,
+  "display_order": 1,
+  "starting_bonuses": [
+   {
+    "description": "Get 1 random hero items."
+   },
+   {
+    "description": "300<influence></influence> "
+   }
+  ],
+  "icon": "the_chosen_ones"
  }
 ]
