@@ -9,17 +9,17 @@ html {
 
 @font-face {
     font-family: 'Header';
-    src: url(/cbm/Style/HEADER.ttf);
+    src: url(/ascension/Style/HEADER.ttf);
 }
 
 @font-face {
     font-family: 'Decorative';
-    src: url(/cbm/Style/DECORATIVE.otf);
+    src: url(/ascension/Style/DECORATIVE.otf);
 }
 
 @font-face {
     font-family: 'Regular';
-    src: url(/cbm/Style/REGULAR.ttf);
+    src: url(/ascension/Style/REGULAR.ttf);
 }
 
 body {
@@ -84,7 +84,7 @@ ul {
 }
 
 .item_card {
-    background-image: url(/cbm/Icons/tooltipBG.png);
+    background-image: url(/ascension/Icons/tooltipBG.png);
     font-size: 13px;
     color: #bbcdf6;
     width: 450px;
@@ -94,7 +94,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -103,7 +103,7 @@ ul {
 .textblocktitle {
     border-width: 5px;
     border-style: solid;
-    border-image: url(/cbm/Icons/Interface/panel_name_border.png);
+    border-image: url(/ascension/Icons/Interface/panel_name_border.png);
     border-image-slice: 50 fill;
     border-image-repeat: stretch;
     text-transform: uppercase;
@@ -125,7 +125,7 @@ ul {
     border-width: 10px;
     border-top-width: 0px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slice.png);
+    border-image: url(/ascension/Icons/9slice.png);
     border-image-slice: 30 fill;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 
 #menu {
     background: black;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     border-style: solid;
     height: 35px;
@@ -166,7 +166,7 @@ a:hover {
 #menu ul {
     height: auto;
     background: black;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     border-style: solid;
 }
@@ -228,7 +228,7 @@ a:hover {
     height: auto;
     width: 180px;
     background: black;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     border-style: solid;
     position: absolute;
@@ -367,7 +367,7 @@ a:hover {
     text-align: left;
     border-style: solid;
     border-width: 10px;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -474,13 +474,13 @@ p {
     width: 500px;
     min-width: 400px;
     float: left;
-    background-image: url(/cbm/Icons/tooltipBG.png);
+    background-image: url(/ascension/Icons/tooltipBG.png);
     font-size: 13px;
     color: #bbcdf6;
     text-align: left;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -494,13 +494,13 @@ p {
     width: 800px;
     min-width: 400px;
     float: left;
-    background-image: url(/cbm/Icons/tooltipBG.png);
+    background-image: url(/ascension/Icons/tooltipBG.png);
     font-size: 13px;
     color: #bbcdf6;
     text-align: left;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -554,7 +554,7 @@ p {
     outline: 0;
     border-width: 3px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: rgb(0, 0, 0);
     border-image-repeat: stretch;
@@ -569,7 +569,7 @@ p {
     outline: 0;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: black;
     border-image-repeat: stretch;
@@ -594,7 +594,7 @@ p {
     color: #bbcdf6;
     text-align: left;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 4 10 4 10 fill;
     text-shadow: 2px 2px 3px black;
     z-index: 2;
@@ -634,7 +634,7 @@ p {
     float: left;
     padding: 10px;
     width: 76px;
-    background: url(/cbm/Icons/Interface/spellbackground_enchantment.png);
+    background: url(/ascension/Icons/Interface/spellbackground_enchantment.png);
     overflow: visible;
     background-size: 156px;
     background-repeat: no-repeat;
@@ -700,7 +700,7 @@ tab {
     padding: 15px;
     color: #362314;
     border-style: solid;
-    border-image: url(/cbm/Icons/Interface/parchment2.png);
+    border-image: url(/ascension/Icons/Interface/parchment2.png);
     border-image-slice: 2 fill;
 }
 
@@ -708,10 +708,10 @@ tab {
     color: white;
     width: 1075px;
     border-style: solid;
-    border-image: url(/cbm/Icons/Interface/Background_Unitpanel.png);
+    border-image: url(/ascension/Icons/Interface/Background_Unitpanel.png);
     border-image-slice: 2;
     border-width: 4px;
-    background-image: url(/cbm/Icons/Interface/Background_Unitpanel.png);
+    background-image: url(/ascension/Icons/Interface/Background_Unitpanel.png);
     background-size: cover;
     padding: 5px;
     display: table;
@@ -729,7 +729,7 @@ tab {
     padding: 15px;
     display: table;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 4 6 4 6;
     margin-bottom: 20px;
     margin-left: auto;
@@ -770,7 +770,7 @@ tab {
     display: flex;
     border-style: solid;
     border-width: 5px;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10 fill;
 }
 
@@ -843,7 +843,7 @@ tab {
     border-top-width: 0px;
     float: right;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slice.png);
+    border-image: url(/ascension/Icons/9slice.png);
     border-image-slice: 30 fill;
     border-image-repeat: stretch;
 }
@@ -910,7 +910,7 @@ tab {
 .unit_name {
     border-width: 20px;
     border-style: solid;
-    border-image: url(/cbm/Icons/Interface/panel_name_border.png);
+    border-image: url(/ascension/Icons/Interface/panel_name_border.png);
     border-image-slice: 20 fill;
     float: right;
     border-image-repeat: stretch;
@@ -1040,7 +1040,7 @@ tab {
 .preview_image {
     float: right;
     max-height: 200px;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-style: solid;
     border-image-slice: 5 fill;
 }
@@ -1052,7 +1052,7 @@ tab {
     color: #bbcdf6;
     text-align: left;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 4 500 4 10 fill;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -1066,7 +1066,7 @@ tab {
     color: #bbcdf6;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10 fill;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -1113,7 +1113,7 @@ hr {
     width: 300px;
     border-style: solid;
     border-width: 10px;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10;
     background-color: black;
     color: #F0F8FF;
@@ -1157,14 +1157,14 @@ hr {
 }
 
 .tooltiptextnew {
-    background-image: url(/cbm/Icons/tooltipBG.png);
+    background-image: url(/ascension/Icons/tooltipBG.png);
     background-size: auto;
     font-size: 13px;
     color: #bbcdf6;
     text-align: left;
     border-width: 5px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 10 10 10 10 fill;
     text-shadow: 2px 2px 3px black;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
@@ -1200,7 +1200,7 @@ hyperlink {
     width: 100%;
     outline: 0;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 2 5 2 5 fill;
     background-color: black;
     border-image-repeat: stretch;
@@ -1220,7 +1220,7 @@ hyperlink {
     display: block;
     outline: 0;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 2 5 2 5 fill;
     background-color: black;
     border-image-repeat: stretch;
@@ -1234,7 +1234,7 @@ hyperlink {
     margin-bottom: 0px;
     padding: 4px;
     border-style: solid;
-    border-image: url(/cbm/Icons/9slicetooltip.png);
+    border-image: url(/ascension/Icons/9slicetooltip.png);
     border-image-slice: 1 1 1 1;
 }
 
@@ -1270,132 +1270,132 @@ damageblight {
     max-height: 20px;
     top: 4px;
     position: relative;
-    content: url(/cbm/Icons/Text/blight.png);
+    content: url(/ascension/Icons/Text/blight.png);
 }
 
 damagefire {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/fire.png);
+    content: url(/ascension/Icons/Text/fire.png);
     position: relative;
 }
 
 damagespirit {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/spirit.png);
+    content: url(/ascension/Icons/Text/spirit.png);
     position: relative;
 }
 
 damagelightning {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/shock.png);
+    content: url(/ascension/Icons/Text/shock.png);
     position: relative;
 }
 
 DamagePhysical {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/physical.png);
+    content: url(/ascension/Icons/Text/physical.png);
     position: relative;
 }
 
 damagefrost {
     max-height: 20px;
     top: 5px;
-    content: url(/cbm/Icons/Text/ice.png);
+    content: url(/ascension/Icons/Text/ice.png);
     position: relative;
 }
 
 turn {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/turn.png);
+    content: url(/ascension/Icons/Text/turn.png);
     position: relative;
 }
 
 resistance {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/resistance.png);
+    content: url(/ascension/Icons/Text/resistance.png);
     position: relative;
 }
 
 defense {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/armor.png);
+    content: url(/ascension/Icons/Text/armor.png);
     position: relative;
 }
 
 defensefire {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/fire_resistance.png);
+    content: url(/ascension/Icons/Text/fire_resistance.png);
     position: relative;
 }
 
 defenselightning {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/lightning_resistance.png);
+    content: url(/ascension/Icons/Text/lightning_resistance.png);
     position: relative;
 }
 
 defenseblight {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/blight_resistance.png);
+    content: url(/ascension/Icons/Text/blight_resistance.png);
     position: relative;
 }
 
 statuseffectresistance {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/status_resistance.png);
+    content: url(/ascension/Icons/Text/status_resistance.png);
     position: relative;
 }
 
 defensespirit {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/spirit_resistance.png);
+    content: url(/ascension/Icons/Text/spirit_resistance.png);
     position: relative;
 }
 
 defensefrost {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/frost_resistance.png);
+    content: url(/ascension/Icons/Text/frost_resistance.png);
     position: relative;
 }
 
 happiness {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/happiness.png);
+    content: url(/ascension/Icons/Text/happiness.png);
     position: relative;
 }
 
 hp {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/health.png);
+    content: url(/ascension/Icons/Text/health.png);
     position: relative;
 }
 
 temphp {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/tempHitpoints.png);
+    content: url(/ascension/Icons/Text/tempHitpoints.png);
     position: relative;
 }
 
 mp {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/mp.png);
+    content: url(/ascension/Icons/Text/mp.png);
     position: relative;
 }
 
@@ -1432,7 +1432,7 @@ bullet {
 accuracy {
     max-width: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/accuracy.png);
+    content: url(/ascension/Icons/Text/accuracy.png);
     position: relative;
 }
 
@@ -1450,21 +1450,21 @@ spacedline {
 range {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/range.png);
+    content: url(/ascension/Icons/Text/range.png);
     position: relative;
 }
 
 souls {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/souls.png);
+    content: url(/ascension/Icons/Text/souls.png);
     position: relative;
 }
 
 
 repeatingAction {
     max-width: 40px;
-    content: url(/cbm/Icons/Text/repeating.png);
+    content: url(/ascension/Icons/Text/repeating.png);
     position: relative;
     padding-left: 10px;
     top: 6px;
@@ -1473,7 +1473,7 @@ repeatingAction {
 singleUseAction {
     max-width: 40px;
     max-height: 20px;
-    content: url(/cbm/Icons/Text/single_action.png);
+    content: url(/ascension/Icons/Text/single_action.png);
     position: relative;
     padding-left: 10px;
     top: 6px;
@@ -1481,7 +1481,7 @@ singleUseAction {
 
 singleAction {
     max-width: 40px;
-    content: url(/cbm/Icons/Text/single_action.png);
+    content: url(/ascension/Icons/Text/single_action.png);
     position: relative;
     padding-left: 10px;
     top: 6px;
@@ -1489,7 +1489,7 @@ singleAction {
 
 fullAction {
     max-width: 40px;
-    content: url(/cbm/Icons/Text/full_action.png);
+    content: url(/ascension/Icons/Text/full_action.png);
     position: relative;
     padding-left: 10px;
     top: 6px;
@@ -1497,7 +1497,7 @@ fullAction {
 
 freeAction {
     max-width: 40px;
-    content: url(/cbm/Icons/Text/free_action.png);
+    content: url(/ascension/Icons/Text/free_action.png);
     position: relative;
     padding-left: 10px;
     top: 6px;
@@ -1505,7 +1505,7 @@ freeAction {
 
 leaveoneaction {
     max-width: 40px;
-    content: url(/cbm/Icons/Text/leave_one.png);
+    content: url(/ascension/Icons/Text/leave_one.png);
     position: relative;
     padding-left: 10px;
     top: 6px;
@@ -1558,7 +1558,7 @@ silver {
 xp {
     max-height: 15px;
     top: 2px;
-    content: url(/cbm/Icons/Text/xp.png);
+    content: url(/ascension/Icons/Text/xp.png);
     position: relative;
 }
 
@@ -1566,41 +1566,41 @@ gold {
     max-height: 20px;
     top: 3px;
     left: 3px;
-    content: url(/cbm/Icons/Text/gold.png);
+    content: url(/ascension/Icons/Text/gold.png);
     position: relative;
 }
 
 mana {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/mana.png);
+    content: url(/ascension/Icons/Text/mana.png);
     position: relative;
 }
 
 unitprod {
     max-height: 20px;
-    content: url(/cbm/Icons/Text/draft.png);
+    content: url(/ascension/Icons/Text/draft.png);
     position: relative;
 }
 
 population {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/population.png);
+    content: url(/ascension/Icons/Text/population.png);
     position: relative;
 }
 
 production {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/production.png);
+    content: url(/ascension/Icons/Text/production.png);
     position: relative;
 }
 
 research {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/knowledge.png);
+    content: url(/ascension/Icons/Text/knowledge.png);
     position: relative;
 }
 
@@ -1656,7 +1656,7 @@ research {
 .header-img::after {
     content: "";
     height: 150px;
-    background: url(/cbm/Icons/Interface/library_hero.jpg);
+    background: url(/ascension/Icons/Interface/library_hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -1722,126 +1722,126 @@ research {
 influence {
     max-width: 25px;
     top: 3px;
-    content: url(/cbm/Icons/Text/imperium.png);
+    content: url(/ascension/Icons/Text/imperium.png);
     position: relative;
 }
 
 food {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/food.png);
+    content: url(/ascension/Icons/Text/food.png);
     position: relative;
 }
 
 caststrategic {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/strategiccombatpoints.png);
+    content: url(/ascension/Icons/Text/strategiccombatpoints.png);
     position: relative;
 }
 
 optactical {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/tacticalcombatpoints.png);
+    content: url(/ascension/Icons/Text/tacticalcombatpoints.png);
     position: relative;
 }
 
 casttactical {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/tacticalcombatpoints.png);
+    content: url(/ascension/Icons/Text/tacticalcombatpoints.png);
     position: relative;
 }
 
 unitSupport {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/support_unit.png);
+    content: url(/ascension/Icons/Text/support_unit.png);
     position: relative;
 }
 
 unitBattleMage {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/battle_mage_unit.png);
+    content: url(/ascension/Icons/Text/battle_mage_unit.png);
     position: relative;
 }
 
 unitShield {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/shield_unit.png);
+    content: url(/ascension/Icons/Text/shield_unit.png);
     position: relative;
 }
 
 unitPolearm {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/polearm_unit.png);
+    content: url(/ascension/Icons/Text/polearm_unit.png);
     position: relative;
 }
 
 unitRanged {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/ranged_unit.png);
+    content: url(/ascension/Icons/Text/ranged_unit.png);
     position: relative;
 }
 
 unitFighter {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/fighter_unit.png);
+    content: url(/ascension/Icons/Text/fighter_unit.png);
     position: relative;
 }
 
 unitScout {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/scout_unit.png);
+    content: url(/ascension/Icons/Text/scout_unit.png);
     position: relative;
 }
 
 unitMythic {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/mythic_unit.png);
+    content: url(/ascension/Icons/Text/mythic_unit.png);
     position: relative;
 }
 
 unitSkirmisher {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/skirmisher_unit.png);
+    content: url(/ascension/Icons/Text/skirmisher_unit.png);
     position: relative;
 }
 
 unitShock {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/shock_unit.png);
+    content: url(/ascension/Icons/Text/shock_unit.png);
     position: relative;
 }
 
 unitTower {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/tower.png);
+    content: url(/ascension/Icons/Text/tower.png);
     position: relative;
 }
 
 unitSiegecraft {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/siegecraft.png);
+    content: url(/ascension/Icons/Text/siegecraft.png);
     position: relative;
 }
 
 unitCivilian {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Abilities/civilian.png);
+    content: url(/ascension/Icons/Abilities/civilian.png);
     position: relative;
 }
 
@@ -1849,21 +1849,21 @@ unitCivilian {
 knowledge {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/knowledge.png);
+    content: url(/ascension/Icons/Text/knowledge.png);
     position: relative;
 }
 
 empirechaos {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/chaos.png);
+    content: url(/ascension/Icons/Text/chaos.png);
     position: relative;
 }
 
 empirenature {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/nature.png);
+    content: url(/ascension/Icons/Text/nature.png);
     position: relative;
 }
 
@@ -1871,14 +1871,14 @@ empirearcana,
 empireastral {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/astral.png);
+    content: url(/ascension/Icons/Text/astral.png);
     position: relative;
 }
 
 empireshadow {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/shadow.png);
+    content: url(/ascension/Icons/Text/shadow.png);
     position: relative;
 }
 
@@ -1886,28 +1886,28 @@ empirematter,
 empirematerium {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/materium.png);
+    content: url(/ascension/Icons/Text/materium.png);
     position: relative;
 }
 
 empireorder {
     max-height: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/order.png);
+    content: url(/ascension/Icons/Text/order.png);
     position: relative;
 }
 
 empirechaosBig {
     max-height: 25px;
     top: 3px;
-    content: url(/cbm/Icons/Text/chaos.png);
+    content: url(/ascension/Icons/Text/chaos.png);
     position: relative;
 }
 
 empirenatureBig {
     max-height: 25px;
     top: 3px;
-    content: url(/cbm/Icons/Text/nature.png);
+    content: url(/ascension/Icons/Text/nature.png);
     position: relative;
 }
 
@@ -1915,14 +1915,14 @@ empirearcanaBig,
 empireastralBig {
     max-height: 25px;
     top: 3px;
-    content: url(/cbm/Icons/Text/astral.png);
+    content: url(/ascension/Icons/Text/astral.png);
     position: relative;
 }
 
 empireshadowBig {
     max-height: 25px;
     top: 3px;
-    content: url(/cbm/Icons/Text/shadow.png);
+    content: url(/ascension/Icons/Text/shadow.png);
     position: relative;
 }
 
@@ -1930,84 +1930,84 @@ empirematterBig,
 empiremateriumBig {
     max-height: 25px;
     top: 3px;
-    content: url(/cbm/Icons/Text/materium.png);
+    content: url(/ascension/Icons/Text/materium.png);
     position: relative;
 }
 
 empireorderBig {
     max-height: 25px;
     top: 3px;
-    content: url(/cbm/Icons/Text/order.png);
+    content: url(/ascension/Icons/Text/order.png);
     position: relative;
 }
 
 chaos {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/chaosInv.png);
+    content: url(/ascension/Icons/Text/chaosInv.png);
     position: relative;
 }
 
 nature {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/natureInv.png);
+    content: url(/ascension/Icons/Text/natureInv.png);
     position: relative;
 }
 
 arcana {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/astralInv.png);
+    content: url(/ascension/Icons/Text/astralInv.png);
     position: relative;
 }
 
 shadow {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/shadowInv.png);
+    content: url(/ascension/Icons/Text/shadowInv.png);
     position: relative;
 }
 
 matter {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/materiumInv.png);
+    content: url(/ascension/Icons/Text/materiumInv.png);
     position: relative;
 }
 
 order {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/orderInv.png);
+    content: url(/ascension/Icons/Text/orderInv.png);
     position: relative;
 }
 
 general {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/EmpireProgressionIcons/general.png);
+    content: url(/ascension/Icons/EmpireProgressionIcons/general.png);
     position: relative;
 }
 
 garrison {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/fortification.png);
+    content: url(/ascension/Icons/Text/fortification.png);
     position: relative;
 }
 
 structureprod {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/production.png);
+    content: url(/ascension/Icons/Text/production.png);
     position: relative;
 }
 
 reputation8 {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/puregood.png);
+    content: url(/ascension/Icons/Text/puregood.png);
     position: relative;
 }
 
@@ -2016,14 +2016,14 @@ reputation7,
 goodact {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/good.png);
+    content: url(/ascension/Icons/Text/good.png);
     position: relative;
 }
 
 reputation4 {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/neutral.png);
+    content: url(/ascension/Icons/Text/neutral.png);
     position: relative;
 }
 
@@ -2032,244 +2032,244 @@ reputation1,
 evilact {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/evil.png);
+    content: url(/ascension/Icons/Text/evil.png);
     position: relative;
 }
 
 reputation0 {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/pureEvil.png);
+    content: url(/ascension/Icons/Text/pureEvil.png);
     position: relative;
 }
 
 forester {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/forester.png);
+    content: url(/ascension/Icons/Text/forester.png);
     position: relative;
 }
 
 farm {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/farm.png);
+    content: url(/ascension/Icons/Text/farm.png);
     position: relative;
 }
 
 farms {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/farm.png);
+    content: url(/ascension/Icons/Text/farm.png);
     position: relative;
 }
 
 conduit {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/conduit.png);
+    content: url(/ascension/Icons/Text/conduit.png);
     position: relative;
 }
 
 hut {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/hut.png);
+    content: url(/ascension/Icons/Text/hut.png);
     position: relative;
 }
 
 mine {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/mine.png);
+    content: url(/ascension/Icons/Text/mine.png);
     position: relative;
 }
 
 fishery {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/fishery.png);
+    content: url(/ascension/Icons/Text/fishery.png);
     position: relative;
 }
 
 quarry {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/quarry.png);
+    content: url(/ascension/Icons/Text/quarry.png);
     position: relative;
 }
 
 researchpost {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/researchpost.png);
+    content: url(/ascension/Icons/Text/researchpost.png);
     position: relative;
 }
 
 teleporter {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/teleporter.png);
+    content: url(/ascension/Icons/Text/teleporter.png);
     position: relative;
 }
 
 magicvictory {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/magicvictory.png);
+    content: url(/ascension/Icons/Text/magicvictory.png);
     position: relative;
 }
 
 bronzewonder {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/bronze.png);
+    content: url(/ascension/Icons/Text/bronze.png);
     position: relative;
 }
 
 silverwonder {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/silver.png);
+    content: url(/ascension/Icons/Text/silver.png);
     position: relative;
 }
 
 goldwonder {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/goldWonder.png);
+    content: url(/ascension/Icons/Text/goldWonder.png);
     position: relative;
 }
 
 hero {
     max-height: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/hero.png);
+    content: url(/ascension/Icons/Text/hero.png);
     position: relative;
 }
 
 siegehealthdamage {
     max-width: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/siegehealth.png);
+    content: url(/ascension/Icons/Text/siegehealth.png);
     position: relative;
 }
 
 pantheon {
     max-width: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/pantheon.png);
+    content: url(/ascension/Icons/Text/pantheon.png);
     position: relative;
 }
 
 dragondawn {
     max-width: 15px;
     top: 3px;
-    content: url(/cbm/Icons/Text/DragonDawn.png);
+    content: url(/ascension/Icons/Text/DragonDawn.png);
     position: relative;
 }
 
 mountSpecial {
     max-width: 20px;
     top: 5px;
-    content: url(/cbm/Icons/Text/MountInteraction.png);
+    content: url(/ascension/Icons/Text/MountInteraction.png);
     position: relative;
 }
 
 once {
     max-width: 20px;
     top: 5px;
-    content: url(/cbm/Icons/Text/once.png);
+    content: url(/ascension/Icons/Text/once.png);
     position: relative;
 }
 
 tierI {
     max-width: 20px;
     top: -2px;
-    content: url(/cbm/Icons/Text/tierI.png);
+    content: url(/ascension/Icons/Text/tierI.png);
     position: relative;
 }
 
 tierII {
     max-width: 20px;
     top: -2px;
-    content: url(/cbm/Icons/Text/tierII.png);
+    content: url(/ascension/Icons/Text/tierII.png);
     position: relative;
 }
 
 tierIII {
     max-width: 20px;
     top: -2px;
-    content: url(/cbm/Icons/Text/tierIII.png);
+    content: url(/ascension/Icons/Text/tierIII.png);
     position: relative;
 }
 
 tierIV {
     max-width: 20px;
     top: -2px;
-    content: url(/cbm/Icons/Text/tierIV.png);
+    content: url(/ascension/Icons/Text/tierIV.png);
     position: relative;
 }
 
 tierV {
     max-width: 20px;
     top: -2px;
-    content: url(/cbm/Icons/Text/tierV.png);
+    content: url(/ascension/Icons/Text/tierV.png);
     position: relative;
 }
 
 unit {
     max-width: 20px;
     top: 5px;
-    content: url(/cbm/Icons/Text/unit.png);
+    content: url(/ascension/Icons/Text/unit.png);
     position: relative;
 }
 
 structure {
     max-width: 20px;
     top: 5px;
-    content: url(/cbm/Icons/Text/city.png);
+    content: url(/ascension/Icons/Text/city.png);
     position: relative;
 }
 
 medal_soldier {
     max-width: 20px;
     top: 8px;
-    content: url(/cbm/Icons/Text/medal_soldier.png);
+    content: url(/ascension/Icons/Text/medal_soldier.png);
     position: relative;
 }
 
 medal_veteran {
     max-width: 20px;
     top: 8px;
-    content: url(/cbm/Icons/Text/medal_veteran.png);
+    content: url(/ascension/Icons/Text/medal_veteran.png);
     position: relative;
 }
 
 medal_elite {
     max-width: 20px;
     top: 8px;
-    content: url(/cbm/Icons/Text/medal_elite.png);
+    content: url(/ascension/Icons/Text/medal_elite.png);
     position: relative;
 }
 
 medal_champion {
     max-width: 20px;
     top: 8px;
-    content: url(/cbm/Icons/Text/medal_champion.png);
+    content: url(/ascension/Icons/Text/medal_champion.png);
     position: relative;
 }
 
 medal_legend {
     max-width: 20px;
     top: 8px;
-    content: url(/cbm/Icons/Text/medal_legend.png);
+    content: url(/ascension/Icons/Text/medal_legend.png);
     position: relative;
 }
 
 bindingessence {
     max-width: 20px;
     top: 3px;
-    content: url(/cbm/Icons/Text/bindingEssence.png);
+    content: url(/ascension/Icons/Text/bindingEssence.png);
     position: relative;
 }

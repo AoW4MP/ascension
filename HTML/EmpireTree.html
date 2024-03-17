@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<link rel="shortcut icon" type="image/x-icon" href="/cbm/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/ascension/favicon.ico" />
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/cbm/Style/style.css">
+    <link rel="stylesheet" type="text/css" href="/ascension/Style/style.css">
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <script>
         $("#body").ready(function () {
 
-            $("#header").load("/cbm/HTML/header.html", function () {
+            $("#header").load("/ascension/HTML/header.html", function () {
                 CheckData();
             });
         });
@@ -99,7 +99,7 @@
 
 
                             var img = document.createElement("IMG");
-                            img.setAttribute("src", "/cbm/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
+                            img.setAttribute("src", "/ascension/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
                             img.setAttribute("height", "50px");
                             img.className = "empireNodeIcon";
                             newNode.append(img);
@@ -165,7 +165,7 @@
 
 
                             var img = document.createElement("IMG");
-                            img.setAttribute("src", "/cbm/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
+                            img.setAttribute("src", "/ascension/Icons/EmpireProgressionIcons/" + jsonEmpire[i].id + ".png");
                             img.setAttribute("height", "50px");
                             img.setAttribute("style", "left:-35%");
                             img.className = "empireNodeIcon";
@@ -246,7 +246,7 @@
     </script>
 
 
-    <title>Age of Wonders 4 CBM - Empire Tree</title>
+    <title>Age of Wonders 4 Ascension - Empire Tree</title>
 </head>
 
 <body>
@@ -285,7 +285,7 @@
         position: absolute;
 
         transform-origin: left center;
-        background-image: url(/cbm/Icons/Interface/talents-arrow-line-gray.png);
+        background-image: url(/ascension/Icons/Interface/talents-arrow-line-gray.png);
         background-size: 10px;
         width: 25px;
     }
@@ -298,10 +298,10 @@
         height: 800px;
         width: 1150px;
         background-color: black;
-        background-image: url(/cbm/Icons/Interface/panel_Background.png);
+        background-image: url(/ascension/Icons/Interface/panel_Background.png);
         background-size: inherit;
 
-        border-image: url(/cbm/Icons/9slicetooltip.png);
+        border-image: url(/ascension/Icons/9slicetooltip.png);
         border-image-slice: 4 10 4 10 fill;
         border-style: solid;
     }
