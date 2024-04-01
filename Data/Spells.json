@@ -359,6 +359,9 @@
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
    },
    {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
+   },
+   {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
    },
    {
@@ -395,6 +398,9 @@
    },
    {
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    },
    {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
@@ -435,6 +441,9 @@
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
    },
    {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
+   },
+   {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
    },
    {
@@ -471,6 +480,9 @@
    },
    {
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    },
    {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
@@ -511,6 +523,9 @@
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
    },
    {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
+   },
+   {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
    },
    {
@@ -549,6 +564,9 @@
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
    },
    {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
+   },
+   {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
    },
    {
@@ -585,6 +603,9 @@
    },
    {
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    },
    {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
@@ -809,7 +830,7 @@
   "id": "naga_transformation",
   "DLC": "PRIMALFURY ",
   "tactical": false,
-  "description": "<bulletlist></bulletlist><bullet>Very Fast Movement.</bullet><bullet>Amphibious.</bullet><bullet>Slip Away.</bullet><bullet>Immunity to Electrified.</bullet><bullet>+2  and +2 .</bullet><bullet>+25 <hyperlink><hp></hp> Hit Point</hyperlink>.</bullet><bullet>Mounted units lose their mounts.</bullet><bullet>Heroes lose their Leg and Mount equipment slots.</bullet></bulletlist>",
+  "description": "Transforms target race into Nagas, granting them: <bulletlist><bullet>Very Fast Movement.</bullet><bullet>Amphibious.</bullet><bullet>Slip Away.</bullet><bullet>Immunity to Electrified.</bullet><bullet>+2 <defenselightning></defenselightning> <hyperlink>Lightning Resistance</hyperlink>.</bullet><bullet>+2 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink>.</bullet><bullet>+25 <hyperlink><hp></hp> Hit Point</hyperlink>.</bullet><bullet>Mounted units lose their mounts.</bullet><bullet>Heroes lose their Leg and Mount equipment slots.</bullet></bulletlist>",
   "name": "Naga Transformation",
   "operation_point_cost": 600,
   "icon": "naga_transformation"
@@ -1105,7 +1126,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "destructive_regrowth",
   "tactical": false,
-  "description": "Target enemy <hyperlink>Province</hyperlink> that doesn't contain an <hyperlink>Ancient Wonder</hyperlink>:<bulletlist><bullet>Has its <hyperlink>Province Improvement</hyperlink> razed.</bullet><bullet>Gains the Forest feature.</bullet><bullet>Enemy armies in the radius sustain -3 <defenseblight></defenseblight> <hyperlink>Blight Resistance</hyperlink> for 1 <turn></turn> Turn.</bullet></bulletlist>",
+  "description": "Target enemy <hyperlink>Province</hyperlink> that doesn't contain an <hyperlink>Ancient Wonder</hyperlink>:<bulletlist><bullet>Has its <hyperlink>Province Improvement</hyperlink> razed.</bullet><bullet>Gains the Forest feature.</bullet><bullet>Enemy units within sustain 20 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink>.</bullet></bulletlist>",
   "name": "Destructive Regrowth",
   "operation_point_cost": 100,
   "icon": "destructive_regrowth"
@@ -1254,7 +1275,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Major Race Transformation</hyperlink>",
   "id": "demonkin",
   "tactical": false,
-  "description": "Turns the target race into demonic beings, which grants them:<bulletlist><bullet>Demonkin, granting Burning immunity and faster movement on desolate.</bullet><bullet>Flying, increasing mobility.</bullet><bullet>Frenzy, increasing damage as they attack.</bullet><bullet>+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> and +25 <hyperlink><hp></hp> Hit Point</hyperlink>.</bullet><bullet>Overwhelm and Death Explosion.</bullet></bulletlist>",
+  "description": "Turns the target race into demonic beings, which grants them:<bulletlist><bullet>Demonkin, granting Burning immunity and faster movement on desolate.</bullet><bullet>Flying, increasing mobility.</bullet><bullet>Frenzy, increasing damage as they attack.</bullet><bullet>+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> and +25 <hyperlink><hp></hp> Hit Point</hyperlink>.</bullet><bullet>The Fiend unit type, Overwhelm and Death Explosion.</bullet></bulletlist>",
   "name": "Demonkin",
   "operation_point_cost": 600,
   "icon": "demonkin"
@@ -1527,12 +1548,13 @@
   ]
  },
  {
-  "casting_cost": "50<souls></souls> ",
+  "casting_cost": "80<mana></mana> ",
   "resid": 4514010634349,
+  "upkeep": "8<mana></mana> ",
   "spellType": "<caststrategic></caststrategic> <hyperlink>World Spell</hyperlink>",
   "id": "desecrate_structure",
   "tactical": false,
-  "description": "Targets a resource node in your domain:<bulletlist><bullet>Node provides +50 <mana></mana> <hyperlink>Mana</hyperlink> income.</bullet><bullet>If you lose the province, the effect stops.</bullet></bulletlist>",
+  "description": "Target resource node in your domain:<bulletlist><bullet>Provides +20 <souls></souls> <hyperlink>Soul</hyperlink>.</bullet><bullet>If you lose the province, the effect stops.</bullet></bulletlist>",
   "name": "Desecrate Structure",
   "operation_point_cost": 80,
   "icon": "desecrate_structure"
@@ -1565,6 +1587,9 @@
    },
    {
     "requisite": "<unitShock></unitShock> Shock Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    },
    {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
@@ -2098,7 +2123,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Terraforming Spell</hyperlink>",
   "id": "pyroclastic_eruption",
   "tactical": false,
-  "description": "Target enemy <hyperlink>Province</hyperlink> that doesn't contain an <hyperlink>Ancient Wonder</hyperlink>:<bulletlist><bullet>Has its <hyperlink>Province Improvement</hyperlink> razed.</bullet><bullet>Transforms into Desolate terrain.</bullet><bullet>Enemy armies in the radius sustain -1 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink> and <defense></defense> <hyperlink>Defense</hyperlink> for 1 <turn></turn> Turn.</bullet></bulletlist>",
+  "description": "Target enemy <hyperlink>Province</hyperlink> that doesn't contain an <hyperlink>Ancient Wonder</hyperlink>:<bulletlist><bullet>Has its <hyperlink>Province Improvement</hyperlink> razed.</bullet><bullet>Transforms into Desolate terrain.</bullet><bullet>Enemy units in the province sustain 20 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet></bulletlist>",
   "name": "Pyroclastic Eruption",
   "operation_point_cost": 100,
   "icon": "pyroclastic_eruption"
@@ -2184,7 +2209,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Damage Spell</hyperlink>",
   "id": "lava_burst",
   "tactical": true,
-  "description": "Targets a 2-hex radius:<bulletlist><bullet>All units sustain 40 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>All units are inflicted with Flames of the Universe.</bullet><bullet>All units are Slowed.</bullet><bullet>The ground is set <hyperlink>On Fire</hyperlink>.</bullet></bulletlist>",
+  "description": "Targets a 2-hex radius:<bulletlist><bullet>All units sustain 40 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>All units are inflicted with Burning.</bullet><bullet>All units are Slowed.</bullet><bullet>The ground is set <hyperlink>On Fire</hyperlink>.</bullet></bulletlist>",
   "name": "Lava Burst",
   "operation_point_cost": 40,
   "icon": "lava_burst"
@@ -2276,6 +2301,9 @@
    },
    {
     "requisite": "<unitShock></unitShock> Shock Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    },
    {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
@@ -2495,7 +2523,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>",
   "id": "scion_of_flame",
   "tactical": false,
-  "description": "Makes the target race the embodiment of fire, granting them:<bulletlist><bullet>4 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink>.</bullet><bullet>Vengeful Flames, which damages <hyperlink>Melee</hyperlink> attackers.</bullet><bullet>Fiery Wake, which ignites flammable terrain such as <hyperlink>Flora Obstacles</hyperlink>.</bullet><bullet>Immunity to Flames of the Universe.</bullet><bullet>+4 Fire Damage on all Attacks.</bullet></bulletlist>",
+  "description": "Makes the target race the embodiment of fire, granting them:<bulletlist><bullet>4 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink>.</bullet><bullet>Vengeful Flames, which damages <hyperlink>Melee</hyperlink> attackers.</bullet><bullet>Fiery Wake, which ignites flammable terrain such as <hyperlink>Flora Obstacles</hyperlink>.</bullet><bullet>Immunity to Burning.</bullet><bullet>+4 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> on Attacks.</bullet></bulletlist>",
   "name": "Scion of Flame",
   "operation_point_cost": 450,
   "icon": "scion_of_flame"
@@ -2525,6 +2553,9 @@
    },
    {
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    }
   ],
   "name": "Demonic Focus",
@@ -2748,7 +2779,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "searing_blades",
   "tactical": false,
-  "description": "Makes base <hyperlink>Melee</hyperlink> attacks of enchanted units deal:<bulletlist><bullet>+4 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>-2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>+20% damage against targets that are Flames of the Universe.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks.",
+  "description": "Makes base <hyperlink>Melee</hyperlink> attacks of enchanted units deal:<bulletlist><bullet>+4 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>-2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>+20% damage against targets that are Burning.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitShield></unitShield> Shield Unit"
@@ -2869,7 +2900,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Damage Spell</hyperlink>",
   "id": "immolate",
   "tactical": true,
-  "description": "Enemy units in a 1-hex radius:<bulletlist><bullet>Sustain 10 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Sustain an extra 20 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> if they are Flames of the Universe.</bullet></bulletlist>",
+  "description": "Enemy units in a 1-hex radius:<bulletlist><bullet>Sustain 10 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Sustain an extra 20 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> if they are Burning.</bullet></bulletlist>",
   "name": "Immolate",
   "operation_point_cost": 15,
   "icon": "immolate"
@@ -3156,7 +3187,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Damage Spell</hyperlink>",
   "id": "ignite",
   "tactical": true,
-  "description": "Target enemy unit:<bulletlist><bullet>Sustains 25 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Is inflicted with Flames of the Universe.</bullet><bullet>The ground is set <hyperlink>On Fire</hyperlink>.</bullet></bulletlist>",
+  "description": "Target enemy unit:<bulletlist><bullet>Sustains 25 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Is inflicted with Burning.</bullet><bullet>The ground is set <hyperlink>On Fire</hyperlink>.</bullet></bulletlist>",
   "name": "Ignite",
   "operation_point_cost": 15,
   "icon": "ignite"
@@ -3318,7 +3349,13 @@
   "description": "Grants enchanted units:<bulletlist><bullet>Fire Bomb , a <hyperlink>Magic</hyperlink> attack that deals damage in an area.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
+    "requisite": "<unitSupport></unitSupport> Support Unit"
+   },
+   {
     "requisite": "<unitBattleMage></unitBattleMage> Battle Mage Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    }
   ],
   "name": "Flamer Focus",
@@ -3332,7 +3369,7 @@
   "id": "draconian_transformation",
   "DLC": "DRAGONLORDS ",
   "tactical": false,
-  "description": "Unit has:<bulletlist><bullet>Dragon unit type.</bullet><bullet>Natural Regeneration.</bullet><bullet>Immunity to Flames of the Universe.</bullet><bullet>+<resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>+<defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>Fire Aura.</bullet></bulletlist>",
+  "description": "Turn target race into Draconians, which grants them:<bulletlist><bullet>Dragon unit type.</bullet><bullet>Natural Regeneration, which makes the unit regain health faster.</bullet><bullet>Immunity to Burning.</bullet><bullet>Fire Aura.</bullet><bullet>+1 <defense></defense> <hyperlink>Defense</hyperlink>.</bullet><bullet>+1 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
   "name": "Draconian Transformation",
   "operation_point_cost": 600,
   "icon": "draconian_transformation"
@@ -3384,7 +3421,7 @@
   "id": "rapid_evolution_enchantment",
   "DLC": "DRAGONLORDS ",
   "tactical": false,
-  "description": "Grants enchanted units:<bulletlist><bullet>+80% <hyperlink><xp></xp> Experience</hyperlink> from combat.</bullet><bullet>Deathborne if Tier I or II, healing them once per battle if their <hyperlink><hp></hp> Hit Points</hyperlink> would be reduce to zero.</bullet></bulletlist>",
+  "description": "Grants enchanted units:<bulletlist><bullet>+80% <hyperlink><xp></xp> Experience</hyperlink> from combat.</bullet><bullet>Slip Away if Tier I or II, healing them once per battle if their <hyperlink><hp></hp> Hit Points</hyperlink> would be reduce to zero.</bullet></bulletlist>",
   "enchantment_requisites": [
    {
     "requisite": "Units that Evolve"
@@ -3528,7 +3565,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>City Spell</hyperlink>",
   "id": "blessed_reinforcements",
   "tactical": false,
-  "description": "Target Vassal City Summons 4 Units. These Units are either Inquisitors or Blessed Souls.",
+  "description": "Summon 4 Inquisitor or Blessed Soul units to defend target Free City Vassal.",
   "name": "Blessed Reinforcements",
   "operation_point_cost": 45,
   "icon": "blessed_reinforcements"
@@ -3618,7 +3655,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
   "id": "fiery_arrows",
   "tactical": false,
-  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>-1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 30% chance of inflicting Flames of the Universe.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks.",
+  "description": "Makes base <hyperlink>Physical Ranged</hyperlink> attacks of enchanted units gain:<bulletlist><bullet>+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>-1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 30% chance of inflicting Burning.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks.",
   "enchantment_requisites": [
    {
     "requisite": "<unitRanged></unitRanged> Ranged Unit"
@@ -3637,7 +3674,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "divine_protection",
   "tactical": false,
-  "description": "Target friendly Army gains Resurgence for 3 World Map Turns.",
+  "description": "Units in target Friendly Army gain Resurgence for 3 <turn></turn> <hyperlink>Turn</hyperlink>.",
   "name": "Divine Protection",
   "operation_point_cost": 200,
   "icon": "divine_protection"
@@ -3697,7 +3734,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Major Race Transformation</hyperlink>",
   "id": "angelic_transformation",
   "tactical": false,
-  "description": "Turns the target race into angelic beings, granting them:<bulletlist><bullet>The Celestial unit type.</bullet><bullet>Flying Movement, which increases mobility.</bullet><bullet>Faithful, which reduces <hyperlink>Unit Upkeep</hyperlink>.</bullet><bullet>+10 Health and +2 Spirit Damage on ALL Attacks.</bullet></bulletlist>",
+  "description": "Turns the target race into angelic beings, granting them:<bulletlist><bullet>The Celestial unit type.</bullet><bullet>Flying Movement, which increases mobility.</bullet><bullet>Faithful, which reduces <hyperlink>Unit Upkeep</hyperlink>.</bullet><bullet>+25 <hyperlink><hp></hp> Hit Point</hyperlink>.</bullet><bullet>+2 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> and Zeal on attacks.</bullet></bulletlist>",
   "name": "Angelic Transformation",
   "operation_point_cost": 600,
   "icon": "angelic_transformation"
@@ -3770,7 +3807,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Summon Spell</hyperlink>",
   "id": "conjure_divine_beacon",
   "tactical": true,
-  "description": "Summons a <hyperlink>Divine Beacon</hyperlink>. Upon casting and at the start of each turn, friendly units in a 2-hex radius:<bulletlist><bullet>Heal +5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain +5 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist><br></br>This summon lasts for 3 <turn></turn> Turns.<br></br><br></br>Cannot be used in Water battles.",
+  "description": "Summons a <hyperlink>Divine Beacon</hyperlink>. Upon casting and at the start of each turn, friendly units in a 2-hex radius:<bulletlist><bullet>Heal +15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain +20 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist><br></br>This summon lasts for 3 <turn></turn> Turns.<br></br><br></br>Cannot be used in Water battles.",
   "name": "Conjure Divine Beacon",
   "operation_point_cost": 25,
   "icon": "conjure_divine_beacon",
@@ -4152,14 +4189,14 @@
   ]
  },
  {
-  "casting_cost": "15<mana></mana> ",
+  "casting_cost": "45<mana></mana> ",
   "resid": 4273492483614,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Enemy Army Spell</hyperlink>",
   "id": "scry_enemy",
   "tactical": false,
   "description": "All enemies in the target army provide you with vision for 15 <turn></turn> Turns.",
   "name": "Scry Enemy",
-  "operation_point_cost": 15,
+  "operation_point_cost": 45,
   "icon": "scry_enemy"
  },
  {
@@ -4445,7 +4482,7 @@
   "spellType": "<casttactical></casttactical> <hyperlink>Combat Enchantment</hyperlink>",
   "id": "parting_gifts",
   "tactical": true,
-  "description": "Until the end of battle, whenever a friendly unit dies, all other friendly units within 2 hexes heal +12 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+  "description": "Until the end of battle, whenever a friendly unit dies, all other friendly units within 15 hexes heal +12 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
   "name": "Parting Gifts",
   "operation_point_cost": 40,
   "icon": "parting_gifts"
@@ -4860,6 +4897,9 @@
     "requisite": "<unitShock></unitShock> Shock Unit"
    },
    {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
+   },
+   {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
    },
    {
@@ -4886,6 +4926,9 @@
    },
    {
     "requisite": "<unitShock></unitShock> Shock Unit"
+   },
+   {
+    "requisite": "<unitMythic></unitMythic> Mythic Unit"
    },
    {
     "requisite": "<unitFighter></unitFighter> Fighter Unit"
@@ -5078,13 +5121,41 @@
   "icon": "final_ultimatum"
  },
  {
-  "resid": -733933881375325726,
-  "spellType": "",
-  "id": "dark_lords_chosen",
+  "casting_cost": "400<mana></mana> 400<souls></souls> ",
+  "resid": -733933881375324264,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
+  "id": "sea_of_corpses",
   "tactical": false,
-  "description": "",
-  "name": "Dark Lord's Chosen",
-  "icon": "dark_lords_chosen"
+  "description": "Summons a Ghost Ship on Target Hex.",
+  "name": "Sea of Corpses",
+  "operation_point_cost": 400,
+  "summoned_units": [
+   {
+    "slug": "ghost_ship"
+   }
+  ]
+ },
+ {
+  "casting_cost": "300<mana></mana> ",
+  "resid": -733933881375324347,
+  "spellType": "<caststrategic></caststrategic> <hyperlink>Unit Enchantment</hyperlink>",
+  "id": "blinding_speed",
+  "tactical": false,
+  "description": "Grants affected units Blinding Speed, which allows them to instantly move through a short distance during battle.",
+  "enchantment_requisites": [
+   {
+    "requisite": "<unitPolearm></unitPolearm> Polearm Unit"
+   },
+   {
+    "requisite": "<unitShock></unitShock> Shock Unit"
+   },
+   {
+    "requisite": "<unitFighter></unitFighter> Fighter Unit"
+   }
+  ],
+  "name": "Blinding Speed",
+  "operation_point_cost": 300,
+  "icon": "phasing_enchantment"
  },
  {
   "casting_cost": "80<souls></souls> ",
@@ -5092,7 +5163,7 @@
   "spellType": "<caststrategic></caststrategic> <hyperlink>Friendly Army Spell</hyperlink>",
   "id": "wicked_reanimation",
   "tactical": false,
-  "description": "Fuse together the remains of 2 Dragon Units into a <hyperlink>Bone Dragon</hyperlink>.",
+  "description": "Fuse together the remains of 2 Tier III-V Dragon Units into a <hyperlink>Bone Dragon</hyperlink>.",
   "name": "Wicked Reanimation",
   "operation_point_cost": 150,
   "summoned_units": [
@@ -5102,14 +5173,14 @@
   ]
  },
  {
-  "casting_cost": "400<mana></mana> 400<souls></souls> ",
+  "casting_cost": "666<mana></mana> ",
   "resid": -733933881375325975,
   "spellType": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>",
   "id": "invoke_the_void",
   "tactical": false,
   "description": "Summons a <hyperlink>Lost Wizard</hyperlink>.",
   "name": "Invoke the Void",
-  "operation_point_cost": 400,
+  "operation_point_cost": 666,
   "summoned_units": [
    {
     "slug": "lost_wizard"

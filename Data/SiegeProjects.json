@@ -187,7 +187,7 @@
   "cost": "60<mana></mana> ",
   "id": "dragon_attack",
   "DLC": "DRAGONLORDS ",
-  "description": "At the start of combat:<bulletlist><bullet>Units defending the city take 26 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Units defending the city have a base 90% of becoming Flames of the Universe.</bullet><bullet>Fires are randomly added.</bullet></bulletlist>",
+  "description": "At the start of combat:<bulletlist><bullet>Units defending the city take 26 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Units defending the city have a base 90% of becoming Burning.</bullet><bullet>Fires are randomly added.</bullet></bulletlist>",
   "name": "Dragon Attack",
   "siege_health_damage": 0,
   "needs_research_to_unlock": true,

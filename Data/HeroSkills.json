@@ -3393,7 +3393,7 @@
   "category_name": "Support",
   "group_name": "Generic Hero Skills",
   "name": "Spur to Action",
-  "level_name": "<hyperlink>Master Hero Skill</hyperlink>",
+  "level_name": "Legendary",
   "icon": "spur_to_action",
   "type": "normal",
   "abilities": [
@@ -3838,6 +3838,177 @@
   "resid": 4264902531958
  },
  {
+  "id": "there_is_no_escape",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "There Is No Escape",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "there_is_no_escape",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "there_is_no_escape_there_is_no_escape"
+   }
+  ],
+  "resid": -733933881375324383
+ },
+ {
+  "id": "hunter_of_nightmares",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Hunter of Nightmares",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "hunter_of_nightmares",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "bloodletter"
+   },
+   {
+    "slug": "whirling_death"
+   }
+  ],
+  "resid": -733933881375324411
+ },
+ {
+  "id": "divine_dragon",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Divine Dragon",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "divine_dragon_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "divine_dragon"
+   }
+  ],
+  "resid": -733933881375324421
+ },
+ {
+  "id": "elden_lord",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Elden Lord",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "elden_lord",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "gates_of_babylon_elden_lord"
+   },
+   {
+    "slug": "zeal"
+   }
+  ],
+  "resid": -733933881375324422
+ },
+ {
+  "id": "legacy_of_the_rot_goddess",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Legacy of the Rot Goddess",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "legacy_of_the_rot_goddess",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "waterfowl_dance_legacy_of_the_rot_goddess"
+   }
+  ],
+  "resid": -733933881375324452
+ },
+ {
+  "id": "interdimensional_quiver",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Interdimensional Quiver",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "interdimensional_quiver_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "interdimensional_quiver"
+   }
+  ],
+  "resid": -733933881375324489
+ },
+ {
+  "id": "godslayer_arrows",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Godslayer Arrows",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "godslayer_arrows_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "godslayer_arrows"
+   }
+  ],
+  "resid": -733933881375324510
+ },
+ {
+  "id": "ultra_haste",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Ultra Haste",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "ultra_haste_2",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "ultra_haste"
+   }
+  ],
+  "resid": -733933881375324513
+ },
+ {
+  "id": "death_sentence",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Death Sentence",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "death_sentence",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "ultra_haste"
+   }
+  ],
+  "resid": -733933881375324519
+ },
+ {
+  "id": "call_of_the_void",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Call of the Void",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "call_of_the_void",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "call_of_the_void"
+   }
+  ],
+  "resid": -733933881375324521
+ },
+ {
+  "id": "calamitys_genesis",
+  "category_name": "Dark Lord's Chosen",
+  "group_name": "Generic Hero Skills",
+  "name": "Calamity's Genesis",
+  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
+  "icon": "calamitys_genesis",
+  "type": "normal",
+  "abilities": [
+   {
+    "slug": "calamitys_genesis_calamitys_genesis"
+   }
+  ],
+  "resid": -733933881375324537
+ },
+ {
   "id": "calamitys_chosen",
   "category_name": "Dark Lord's Chosen",
   "group_name": "Generic Hero Skills",
@@ -3853,16 +4024,16 @@
   "resid": -733933881375324612
  },
  {
-  "id": "angel_of_death",
+  "id": "demon_of_death",
   "category_name": "Dark Lord's Chosen",
   "group_name": "Generic Hero Skills",
-  "name": "Angel Of Death",
+  "name": "Demon Of Death",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "angel_of_death",
+  "icon": "demon_of_death",
   "type": "normal",
   "abilities": [
    {
-    "slug": "hyper_drive_angel_of_death"
+    "slug": "hyper_drive_demon_of_death"
    }
   ],
   "resid": -733933881375324700
@@ -3902,7 +4073,7 @@
   "category_name": "Battle Magic",
   "group_name": "Generic Hero Skills",
   "name": "BY FIRE BE PURGED!",
-  "level_name": "<hyperlink>Adept Hero Skill</hyperlink>",
+  "level_name": "<hyperlink>Expert Hero Skill</hyperlink>",
   "icon": "by_fire_be_purged!",
   "type": "normal",
   "abilities": [
@@ -4128,7 +4299,7 @@
   "type": "normal",
   "abilities": [
    {
-    "slug": "master_skirmisher"
+    "slug": "soul_shooter"
    }
   ],
   "resid": -733933881375325230
@@ -4349,14 +4520,10 @@
   "group_name": "Generic Hero Skills",
   "name": "Whirling Death",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "whirling_death_2",
+  "icon": "whirling_death",
   "type": "normal",
-  "abilities": [
-   {
-    "slug": "whirling_death"
-   }
-  ],
-  "resid": -733933881375325396
+  "resid": -733933881375325396,
+  "description": "<bulletlist><bullet>Attacks gains +3 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> per stack.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist>"
  },
  {
   "id": "godslayers_inferno",
@@ -4549,21 +4716,6 @@
   "resid": -733933881375325565
  },
  {
-  "id": "blinding_speed",
-  "category_name": "Dark Lord's Chosen",
-  "group_name": "Generic Hero Skills",
-  "name": "Blinding Speed",
-  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "blinding_speed",
-  "type": "normal",
-  "abilities": [
-   {
-    "slug": "bladestorm_blinding_speed"
-   }
-  ],
-  "resid": -733933881375325568
- },
- {
   "id": "godslayer",
   "category_name": "Dark Lord's Chosen",
   "group_name": "Generic Hero Skills",
@@ -4622,21 +4774,6 @@
    }
   ],
   "resid": -733933881375325583
- },
- {
-  "id": "blinding_speed",
-  "category_name": "Dark Lord's Chosen",
-  "group_name": "Generic Hero Skills",
-  "name": "Blinding Speed",
-  "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "blinding_speed",
-  "type": "normal",
-  "abilities": [
-   {
-    "slug": "bladestorm_blinding_speed"
-   }
-  ],
-  "resid": -733933881375325630
  },
  {
   "id": "beyond_perfection",
@@ -4701,7 +4838,7 @@
   "icon": "divine_herald",
   "type": "normal",
   "resid": -733933881375325919,
-  "description": "Your <hyperlink>Throne City</hyperlink> gains +30 <influence></influence> <hyperlink>Imperium</hyperlink> and <happiness></happiness> <hyperlink>City Stability</hyperlink> income."
+  "description": "Your <hyperlink>Throne City</hyperlink> gains +15 <influence></influence> <hyperlink>Imperium</hyperlink> income."
  },
  {
   "id": "legendary_warrior",
@@ -4712,6 +4849,6 @@
   "icon": "legendary_warrior",
   "type": "normal",
   "resid": -733933881375325925,
-  "description": "Provides the following effects:<bulletlist><bullet>+30 <hyperlink><hp></hp> Hit Point</hyperlink></bullet><bullet> +3 <defense></defense> <hyperlink>Defense</hyperlink> and <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>The Piercing Property, which allows this unit to ignore up to 50% of a target's <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>+30% Damage.</bullet></bulletlist>"
+  "description": "Provides the following effects:<bulletlist><bullet>+45 <hyperlink><hp></hp> Hit Point</hyperlink></bullet><bullet> +4 <defense></defense> <hyperlink>Defense</hyperlink> and <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet><bullet>The Piercing Property, which allows this unit to ignore up to 50% of a target's <defense></defense> <hyperlink>Defense</hyperlink>.</bullet></bulletlist>"
  }
 ]

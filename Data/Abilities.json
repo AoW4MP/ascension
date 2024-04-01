@@ -112,7 +112,7 @@
   "description": "Strikes target enemy unit and then teleports back 3 hexes.",
   "name": "Misty Strike",
   "slug": "melee_single_strike_mistling",
-  "damage": "26<damagephysical></damagephysical> ",
+  "damage": "30<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -139,7 +139,7 @@
   "description": "Deal damage to target enemy with a base 90% of inflicting a random negative status effect.",
   "name": "Fey Trick",
   "slug": "fey_trick_mistling",
-  "damage": "8<damagephysical></damagephysical> 8<damageblight></damageblight> 8<damagelightning></damagelightning> ",
+  "damage": "10<damagephysical></damagephysical> 10<damageblight></damageblight> 10<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -297,12 +297,6 @@
   "name": "Amphibious",
   "slug": "amphibious",
   "icon": "amphibious"
- },
- {
-  "description": "At the end of this unit's turn, adjacent enemy units have a base 60% chance of becoming Diseased.",
-  "name": "Aura of Disease",
-  "slug": "aura_of_disease",
-  "icon": "aura_of_disease"
  },
  {
   "description": "This unit's attacks damage <hyperlink>Fortified</hyperlink> obstacles.",
@@ -824,7 +818,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -850,7 +844,7 @@
  {
   "modifiers": [
    {
-    "description": "Inflicts Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Inflicts Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -884,7 +878,7 @@
   "icon": "desolate_walk"
  },
  {
-  "description": "This unit ignites Flammable obstacles it moves over <hyperlink>On Fire</hyperlink>.<br></br>In addition, this unit is immune to Flames of the Universe.",
+  "description": "This unit ignites Flammable obstacles it moves over <hyperlink>On Fire</hyperlink>.<br></br>In addition, this unit is immune to Burning.",
   "name": "Fiery Wake",
   "slug": "fiery_wake",
   "icon": "fiery_wake"
@@ -1547,7 +1541,18 @@
   "icon": "stomp_primal_mammoth"
  },
  {
-  "modifiers": [],
+  "modifiers": [
+   {
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
+   },
+   {
+    "description": "+1 Range",
+    "name": "Extra Range",
+    "count": 1
+   }
+  ],
   "description": "Units in a 3-hex line:<bulletlist><bullet>Sustain damage.</bullet><bullet>Have their <hyperlink>Defense Mode</hyperlink> canceled and <hyperlink>Retaliation Attacks</hyperlink> removed.</bullet></bulletlist>",
   "name": "Fire Cannon",
   "slug": "fire_cannon_magelock_cannon",
@@ -1562,7 +1567,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "5",
+  "range": "6",
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
@@ -1822,7 +1827,7 @@
  {
   "modifiers": [
    {
-    "description": "Adjacent units:<bulletlist><bullet>Suffer 5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Have a base 90% chance of becoming Flames of the Universe.</bullet></bulletlist>",
+    "description": "Adjacent units:<bulletlist><bullet>Suffer 5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Have a base 90% chance of becoming Burning.</bullet></bulletlist>",
     "name": "Molten Spill",
     "count": 1
    }
@@ -1846,7 +1851,7 @@
   "icon": "charge_strike_primal_mammoth"
  },
  {
-  "description": "When this unit attacks or is attacked, adjacent units:<bulletlist><bullet>Suffer 5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Have a base 90% chance of becoming Flames of the Universe.</bullet></bulletlist>",
+  "description": "When this unit attacks or is attacked, adjacent units:<bulletlist><bullet>Suffer 5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Have a base 90% chance of becoming Burning.</bullet></bulletlist>",
   "name": "Molten Spill",
   "slug": "molten_spill",
   "icon": "molten_spill"
@@ -2531,6 +2536,11 @@
     "description": "+30% damage against units with <happiness></happiness> <hyperlink>Morale</hyperlink> of \\\"Low\\\" or worse.",
     "name": "Cruel",
     "count": 1
+   },
+   {
+    "description": "Units killed with this weapon transform into a <hyperlink>Decaying Zombie</hyperlink> until the end of battle.",
+    "name": "Infecting",
+    "count": 1
    }
   ],
   "description": "A Charge attack:<bulletlist><bullet>Gains 20% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
@@ -2554,10 +2564,10 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Summons a weakened Banshee onto the target hex.<br></br>This summon lasts for 3 <turn></turn> Turns.<br></br><br></br>Once used, this ability cannot be reused until Spirit Beacon triggers.",
+  "description": "Summons a weakened Banshee onto the target hex.<br></br>This summon lasts for 3 <turn></turn> Turns.<br></br><br></br>Once used, this ability cannot be reused until Torrent of Souls triggers.",
   "name": "Summon Ghost",
   "slug": "summon_ghost_ghost_ship",
   "damage": "",
@@ -2567,7 +2577,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<freeaction></freeaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "2",
   "icon": "summon_ghost_ghost_ship"
  },
@@ -2582,6 +2592,11 @@
     "description": "Base 60% chance of inflicting Insanity for 1 <turn></turn> Turn.",
     "name": "Insanity",
     "count": 1
+   },
+   {
+    "description": "Units killed with this weapon transform into a <hyperlink>Decaying Zombie</hyperlink> until the end of battle.",
+    "name": "Infecting",
+    "count": 1
    }
   ],
   "description": "Deals damage to enemy units within a 2-hex radius.",
@@ -2594,7 +2609,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
+  "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "0",
   "notes": [
    {
@@ -2604,28 +2619,16 @@
   "icon": "wail_of_the_lost_ghost_ship"
  },
  {
-  "description": "Unit is embarked and has:<bulletlist><bullet>-2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-2 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
-  "name": "Embarked",
-  "slug": "embarked",
-  "icon": "embarked"
+  "description": "A Zombie is summoned next to the <hyperlink>Hero</hyperlink> at the start of your <turn></turn> <hyperlink>Turn</hyperlink>.",
+  "name": "Gravecall",
+  "slug": "gravecall",
+  "icon": "gravecall"
  },
  {
-  "description": "This land unit is embarked and has:<bulletlist><bullet>-2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-2 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
-  "name": "Embarked Unit",
-  "slug": "embarked_unit",
-  "icon": "embarked_unit"
- },
- {
-  "description": "When a non-Summon non-Undead unit dies, the ability Summon Ghost can be used again. Only triggers once per turn.",
-  "name": "Spirit Beacon",
-  "slug": "spirit_beacon",
-  "icon": "spirit_beacon"
- },
- {
-  "description": "This unit has Water Movement, which allows it to traverse the water at a Movement Cost of 4.",
-  "name": "Water Movement",
-  "slug": "water_movement",
-  "icon": "water_movement"
+  "description": "Whenever a friendly Combat Spell is cast, all Non-Ghost Ship friendly Undead units gain 1 Strengthened, 1 Regeneration, Hastened, 5 <happiness></happiness> <hyperlink>Morale</hyperlink> and Berserk for 3 turns.",
+  "name": "Torrent of Souls",
+  "slug": "torrent_of_souls",
+  "icon": "torrent_of_souls"
  },
  {
   "modifiers": [],
@@ -2696,10 +2699,16 @@
   "icon": "natural_regeneration"
  },
  {
-  "description": "Unit is immune to Flames of the Universe.",
+  "description": "Unit is immune to Burning.",
   "name": "Status Effect Immunity: Burning",
   "slug": "status_effect_immunity_burning",
   "icon": "status_effect_immunity_burning"
+ },
+ {
+  "description": "This unit has Water Movement, which allows it to traverse the water at a Movement Cost of 4.",
+  "name": "Water Movement",
+  "slug": "water_movement",
+  "icon": "water_movement"
  },
  {
   "modifiers": [],
@@ -2827,7 +2836,7 @@
  {
   "modifiers": [
    {
-    "description": "Inflicts Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Inflicts Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
@@ -2858,7 +2867,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -2895,7 +2904,7 @@
   "icon": "unstoppable_juggernaut"
  },
  {
-  "description": "When a <hyperlink>Melee</hyperlink> attack hits, the attacker:<bulletlist><bullet>Sustains 2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Has a base 30% chance of being inflicted with Flames of the Universe.</bullet></bulletlist>",
+  "description": "When a <hyperlink>Melee</hyperlink> attack hits, the attacker:<bulletlist><bullet>Sustains 2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Has a base 30% chance of being inflicted with Burning.</bullet></bulletlist>",
   "name": "Vengeful Flames",
   "slug": "vengeful_flames",
   "icon": "vengeful_flames"
@@ -3186,20 +3195,20 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Insanity for 1 <turn></turn> Turn.",
-    "name": "Insanity",
+    "description": "Base 90% chance of inflicting Infectious Insanity for 2 <turn></turn> Turns.",
+    "name": "Infectious Insanity",
     "count": 1
    },
    {
-    "description": "Damage can not be reduced by <defense></defense> <hyperlink>Defense</hyperlink> or <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
-    "name": "Unblockable Damage",
+    "description": "This unit's attacks ignore all defensive modifiers and always inflict Infectious Insanity.",
+    "name": "Oblivion's Ingress",
     "count": 1
    }
   ],
   "description": "Strikes target enemy unit.",
   "name": "Mind Strike",
   "slug": "mind_strike_living_fog",
-  "damage": "13<damagephysical></damagephysical> ",
+  "damage": "21<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -3215,17 +3224,53 @@
   "icon": "mind_strike_living_fog"
  },
  {
-  "modifiers": [],
-  "description": "Deals damage to target enemy and heals you the same amount as the damage dealt.",
-  "name": "Draining Blade",
-  "slug": "draining_blade_living_fog",
-  "damage": "40<damagefrost></damagefrost> ",
+  "modifiers": [
+   {
+    "description": "This unit's attacks ignore all defensive modifiers and always inflict Infectious Insanity.",
+    "name": "Oblivion's Ingress",
+    "count": 1
+   }
+  ],
+  "description": "Dash through targets in a 3-hex line, dealing damage.<br></br>Combo into one more use of Mind Drive.",
+  "name": "Mind Drive",
+  "slug": "mind_drive_living_fog",
+  "damage": "6<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
    }
   ],
   "accuracy": "Always Hits",
+  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "range": "1",
+  "notes": [
+   {
+    "note": "Cooldown: 3 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "icon": "mind_drive_living_fog"
+ },
+ {
+  "modifiers": [
+   {
+    "description": "This unit's attacks ignore all defensive modifiers and always inflict Infectious Insanity.",
+    "name": "Oblivion's Ingress",
+    "count": 1
+   }
+  ],
+  "description": "Inflict damage onto targets in a 2-hex cone.",
+  "name": "Jaws of Oblivion",
+  "slug": "jaws_of_oblivion_living_fog",
+  "damage": "17<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "Melee"
+   }
+  ],
+  "accuracy": "100%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "1",
   "notes": [
@@ -3233,41 +3278,31 @@
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "icon": "draining_blade_living_fog"
+  "icon": "jaws_of_oblivion_living_fog"
  },
  {
-  "notes": [
-   {
-    "note": "Cooldown: 3 <turn></turn>"
-   }
-  ],
-  "description": "Target enemy unit has a base 100% chance of becoming inflicted with Insanity.<bulletlist><bullet>If successful, attacker gains +10 maximum <hyperlink><hp></hp> Hit Points</hyperlink> and +2 <resistance></resistance> <hyperlink>Resistance</hyperlink> until the end of the battle.</bullet><bullet>If unsuccessful, target sustains 8 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink>, 8 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>, and 8 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist>",
-  "name": "Devour Mind",
-  "slug": "devour_mind_living_fog",
-  "damage": "",
-  "requisites": [],
-  "accuracy": "Always Hits",
-  "actionPoints": "<leaveoneaction></leaveoneaction>",
-  "range": "4",
-  "icon": "devour_mind_living_fog"
+  "description": "This unit's attacks ignore all defensive modifiers and always inflict Infectious Insanity.",
+  "name": "Oblivion's Ingress",
+  "slug": "oblivions_ingress",
+  "icon": "oblivions_ingress"
  },
  {
   "modifiers": [
    {
-    "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
-    "name": "Breaching",
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
     "count": 1
    },
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
+    "name": "Breaching",
+    "count": 1
    }
   ],
   "description": "A Heavy Charge attack:<bulletlist><bullet>Gains 20% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Heavy Charges ignore Charge Resistance.</bullet></bulletlist>",
   "name": "Heavy Charge Strike",
   "slug": "heavy_charge_strike_phase_beast",
-  "damage": "27<damagephysical></damagephysical> 8<damagelightning></damagelightning> ",
+  "damage": "21<damagephysical></damagephysical> 15<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -3571,10 +3606,10 @@
     "count": 1
    }
   ],
-  "description": "Target enemy unit sustains damage and loses 2 Action Points.<br></br>This effect chains to up to 2 additional targets.",
+  "description": "Target enemy unit sustains damage and loses 2 Action Points.<br></br>This effect chains to an additional target within 2 hexes.",
   "name": "Petrify",
   "slug": "petrify_transmuter",
-  "damage": "24<damagephysical></damagephysical> ",
+  "damage": "18<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -3734,6 +3769,36 @@
   "icon": "melee_strike_sabertooth"
  },
  {
+  "modifiers": [
+   {
+    "description": "Base 90% chance of inflicting Poisoned for 3 <turn></turn> Turns.",
+    "name": "Poisoned",
+    "count": 1
+   }
+  ],
+  "description": "Target enemy unit is dealt damage.",
+  "name": "Poisonous Spores",
+  "slug": "poisonous_spores_floral_stinger",
+  "damage": "20<damageblight></damageblight> ",
+  "requisites": [
+   {
+    "requisite": "Base"
+   },
+   {
+    "requisite": "Physical Ranged"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
+  "notes": [
+   {
+    "note": "Cooldown: 1 <turn></turn>"
+   }
+  ],
+  "icon": "poisonous_spores_floral_stinger"
+ },
+ {
   "description": "At the end of the <turn></turn> Turn, heals +6 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> for every unspent Action Point.",
   "name": "Healing Roots",
   "slug": "healing_roots",
@@ -3863,9 +3928,9 @@
  {
   "modifiers": [
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
    },
    {
     "description": "Displaces the attacked target and moves onto its hex.",
@@ -3894,9 +3959,9 @@
  {
   "modifiers": [
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
    }
   ],
   "description": "Attacks units in a 1-hex cone.<bulletlist><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
@@ -3967,7 +4032,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 30% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 30% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
@@ -4067,13 +4132,13 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Bleeding for 3 <turn></turn> Turns.",
-    "name": "Bleeding",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
+    "name": "Burning",
     "count": 1
    },
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
-    "name": "Burning",
+    "description": "Base 90% chance of inflicting Bleeding for 3 <turn></turn> Turns.",
+    "name": "Bleeding",
     "count": 1
    }
   ],
@@ -4094,6 +4159,44 @@
   "range": "1",
   "notes": [],
   "icon": "melee_strike_sabertooth"
+ },
+ {
+  "modifiers": [
+   {
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
+    "name": "Burning",
+    "count": 1
+   },
+   {
+    "description": "Base 90% chance of inflicting Bleeding for 3 <turn></turn> Turns.",
+    "name": "Bleeding",
+    "count": 1
+   }
+  ],
+  "description": "Target unit:<bulletlist><bullet>Sustains damage.</bullet><bullet>Turns 180 degrees.</bullet><bullet>Has their <hyperlink>Defense Mode</hyperlink> canceled and removes <hyperlink>Retaliation Attacks</hyperlink>, unless the target has Charge Resistance.</bullet></bulletlist>",
+  "name": "Behind You!",
+  "slug": "behind_you!_gremlin",
+  "damage": "15<damagephysical></damagephysical> 15<damagefire></damagefire> ",
+  "requisites": [
+   {
+    "requisite": "Base"
+   },
+   {
+    "requisite": "Physical Ranged"
+   }
+  ],
+  "accuracy": "90%",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
+  "notes": [
+   {
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
+  "icon": "behind_you!_gremlin"
  },
  {
   "modifiers": [
@@ -4333,9 +4436,9 @@
  {
   "modifiers": [
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
    },
    {
     "description": "Base 90% chance of inflicting -10 <happiness></happiness> <hyperlink>Morale</hyperlink>.",
@@ -4654,7 +4757,7 @@
   "description": "Unleashes a magical bolt at target enemy.",
   "name": "Cosmic Bolts",
   "slug": "magic_bolts_lost_wizard",
-  "damage": "8<damagelightning></damagelightning> 8<damagefire></damagefire> 8<damagefrost></damagefrost> ",
+  "damage": "7<damagelightning></damagelightning> 7<damagefire></damagefire> 7<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -4756,7 +4859,7 @@
   "accuracy": "Always Hits",
   "actionPoints": "<leaveoneaction></leaveoneaction>",
   "range": "4",
-  "icon": "devour_mind_living_fog"
+  "icon": "devour_mind_mage_bane"
  },
  {
   "description": "While this unit is in battle, spells cannot be cast by the enemy.",
@@ -5003,7 +5106,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
   "slug": "melee_strike_bone_dragon",
-  "damage": "15<damageblight></damageblight> 5<damagephysical></damagephysical> ",
+  "damage": "12<damagephysical></damagephysical> 12<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -5105,7 +5208,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -5592,7 +5695,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -5625,7 +5728,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -5655,7 +5758,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 30% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 30% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -5804,7 +5907,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
@@ -6227,12 +6330,12 @@
  {
   "modifiers": [
    {
-    "description": "Inflicts Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Inflicts Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
    {
-    "description": "Gain a stack of Whirling Death on use.",
+    "description": "Gain a stack of Molten Fury on use.",
     "name": "Molten Fury",
     "count": 1
    },
@@ -6268,7 +6371,7 @@
     "count": 1
    }
   ],
-  "description": "<bulletlist><bullet>Adjacent units sustain damage.</bullet><bullet>Consume all stacks of Whirling Death.</bullet><bullet>Heal 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack consumed.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Adjacent units sustain damage.</bullet><bullet>Consume all stacks of Molten Fury.</bullet><bullet>Heal 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> per stack consumed.</bullet></bulletlist>",
   "name": "Molten Whirlwind",
   "slug": "molten_whirlwind_herald_of_war",
   "damage": "33<damagephysical></damagephysical> 8<damagefire></damagefire> ",
@@ -6331,10 +6434,10 @@
   "slug": "blight_resistance_5"
  },
  {
-  "damage": "<xpCol>10<damagefire></damagefire></xpCol>",
+  "damage": "<xpCol>16<damagefire></damagefire></xpCol>",
   "description": "",
   "name": "<xpCol>Fire Resistance</xpCol>",
-  "slug": "fire_resistance_10"
+  "slug": "fire_resistance_16"
  },
  {
   "damage": "<xpCol>5<damagespirit></damagespirit></xpCol>",
@@ -6887,7 +6990,7 @@
   "description": "Attacks all units in a 3-hex cone.",
   "name": "Lightning Breath",
   "slug": "lightning_breath_obsidian_dragon",
-  "damage": "40<damagelightning></damagelightning> ",
+  "damage": "42<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -7004,7 +7107,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -7055,27 +7158,11 @@
   "slug": "frost_weakness_2"
  },
  {
-  "modifiers": [
-   {
-    "description": "Base 90% chance of inflicting Bleeding for 3 <turn></turn> Turns.",
-    "name": "Bleeding",
-    "count": 1
-   },
-   {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
-   },
-   {
-    "description": "+30% <hyperlink>Accuracy</hyperlink> on <hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks.",
-    "name": "Increased Accuracy",
-    "count": 1
-   }
-  ],
+  "modifiers": [],
   "description": "Fires ranged projectiles at target enemy unit.",
   "name": "Shoot Bow",
   "slug": "shoot_bow_zephyr_archer",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "14<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -7098,22 +7185,11 @@
   "icon": "shoot_bow_skeleton_archer"
  },
  {
-  "modifiers": [
-   {
-    "description": "Base 90% chance of inflicting Bleeding for 3 <turn></turn> Turns.",
-    "name": "Bleeding",
-    "count": 1
-   },
-   {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
-   }
-  ],
+  "modifiers": [],
   "description": "Deals damage to target unit. Adjacent enemy units sustain 50% of the damage.",
   "name": "Zephyr Shot",
   "slug": "zephyr_shot_zephyr_archer",
-  "damage": "40<damagephysical></damagephysical> ",
+  "damage": "38<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -7457,7 +7533,7 @@
  },
  {
   "notes": [],
-  "description": "Friendly units within 2 hexes:<bulletlist><bullet>Heal +5 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain 5 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist>",
+  "description": "Friendly units within 2 hexes:<bulletlist><bullet>Heal +15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.</bullet><bullet>Gain 20 <happiness></happiness> <hyperlink>Morale</hyperlink>.</bullet></bulletlist>",
   "name": "Divine Beacon's Grace",
   "slug": "divine_beacons_grace_divine_beacon",
   "damage": "",
@@ -7504,7 +7580,7 @@
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Base 90% chance of making target non-<hyperlink>Hero</hyperlink> enemy unit become Dominated.<br></br>If unsuccessful, the unit sustains 15 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> instead.",
+  "description": "Base 60% chance of making target non-<hyperlink>Hero</hyperlink> enemy unit become Dominated.<br></br>If unsuccessful, the unit sustains 15 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> instead.",
   "name": "Convert",
   "slug": "convert_lightbringer",
   "damage": "",
@@ -7575,7 +7651,7 @@
   "description": "Target enemy unit sustains damage that cannot be mitigated by defensive modifiers.<br></br>If that kills it, transform its corpse into a random Skeleton.",
   "name": "Finger of Death",
   "slug": "finger_of_death_reaper",
-  "damage": "45<damagefrost></damagefrost> ",
+  "damage": "45<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -7840,7 +7916,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
   "slug": "melee_strike_astral_serpent",
-  "damage": "10<damagephysical></damagephysical> 10<damagelightning></damagelightning> ",
+  "damage": "9<damagephysical></damagephysical> 9<damagelightning></damagelightning> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -7950,7 +8026,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "range": "7",
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
@@ -8176,9 +8252,9 @@
  {
   "modifiers": [
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
    }
   ],
   "description": "A Charge attack:<bulletlist><bullet>Gains 20% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
@@ -8381,7 +8457,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "icon": "mass_rejuvenation_druid_of_the_cycle"
@@ -8468,23 +8544,7 @@
   "icon": "life_from_death"
  },
  {
-  "modifiers": [
-   {
-    "description": "Base 90% chance of inflicting Bleeding for 3 <turn></turn> Turns.",
-    "name": "Bleeding",
-    "count": 1
-   },
-   {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 3
-   },
-   {
-    "description": "+30% <hyperlink>Accuracy</hyperlink> on <hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks.",
-    "name": "Increased Accuracy",
-    "count": 1
-   }
-  ],
+  "modifiers": [],
   "description": "Fires ranged projectiles at target enemy unit.",
   "name": "Shoot Bow",
   "slug": "shoot_bow_glade_runner",
@@ -8527,7 +8587,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<freeaction></freeaction>",
-  "range": "7",
+  "range": "5",
   "icon": "trackers_mark_glade_runner"
  },
  {
@@ -8710,7 +8770,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
@@ -8933,6 +8993,18 @@
   "actionPoints": "<repeatingaction></repeatingaction>",
   "range": "4",
   "icon": "boat_ballista_ballista_warship"
+ },
+ {
+  "description": "Unit is embarked and has:<bulletlist><bullet>-2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-2 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
+  "name": "Embarked",
+  "slug": "embarked",
+  "icon": "embarked"
+ },
+ {
+  "description": "This land unit is embarked and has:<bulletlist><bullet>-2 <defense></defense> <hyperlink>Defense</hyperlink></bullet><bullet>-2 <resistance></resistance> <hyperlink>Resistance</hyperlink></bullet></bulletlist>",
+  "name": "Embarked Unit",
+  "slug": "embarked_unit",
+  "icon": "embarked_unit"
  },
  {
   "modifiers": [],
@@ -9419,8 +9491,8 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "5",
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
@@ -10151,7 +10223,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Gain:<bulletlist><bullet>+50% <hyperlink>Melee</hyperlink> attack damage for 3 <turn></turn> Turn</bullet><bullet>2 Sundered Defense</bullet><bullet>2 Sundered Resistance</bullet></bulletlist>",
+  "description": "Gain:<bulletlist><bullet>+50% Damage for 3 <turn></turn> Turn.</bullet><bullet>However, suffer -3 Sundered Defense and -3 Sundered Resistance.</bullet></bulletlist>",
   "name": "Reckless Rage",
   "slug": "reckless_rage_berserker",
   "damage": "",
@@ -10800,7 +10872,7 @@
   "description": "Single magical attack at target unit.",
   "name": "Reclaiming Bolt",
   "slug": "reclaiming_bolt_horned_god",
-  "damage": "42<damageblight></damageblight> ",
+  "damage": "45<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -10879,7 +10951,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -10905,7 +10977,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 30% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 30% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -11113,7 +11185,7 @@
   "icon": "water_camouflage"
  },
  {
-  "description": "Unit has:<bulletlist><bullet>-4 <defenselightning></defenselightning> <hyperlink>Lightning Resistance</hyperlink></bullet><bullet>-4 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink></bullet><bullet>2 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink></bullet></bulletlist><br></br><br></br>Wet <hyperlink>counters</hyperlink> Flames of the Universe",
+  "description": "Unit has:<bulletlist><bullet>-4 <defenselightning></defenselightning> <hyperlink>Lightning Resistance</hyperlink></bullet><bullet>-4 <defensefrost></defensefrost> <hyperlink>Frost Resistance</hyperlink></bullet><bullet>2 <defensefire></defensefire> <hyperlink>Fire Resistance</hyperlink></bullet></bulletlist><br></br><br></br>Wet <hyperlink>counters</hyperlink> Burning",
   "name": "Wet",
   "slug": "wet",
   "icon": "wet"
@@ -11227,7 +11299,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 30% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 30% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -11814,7 +11886,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
@@ -11852,7 +11924,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
@@ -12308,7 +12380,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -12334,7 +12406,7 @@
  {
   "modifiers": [
    {
-    "description": "Inflicts Flames of the Universe.",
+    "description": "Inflicts Burning.",
     "name": "Burning",
     "count": 1
    }
@@ -12381,7 +12453,7 @@
  {
   "modifiers": [
    {
-    "description": "Inflicts Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Inflicts Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -12389,7 +12461,7 @@
   "description": "Attacks all units in a 3-hex cone.",
   "name": "Fire Breath",
   "slug": "fire_breath_fire_dragon",
-  "damage": "38<damagefire></damagefire> ",
+  "damage": "40<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -12406,15 +12478,21 @@
   "icon": "fire_breath_fire_dragon"
  },
  {
-  "description": "At the start of the turn, adjacent enemy units:<bulletlist><bullet>Sustain 6 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Have a base 60% chance of being inflicted with Flames of the Universe.</bullet></bulletlist>",
+  "description": "At the start of the turn, adjacent enemy units:<bulletlist><bullet>Sustain 6 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>Have a base 60% chance of being inflicted with Burning.</bullet></bulletlist>",
   "name": "Fire Aura",
   "slug": "fire_aura",
   "icon": "fire_aura"
  },
  {
+  "damage": "<xpCol>10<damagefire></damagefire></xpCol>",
+  "description": "",
+  "name": "<xpCol>Fire Resistance</xpCol>",
+  "slug": "fire_resistance_10"
+ },
+ {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -12564,15 +12642,138 @@
  {
   "modifiers": [
    {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "name": "Seething Hatred",
+    "count": 1
+   }
+  ],
+  "description": "Target friendly Tier IV-V unit sustains 300 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>. ALL other units within a 2-hex radius of it sustain damage and 3 stacks of Brimstone Flames.",
+  "name": "Brimstone Eruption",
+  "slug": "brimstone_eruption_brimstone_witch",
+  "damage": "45<damagefire></damagefire> ",
+  "requisites": [
+   {
+    "requisite": "Magic"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "5",
+  "notes": [
+   {
+    "note": "Cooldown: 3 <turn></turn>"
+   }
+  ],
+  "icon": "brimstone_eruption_brimstone_witch"
+ },
+ {
+  "modifiers": [
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "name": "Seething Hatred",
+    "count": 1
+   }
+  ],
+  "description": "Target unit sustains damage and is afflicted with Brimstone Flames.<br></br>This effect cascades, affecting ALL units in hexes that form a link with the original target.",
+  "name": "Blaze of Calamity",
+  "slug": "blaze_of_calamity_brimstone_witch",
+  "damage": "38<damagefire></damagefire> ",
+  "requisites": [
+   {
+    "requisite": "Magic"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "5",
+  "notes": [
+   {
+    "note": "Cooldown: 3 <turn></turn>"
+   }
+  ],
+  "icon": "blaze_of_calamity_brimstone_witch"
+ },
+ {
+  "modifiers": [
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "name": "Seething Hatred",
+    "count": 1
+   }
+  ],
+  "description": "Target friendly Tier IV-V unit sustains a massive amount of <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> in order to grant the caster +50% Damage and +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> on all attacks and abilities.<br></br>This ability can be used on the caster, allowing the unit to sacrifice its own health.<br></br>This effect stacks, up to 5 times.",
+  "name": "Ashes to Ashes",
+  "slug": "ashes_to_ashes_brimstone_witch",
+  "damage": "400<damagefire></damagefire> ",
+  "requisites": [
+   {
+    "requisite": "Magic"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "3",
+  "notes": [
+   {
+    "note": "Cooldown: 1 <turn></turn>"
+   }
+  ],
+  "icon": "ashes_to_ashes_brimstone_witch"
+ },
+ {
+  "modifiers": [
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "name": "Seething Hatred",
+    "count": 1
+   }
+  ],
+  "description": "Inflict damage and a stack of Brimstone Flames to all targets in a 4-hex line, aswell as yourself and ALL other units around you.",
+  "name": "Brimstone Blast",
+  "slug": "brimstone_blast_brimstone_witch",
+  "damage": "30<damagefire></damagefire> ",
+  "requisites": [
+   {
+    "requisite": "Base"
+   },
+   {
+    "requisite": "Magic"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "1",
+  "notes": [],
+  "icon": "brimstone_blast_brimstone_witch"
+ },
+ {
+  "description": "Whenever ANY spell is cast, this unit applies Brimstone Flames to itself and ALL units within 3 hexes.",
+  "name": "Price of Power",
+  "slug": "price_of_power",
+  "icon": "price_of_power"
+ },
+ {
+  "modifiers": [
+   {
     "description": "Base 90% chance of inflicting Visions of Death until the end of combat.",
     "name": "Visions of Death",
+    "count": 1
+   },
+   {
+    "description": "This unit receives 12 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> every turn and is unable to heal.",
+    "name": "Brimstone Flames",
+    "count": 1
+   },
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "name": "Seething Hatred",
     "count": 1
    }
   ],
   "description": "Catastrophe channels his hatred onto enemies within a 3-hex cone, afflicting them with damage and Visions of Death.<br></br>Catastrophe also suffers these effects.",
   "name": "Seething Hatred",
   "slug": "seething_hatred_catastrophe",
-  "damage": "22<damagefire></damagefire> ",
+  "damage": "7<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -12590,8 +12791,8 @@
  {
   "modifiers": [
    {
-    "description": "",
-    "name": "",
+    "description": "This unit receives 12 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> every turn and is unable to heal.",
+    "name": "Brimstone Flames",
     "count": 1
    }
   ],
@@ -12620,31 +12821,26 @@
  {
   "modifiers": [
    {
-    "description": "Displaces the attacked target and moves onto its hex.",
-    "name": "Displace and Replace",
-    "count": 1
-   },
-   {
-    "description": "",
-    "name": "",
+    "description": "This unit receives 12 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> every turn and is unable to heal.",
+    "name": "Brimstone Flames",
     "count": 1
    }
   ],
-  "description": "Dash through enemies in a 10-hex long, 1-hex wide line, dealing damage and inflicting Brimstone Flames.",
+  "description": "Dash through enemies in a massive line, dealing damage and inflicting Brimstone Flames.<br></br>Combo into one more Blade Crash.",
   "name": "Blade Crash",
   "slug": "blade_crash_catastrophe",
-  "damage": "50<damagefire></damagefire> 25<damagephysical></damagephysical> ",
+  "damage": "20<damagefire></damagefire> 10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<leaveoneaction></leaveoneaction>",
   "range": "1",
   "notes": [
    {
-    "note": "Cooldown: 2 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "icon": "blade_crash_catastrophe"
@@ -12695,7 +12891,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Target friendly unit redirects damage taken to Cataclysm with an 80% damage reduction.",
+  "description": "Target friendly unit becomes immune to damage while Cataclysm or Catastrophe is alive.",
   "name": "Brimstone Ward",
   "slug": "brimstone_ward_catastrophe",
   "damage": "",
@@ -12734,10 +12930,10 @@
     "count": 1
    }
   ],
-  "description": "Target units in a 2-hex radius sustain damage and 3 stacks of Bleeding.",
+  "description": "Target units in a 3-hex long 1-hex wise line sustain damage and 3 stacks of Bleeding.",
   "name": "Mutilate",
   "slug": "mutilate_cataclysm",
-  "damage": "17<damagephysical></damagephysical> 17<damagefire></damagefire> ",
+  "damage": "27<damagephysical></damagephysical> 9<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -12748,7 +12944,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<repeatingaction></repeatingaction>",
-  "range": "0",
+  "range": "1",
   "notes": [],
   "icon": "mutilate_cataclysm"
  },
@@ -12771,9 +12967,6 @@
   "damage": "28<damagephysical></damagephysical> 28<damagefire></damagefire> ",
   "requisites": [
    {
-    "requisite": "Base"
-   },
-   {
     "requisite": "Magic"
    }
   ],
@@ -12782,7 +12975,7 @@
   "range": "1",
   "notes": [
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "icon": "ravage_cataclysm"
@@ -12796,7 +12989,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Target friendly unit redirects damage taken to Cataclysm with an 80% damage reduction.",
+  "description": "Target friendly unit becomes immune to damage while Cataclysm or Catastrophe is alive.",
   "name": "Brimstone Ward",
   "slug": "brimstone_ward_cataclysm",
   "damage": "",
@@ -12823,8 +13016,8 @@
     "count": 1
    },
    {
-    "description": "",
-    "name": "",
+    "description": "This unit receives 12 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> every turn and is unable to heal.",
+    "name": "Brimstone Flames",
     "count": 1
    }
   ],
@@ -13209,7 +13402,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Target enemy unit suffers:<bulletlist><bullet>Flames of the Universe</bullet><bullet>This effect then cascades to adjacent units and is repeated.</bullet></bulletlist>",
+  "description": "Target enemy unit suffers:<bulletlist><bullet>Burning</bullet><bullet>This effect then cascades to adjacent units and is repeated.</bullet></bulletlist>",
   "name": "Ascended Wildfire",
   "slug": "ascended_wildfire_ascension_pyromancer",
   "damage": "20<damagefire></damagefire> ",
@@ -13308,7 +13501,7 @@
   "icon": "avatar_of_nature"
  },
  {
-  "description": "While army leader, units in the army regenerate + <hyperlink><hp></hp> Hit Points</hyperlink> in friendly and neutral territory.<br></br><br></br>In addition, after winning combat, units in the army regain <hyperlink>Move Points</hyperlink>.<br></br>This triggers once per <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink><br></br><br></br>Only one Hero can be this Lord at any time.",
+  "description": "While army leader, units in the army regenerate +25 <hyperlink><hp></hp> Hit Points</hyperlink> in friendly and neutral territory.<br></br><br></br>In addition, after winning combat, units in the army regain 100% <hyperlink>Move Points</hyperlink>.<br></br>This triggers once per <hyperlink>World Map</hyperlink> <turn></turn> <hyperlink>Turn</hyperlink><br></br><br></br>Only one Hero can be this Lord at any time.",
   "name": "Lord of War",
   "slug": "lord_of_war",
   "icon": "lord_of_war"
@@ -13696,8 +13889,8 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "5",
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
@@ -13760,7 +13953,7 @@
   "icon": "frost_weapons"
  },
  {
-  "description": "Base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks gain:<bulletlist><bullet>+4 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>-2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 30% chance of inflicting Flames of the Universe.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks.",
+  "description": "Base <hyperlink>Melee</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks gain:<bulletlist><bullet>+4 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>.</bullet><bullet>-2 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>A base 30% chance of inflicting Burning.</bullet></bulletlist><br></br>Effects <hyperlink>are increased</hyperlink> for non-repeating attacks.",
   "name": "Searing Blades",
   "slug": "searing_blades",
   "icon": "searing_blades"
@@ -13993,7 +14186,7 @@
   "icon": "nature_aura"
  },
  {
-  "description": "<bulletlist><bullet>At the end of each turn, adjacent friendly units gain a random positive status effect.</bullet><bullet>At the end of each turn, adjacent enemy units gain Flames of the Universe and have a base 90% chance of being inflicted with a random negative status effect.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>At the end of each turn, adjacent friendly units gain a random positive status effect.</bullet><bullet>At the end of each turn, adjacent enemy units gain Burning and have a base 90% chance of being inflicted with a random negative status effect.</bullet></bulletlist>",
   "name": "Chaos Aura",
   "slug": "chaos_aura",
   "icon": "chaos_aura"
@@ -14135,7 +14328,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    },
@@ -14271,7 +14464,7 @@
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "icon": "draining_blade_living_fog"
+  "icon": "draining_blade_draining_blade"
  },
  {
   "description": "While this unit is the army leader, friendly non-Fiend and non-Hero units in the army:<bulletlist><bullet>Transform into Tier I Fiends upon death in battle.</bullet><bullet>Have a small chance of transforming into Tier II Fiends instead.</bullet></bulletlist>",
@@ -14385,7 +14578,7 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Friendly units in a 2-hex radius gain:<bulletlist><bullet>10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink></bullet><bullet>Regeneration</bullet></bulletlist>",
@@ -14500,7 +14693,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Gain:<bulletlist><bullet>+50% <hyperlink>Melee</hyperlink> attack damage for 3 <turn></turn> Turn</bullet><bullet>2 Sundered Defense</bullet><bullet>2 Sundered Resistance</bullet></bulletlist>",
+  "description": "Gain:<bulletlist><bullet>+50% Damage for 3 <turn></turn> Turn.</bullet><bullet>However, suffer -3 Sundered Defense and -3 Sundered Resistance.</bullet></bulletlist>",
   "name": "Reckless Rage",
   "slug": "reckless_rage_reckless_rage",
   "damage": "",
@@ -14559,7 +14752,7 @@
     "note": "Cooldown: 4 <turn></turn>"
    }
   ],
-  "description": "Enemy units in a 2-hex radius <hyperlink>Fumble</hyperlink> their attacks for 1 <turn></turn> Turn.",
+  "description": "Enemy units in a 1-hex radius <hyperlink>Fumble</hyperlink> their attacks for 1 <turn></turn> Turn.",
   "name": "Visions of Woe",
   "slug": "visions_of_woe_visions_of_woe",
   "damage": "",
@@ -14570,7 +14763,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "range": "7",
   "icon": "visions_of_woe_visions_of_woe"
  },
  {
@@ -14680,7 +14873,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -14872,7 +15065,154 @@
  {
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
+   }
+  ],
+  "description": "This turn, gain 16 movement points and ignore Zone of Control.",
+  "name": "There Is No Escape",
+  "slug": "there_is_no_escape_there_is_no_escape",
+  "damage": "",
+  "requisites": [],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "0",
+  "icon": "there_is_no_escape_there_is_no_escape"
+ },
+ {
+  "description": "The Hunter does double damage for each attack they have already inflicted this turn.<br></br>Passively grants Whirling Death.",
+  "name": "Bloodletter",
+  "slug": "bloodletter",
+  "icon": "bloodletter"
+ },
+ {
+  "description": "<bulletlist><bullet>Attacks gains +3 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> per stack.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist>",
+  "name": "Whirling Death",
+  "slug": "whirling_death"
+ },
+ {
+  "description": "After this unit dies, it comes back to life with 100% of its total <hyperlink><hp></hp> Hit Points</hyperlink>.<br></br>This effect triggers once per combat.",
+  "name": "Divine Dragon",
+  "slug": "divine_dragon",
+  "icon": "divine_dragon"
+ },
+ {
+  "modifiers": [
+   {
+    "description": "Attacks inflict Condemned.",
+    "name": "Condemned",
+    "count": 1
+   }
+  ],
+  "description": "Call forth an Armageddon of blades, unleashing them upon your enemies, inflicting damage and Condemned onto all targets hit.",
+  "name": "Gates of Babylon",
+  "slug": "gates_of_babylon_elden_lord",
+  "damage": "12<damagespirit></damagespirit> 4<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "Magic"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<repeatingaction></repeatingaction>",
+  "range": "1",
+  "notes": [
+   {
+    "note": "Cooldown: 4 <turn></turn>"
+   }
+  ],
+  "icon": "gates_of_babylon_elden_lord"
+ },
+ {
+  "modifiers": [
+   {
+    "description": "Inflict Sundered Defense for 3 <turn></turn> Turns.",
+    "name": "Sundered Defense",
+    "count": 1
+   },
+   {
+    "description": "Inflicts Bleeding for 3 <turn></turn> Turns.",
+    "name": "Bleeding",
+    "count": 1
+   },
+   {
+    "description": "Base attacks heal 10 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink>.",
+    "name": "Life Steal",
+    "count": 1
+   }
+  ],
+  "description": "Perform a series of one-footed leaps in the manner of a waterfowl to unleash a swift yet graceful slashing combo, inflicting damage onto targets caught in the radius.<br></br>Repeated inputs allow for up to three follow-up attacks.",
+  "name": "Waterfowl Dance",
+  "slug": "waterfowl_dance_legacy_of_the_rot_goddess",
+  "damage": "26<damagephysical></damagephysical> ",
+  "requisites": [
+   {
+    "requisite": "Melee"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullactioncontinue></fullactioncontinue>",
+  "range": "3-7",
+  "notes": [
+   {
+    "note": "Cooldown: 3 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
+   }
+  ],
+  "icon": "waterfowl_dance_legacy_of_the_rot_goddess"
+ },
+ {
+  "description": "Every turn, conjure one of several unique special arrows to use for your next attack.<br></br>The arrows are ephemeral, lasting for only one turn, so you can't stack them up for a single attack.",
+  "name": "Interdimensional Quiver",
+  "slug": "interdimensional_quiver",
+  "icon": "interdimensional_quiver"
+ },
+ {
+  "description": "Your Ranged Basic Attacks cascade, chaining onto all targets linked to the original for 50% of the damage.",
+  "name": "Godslayer Arrows",
+  "slug": "godslayer_arrows",
+  "icon": "godslayer_arrows"
+ },
+ {
+  "description": "Sets your unmounted movement to 56.",
+  "name": "Ultra Haste",
+  "slug": "ultra_haste",
+  "icon": "ultra_haste"
+ },
+ {
+  "description": "Your combat spells cost 20% less.<br></br>This effect stacks.",
+  "name": "Call of the Void",
+  "slug": "call_of_the_void",
+  "icon": "spell_channeling"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Cooldown: 7 <turn></turn>"
+   }
+  ],
+  "description": "Refresh your Ability Cooldowns.",
+  "name": "Calamity's Genesis",
+  "slug": "calamitys_genesis_calamitys_genesis",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "Can't be refreshed"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "0",
+  "icon": "calamitys_genesis_calamitys_genesis"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cooldown: 4 <turn></turn>"
    }
   ],
   "description": "Grant Cataclysm or Catastrophe +50% Damage and 5 stacks of Bolstered Defense and Bolstered Resistance.",
@@ -14892,14 +15232,19 @@
  {
   "modifiers": [
    {
-    "description": "Displaces the attacked target and moves onto its hex.",
-    "name": "Displace and Replace",
+    "description": "Inflict Sundered Defense for 3 <turn></turn> Turns.",
+    "name": "Sundered Defense",
+    "count": 1
+   },
+   {
+    "description": "Inflicts Bleeding for 3 <turn></turn> Turns.",
+    "name": "Bleeding",
     "count": 1
    }
   ],
-  "description": "Dash forward, dealing damage to enemies in a 20-hex long 1-hex wide line and displacing them by running through them.<br></br>Combo into the next drive, which has reduced radius, up to 5 times.",
+  "description": "Dash forward, dealing damage to enemies in a massive line by running right through them.<br></br>Combo into the next drive, which has reduced radius, up to 5 times.",
   "name": "Hyper Drive",
-  "slug": "hyper_drive_angel_of_death",
+  "slug": "hyper_drive_demon_of_death",
   "damage": "25<damagephysical></damagephysical> ",
   "requisites": [
    {
@@ -14911,19 +15256,16 @@
   "range": "1",
   "notes": [
    {
-    "note": "Can only be used once per battle."
+    "note": "Cooldown: 3 <turn></turn>"
    },
    {
-    "note": "Starts on cooldown: 2<turn></turn>"
+    "note": "Starts on cooldown: 1<turn></turn>"
    }
   ],
-  "icon": "hyper_drive_angel_of_death"
+  "icon": "hyper_drive_demon_of_death"
  },
  {
   "notes": [
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   },
    {
     "note": "Cooldown: 3 <turn></turn>"
    }
@@ -14994,9 +15336,12 @@
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Can only be used once per battle."
    }
   ],
-  "description": "Sacrifice a friendly Hero to summon Cataclysm or Catastrophe (Chosen Randomly).",
+  "description": "Summon Cataclysm or Catastrophe (Chosen Randomly).",
   "name": "Brothers of Calamity",
   "slug": "brothers_of_calamity_brothers_of_calamity",
   "damage": "",
@@ -15057,13 +15402,13 @@
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "description": "Unleash a colossal Brimstone explosion, dealing massive damage and inflicting Brimstone Flames to ALL units.",
   "name": "Brimstone Nova",
   "slug": "brimstone_nova_call_of_calamity",
-  "damage": "25<damagefire></damagefire> ",
+  "damage": "20<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -15075,7 +15420,7 @@
   "icon": "brimstone_nova_call_of_calamity"
  },
  {
-  "description": "Whenever a unit dies, gain +20 Temporary <hyperlink><hp></hp> Hit Point</hyperlink>.",
+  "description": "Whenever a unit dies, gain +20 Temporary <hyperlink><hp></hp> Hit Point</hyperlink>. and 1 Strengthened.",
   "name": "Soul Eater",
   "slug": "soul_eater",
   "icon": "soul_eater"
@@ -15093,7 +15438,7 @@
   "icon": "wrath_of_kos"
  },
  {
-  "description": "After receiving 7 different instances of damage in a turn, become IMMUNE until next turn.",
+  "description": "After receiving 7 different instances of damage in a turn, become IMMUNE until next turn.<br></br>This effect cannot be dispelled.",
   "name": "Curse of the Astral Clocktower",
   "slug": "curse_of_the_astral_clocktower",
   "icon": "curse_of_the_astral_clocktower"
@@ -15136,12 +15481,18 @@
   "icon": "evasion_slash_gladiator"
  },
  {
+  "description": "Your Ranged Basic Attacks inflict an additional +8 <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink> in a 2-hex radius.",
+  "name": "Soul Shooter",
+  "slug": "soul_shooter",
+  "icon": "soul_shooter"
+ },
+ {
   "notes": [
    {
     "note": "Cooldown: 3 <turn></turn>"
    }
   ],
-  "description": "Shoot out 10-15 arrows, dealing 18 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> to all targets hit.",
+  "description": "Shoot out 10-15 arrows, dealing 15 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> and 15 <damageLightning></damageLightning> <hyperlink>Lightning Damage</hyperlink> to all targets hit.",
   "name": "Tracking Arrows",
   "slug": "tracking_arrows_destined_shots",
   "damage": "",
@@ -15158,28 +15509,34 @@
  {
   "notes": [
    {
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
+   {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 3 <turn></turn>"
    }
   ],
   "description": "Target units in a 3-hex radius sustain damage.",
   "name": "Rain of Arrows",
   "slug": "rain_of_arrows_black_out_the_sky",
-  "damage": "15<damagephysical></damagephysical> ",
+  "damage": "10<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
    }
   ],
-  "accuracy": "Always Hits",
+  "accuracy": "50%",
   "actionPoints": "<repeatingaction></repeatingaction>",
-  "range": "99",
+  "range": "3-6",
   "icon": "rain_of_arrows_black_out_the_sky"
  },
  {
   "notes": [
+   {
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
    },
@@ -15196,9 +15553,9 @@
     "requisite": "Physical Ranged"
    }
   ],
-  "accuracy": "Always Hits",
+  "accuracy": "60%",
   "actionPoints": "<singleuseaction></singleuseaction>",
-  "range": "7",
+  "range": "3-7",
   "icon": "execution_deadeye"
  },
  {
@@ -15230,13 +15587,13 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 0 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "description": "Target units in a 4-hex cone sustain damage and suffer Burning and Berserk.",
   "name": "Dragonflight",
   "slug": "dragonflight_dragonlord",
-  "damage": "40<damagefire></damagefire> ",
+  "damage": "36<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -15256,7 +15613,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "All enemy units have a base 60% chance of being afflicted with Insanity for 1 turn.",
+  "description": "All enemy units have a base 90% chance of being afflicted with Insanity for 1 turn.",
   "name": "Cascading Madness",
   "slug": "cascading_madness_mind_bender",
   "damage": "",
@@ -15282,7 +15639,7 @@
   "description": "Units in a 2-hex radius sustain damage.<br></br>Summon Devouring Void on the affected area.",
   "name": "Wormhole",
   "slug": "wormhole_shadowcaster",
-  "damage": "10<damagephysical></damagephysical> 10<damagefrost></damagefrost> ",
+  "damage": "7<damagephysical></damagephysical> 7<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -15291,7 +15648,7 @@
   "accuracy": "Always Hits",
   "actionPoints": "<leaveoneaction></leaveoneaction>",
   "range": "6",
-  "icon": "cascading_madness_mind_bender"
+  "icon": "wormhole_shadowcaster"
  },
  {
   "notes": [
@@ -15302,7 +15659,7 @@
   "description": "Units in a 2-hex radius sustain damage.<br></br>Summon Devouring Void on the affected area.",
   "name": "Black Hole",
   "slug": "black_hole_voidcaster",
-  "damage": "20<damagephysical></damagephysical> 20<damagefrost></damagefrost> ",
+  "damage": "14<damagephysical></damagephysical> 14<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -15391,12 +15748,6 @@
   "icon": "skybreaker_skybreaker"
  },
  {
-  "description": "<bulletlist><bullet>Base attack gains +1 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink> per stack.</bullet><bullet>Stacks up to 5 times.</bullet></bulletlist>",
-  "name": "Whirling Death",
-  "slug": "whirling_death",
-  "icon": "whirling_death"
- },
- {
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
@@ -15428,7 +15779,7 @@
  {
   "notes": [
    {
-    "note": "Cooldown: 1 <turn></turn>"
+    "note": "Cooldown: 2 <turn></turn>"
    }
   ],
   "description": "Perform a massive halfmoon crescent-shaped cleave, dealing damage to all units within the radius and disrupting them for 3 turns.<br></br>Combo into Crescent Cleave.",
@@ -15514,7 +15865,7 @@
   "icon": "encroaching_darkness_summon_shadow_realm"
  },
  {
-  "description": "This unit reflects 15% of ALL Damage taken.<br></br>Passively grants Breaching and the Ethereal unit type.",
+  "description": "This unit reflects 30% of ALL Damage taken.<br></br>Passively grants Breaching and the Ethereal unit type.",
   "name": "Pillar of Darkness",
   "slug": "pillar_of_darkness",
   "icon": "pillar_of_darkness"
@@ -15522,17 +15873,17 @@
  {
   "modifiers": [
    {
-    "description": "Displaces the attacked target and moves onto its hex.",
-    "name": "Displace and Replace",
+    "description": "Inflict Sundered Defense for 3 <turn></turn> Turns.",
+    "name": "Sundered Defense",
     "count": 1
    },
    {
-    "description": "Inflict Blind for 1 <turn></turn> Turn.",
-    "name": "Blind",
+    "description": "Inflicts Bleeding for 3 <turn></turn> Turns.",
+    "name": "Bleeding",
     "count": 1
    }
   ],
-  "description": "Grants the Line Drive Ability, allowing you to effortlessly dash through hordes of enemies, displacing and blinding them.",
+  "description": "Effortlessly dash through hordes of enemies, running right through them while dealing damage.",
   "name": "Line Drive",
   "slug": "line_drive_line_drive",
   "damage": "25<damagephysical></damagephysical> ",
@@ -15564,7 +15915,7 @@
     "count": 1
    }
   ],
-  "description": "Target units in a 3-hex radius sustain damage.",
+  "description": "Target units in a 2-hex radius sustain damage.",
   "name": "Bladestorm",
   "slug": "bladestorm_bladestorm",
   "damage": "18<damagephysical></damagephysical> ",
@@ -15616,41 +15967,6 @@
   "icon": "dancing_blades_dancing_blades"
  },
  {
-  "modifiers": [
-   {
-    "description": "Inflict Sundered Defense for 3 <turn></turn> Turns.",
-    "name": "Sundered Defense",
-    "count": 1
-   },
-   {
-    "description": "Inflicts Bleeding for 3 <turn></turn> Turns.",
-    "name": "Bleeding",
-    "count": 1
-   }
-  ],
-  "description": "Target units in a 3-hex radius sustain damage.",
-  "name": "Bladestorm",
-  "slug": "bladestorm_blinding_speed",
-  "damage": "18<damagephysical></damagephysical> ",
-  "requisites": [
-   {
-    "requisite": "Melee"
-   },
-   {
-    "requisite": "Base"
-   }
-  ],
-  "accuracy": "Always Hits",
-  "actionPoints": "<repeatingaction></repeatingaction>",
-  "range": "1",
-  "notes": [
-   {
-    "note": "Cooldown: 1 <turn></turn>"
-   }
-  ],
-  "icon": "bladestorm_bladestorm"
- },
- {
   "description": "Unit regains 33% <hyperlink>Action Points</hyperlink> when killing another unit.<br></br>Works TWICE per <turn></turn> Turn.",
   "name": "Demonic Momentum",
   "slug": "demonic_momentum",
@@ -15680,9 +15996,12 @@
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Cooldown: 0 <turn></turn>"
    }
   ],
-  "description": "Reanimate ALL Corpses on the Battlefield under YOUR control with 100% of their <hyperlink><hp></hp> Hit Point</hyperlink>.",
+  "description": "Reanimate target corpse under YOUR control with 100% of their <hyperlink><hp></hp> Hit Point</hyperlink>.",
   "name": "Reign of Darkness",
   "slug": "reign_of_darkness_gravelord",
   "damage": "",
@@ -15692,7 +16011,7 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<fullaction></fullaction>",
+  "actionPoints": "<freeaction></freeaction>",
   "range": "99",
   "icon": "reign_of_darkness_gravelord"
  },
@@ -15725,7 +16044,7 @@
     "note": "Can only be used once per battle."
    }
   ],
-  "description": "Target friendly unit regains its Action Points. This effect chains to up to 2 additional targets.",
+  "description": "Target friendly unit regains its Action Points. This effect chains to up to 1 additional target.",
   "name": "Tyrant's Will",
   "slug": "tyrants_will_tyrant_king",
   "damage": "",
@@ -16286,7 +16605,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -17240,12 +17559,6 @@
   "icon": "quick_stab_staff"
  },
  {
-  "description": "During the first 30 <turn></turn> <hyperlink>Turns</hyperlink> in combat, a <hyperlink>Decaying Zombie</hyperlink> is summoned next to the <hyperlink>Hero</hyperlink> every <turn></turn> <hyperlink>Turn</hyperlink>.",
-  "name": "Gravecall",
-  "slug": "gravecall",
-  "icon": "gravecall"
- },
- {
   "modifiers": [],
   "description": "Fires ranged projectiles at target enemy unit.",
   "name": "Shoot Bow",
@@ -17797,7 +18110,11 @@
   "name": "Mass Plague",
   "slug": "mass_plague_staff_of_blossoms",
   "damage": "18<damageblight></damageblight> ",
-  "requisites": [],
+  "requisites": [
+   {
+    "requisite": "Magic"
+   }
+  ],
   "accuracy": "Always Hits",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "99",
@@ -18660,7 +18977,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 90% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }
@@ -18668,7 +18985,7 @@
   "description": "Attacks all units in a 3-hex cone.",
   "name": "Fire Breath",
   "slug": "fire_breath_wand_of_fire_breath",
-  "damage": "38<damagefire></damagefire> ",
+  "damage": "40<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -19627,7 +19944,7 @@
  {
   "modifiers": [
    {
-    "description": "Base 60% chance of inflicting Flames of the Universe for 3 <turn></turn> Turns.",
+    "description": "Base 60% chance of inflicting Burning for 3 <turn></turn> Turns.",
     "name": "Burning",
     "count": 1
    }

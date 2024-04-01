@@ -206,7 +206,7 @@
  {
   "requirement_description": "",
   "cost": "100<gold></gold> 250<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+5 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+10 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+25 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+10 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet></bulletlist>",
   "resid": 5016521802591,
   "id": "stonestele",
   "DLC": "PRIMALFURY ",
@@ -219,7 +219,7 @@
  {
   "requirement_description": "",
   "cost": "60<gold></gold> 130<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+5 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+8 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet><bullet>+5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income</bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+15 <food></food> <hyperlink>Food</hyperlink> income</bullet><bullet>+8 <structureprod></structureprod> <hyperlink>Production</hyperlink> income</bullet><bullet>+5 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income</bullet></bulletlist>",
   "resid": 5016521802586,
   "id": "woodcarvers_workshop",
   "DLC": "PRIMALFURY ",
@@ -349,7 +349,7 @@
   "resid": 4986457030787,
   "id": "extraction_nexus",
   "DLC": "EMPIRESANDASHES ",
-  "description": "Special Province Improvements grant +10  and <mana></mana> <hyperlink>Mana</hyperlink> income.",
+  "description": "",
   "name": "Extraction Nexus",
   "icon": "extraction_nexus",
   "is_sector_upgrade": false
@@ -1186,7 +1186,7 @@
   "prediction_description": "",
   "resid": 4578435139420,
   "id": "_conduit___spell_jammer",
-  "description": "<bulletlist><bullet>Enemies cannot target <hyperlink>World Map Spells</hyperlink> in this <hyperlink>Domain</hyperlink>.</bullet><bullet>Enemy <hyperlink>Spells</hyperlink> cost +25% <optactical></optactical> <hyperlink> Combat Casting Points</hyperlink> in <hyperlink>Combat</hyperlink> in <hyperlink>Domain</hyperlink>.</bullet><bullet>-10 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
+  "description": "<bulletlist><bullet>Enemies cannot target <hyperlink>World Map Spells</hyperlink> in this <hyperlink>Domain</hyperlink></bullet><bullet>Enemy <hyperlink>Spell</hyperlink> cost 10% more within this Domain.</bullet><bullet>-10 <mana></mana> <hyperlink>Mana</hyperlink>.</bullet><bullet>Counts as a <conduit></conduit> <hyperlink>Conduit</hyperlink>.</bullet></bulletlist>",
   "name": "<conduit></conduit> Spell Jammer",
   "icon": "_conduit___spell_jammer",
   "is_sector_upgrade": true
@@ -2134,10 +2134,10 @@
  {
   "requirement_description": "Requires 4: Water provinces to unlock",
   "cost": "280<gold></gold> 750<structureprod></structureprod> ",
-  "prediction_description": "<bulletlist><bullet>+12 <food></food> <hyperlink>Food</hyperlink> income per Coast: </bullet><bullet>+12 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per Coast: </bullet><bullet>+12 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income per Coast: </bullet><bullet>+12 <gold></gold> <hyperlink>Gold</hyperlink> income per Coast: </bullet></bulletlist>",
+  "prediction_description": "<bulletlist><bullet>+12 <food></food> <hyperlink>Food</hyperlink> income per Coast: </bullet><bullet>+12 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per Coast: </bullet><bullet>+12 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income per Coast: </bullet><bullet>+12 <gold></gold> <hyperlink>Gold</hyperlink> income per Coast: </bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink> income per Underground Lake: </bullet><bullet>+3 <structureprod></structureprod> <hyperlink>Production</hyperlink> income per Underground Lake: </bullet><bullet>+3 <unitprod></unitprod> <hyperlink>Draft</hyperlink> income per Underground Lake: </bullet><bullet>+3 <gold></gold> <hyperlink>Gold</hyperlink> income per Underground Lake: </bullet></bulletlist>",
   "resid": 4282082401545,
   "id": "seafarers_guild",
-  "description": "",
+  "description": "Per Coast or Underground Lake province:<bulletlist><bullet>+3 <structureprod></structureprod> <hyperlink>Production</hyperlink></bullet><bullet>+3 <food></food> <hyperlink>Food</hyperlink></bullet><bullet>+3 <gold></gold> <hyperlink>Gold</hyperlink></bullet><bullet>+3 <unitprod></unitprod> <hyperlink>Draft</hyperlink></bullet></bulletlist>",
   "name": "Seafarers' Guild",
   "icon": "seafarers_guild",
   "is_sector_upgrade": false,
