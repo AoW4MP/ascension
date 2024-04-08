@@ -2113,7 +2113,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "magelock_cannon",
   "name": "Magelock Cannon",
-  "hp": 85,
+  "hp": 100,
   "armor": 4,
   "medal_rewards_2": [
    {
@@ -2711,7 +2711,7 @@
   "upkeep": "12<gold></gold> ",
   "id": "overseer",
   "name": "Overseer",
-  "hp": 60,
+  "hp": 75,
   "armor": 1,
   "medal_rewards_2": [
    {
@@ -4937,11 +4937,7 @@
   ]
  },
  {
-  "primary_passives": [
-   {
-    "slug": "melee_mage"
-   }
-  ],
+  "primary_passives": [],
   "mp": 32,
   "abilities": [
    {
@@ -6314,9 +6310,6 @@
     "slug": "holy_retribution"
    },
    {
-    "slug": "undead_slayer"
-   },
-   {
     "slug": "vicious_killer"
    }
   ],
@@ -6324,6 +6317,9 @@
   "abilities": [
    {
     "slug": "demoralizing_charge_strike_tyrant_knight"
+   },
+   {
+    "slug": "tyrannize_tyrant_knight"
    },
    {
     "slug": "defense_mode"
@@ -10073,7 +10069,7 @@
   "upkeep": "20<gold></gold> ",
   "id": "dragoon",
   "name": "Dragoon",
-  "hp": 80,
+  "hp": 95,
   "armor": 2,
   "medal_rewards_2": [
    {
@@ -12581,6 +12577,9 @@
    },
    {
     "slug": "status_effect_immunity"
+   },
+   {
+    "slug": "tireless_retaliation"
    }
   ],
   "mp": 32,
@@ -12912,7 +12911,7 @@
   ],
   "medal_rewards_5": [
    {
-    "slug": "_6_hp__"
+    "slug": "_8_hp__"
    }
   ],
   "description": "",
@@ -12920,7 +12919,7 @@
   "resid": 4273492483247,
   "medal_rewards_3": [
    {
-    "slug": "_6_hp__"
+    "slug": "_8_hp__"
    }
   ],
   "resistances": [
@@ -12934,19 +12933,19 @@
     "slug": "spirit_weakness_3"
    }
   ],
-  "status_resistance": 0,
-  "upkeep": "12<gold></gold> ",
+  "status_resistance": 3,
+  "upkeep": "20<gold></gold> ",
   "id": "gargoyle",
   "name": "Gargoyle",
   "hp": 110,
-  "armor": 3,
+  "armor": 4,
   "medal_rewards_2": [
    {
-    "slug": "_6_hp__"
+    "slug": "_8_hp__"
    }
   ],
-  "tier": 2,
-  "resistance": 1,
+  "tier": 3,
+  "resistance": 2,
   "secondary_passives": [
    {
     "slug": "elemental"
@@ -12966,7 +12965,7 @@
   ],
   "medal_rewards_4": [
    {
-    "slug": "_6_hp__"
+    "slug": "_8_hp__"
    },
    {
     "slug": "elite_medal_damage"
@@ -12974,7 +12973,7 @@
   ],
   "medal_rewards_6": [
    {
-    "slug": "_6_hp__"
+    "slug": "_8_hp__"
    },
    {
     "slug": "legend_medal_critical"
@@ -14638,21 +14637,6 @@
  {
   "primary_passives": [
    {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
     "slug": "cull_the_weak"
    }
   ],
@@ -15995,21 +15979,6 @@
  {
   "primary_passives": [
    {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
     "slug": "berserkers_rage"
    },
    {
@@ -16483,21 +16452,6 @@
  },
  {
   "primary_passives": [
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
-   {
-    "slug": "armor_piercing"
-   },
    {
     "slug": "giant_slayer"
    },
@@ -19734,7 +19688,7 @@
     "slug": "vicious_killer"
    }
   ],
-  "mp": 48,
+  "mp": 56,
   "abilities": [
    {
     "slug": "charge_strike_nightmare"
@@ -20587,6 +20541,94 @@
   "medal_rewards_6": [
    {
     "slug": "_6_hp__"
+   }
+  ]
+ },
+ {
+  "primary_passives": [
+   {
+    "slug": "heavenly_aura"
+   }
+  ],
+  "mp": 32,
+  "abilities": [
+   {
+    "slug": "repentance_paragon"
+   },
+   {
+    "slug": "blessing_of_fortitude_paragon"
+   },
+   {
+    "slug": "blessing_of_exaltation_paragon"
+   },
+   {
+    "slug": "blessing_of_sanctuary_paragon"
+   },
+   {
+    "slug": "holy_fire_paragon"
+   },
+   {
+    "slug": "divine_will_paragon"
+   },
+   {
+    "slug": "transcendence_paragon"
+   },
+   {
+    "slug": "defense_mode"
+   }
+  ],
+  "medal_rewards_5": [
+   {
+    "slug": "_10_hp__"
+   }
+  ],
+  "description": "Paragon",
+  "cost": "400<unitprod></unitprod> 250<gold></gold> ",
+  "resid": -733933881375324180,
+  "medal_rewards_3": [
+   {
+    "slug": "_10_hp__"
+   }
+  ],
+  "resistances": [],
+  "status_resistance": 9,
+  "upkeep": "30<gold></gold> 3<influence></influence> ",
+  "id": "paragon",
+  "name": "Paragon",
+  "hp": 100,
+  "armor": 3,
+  "medal_rewards_2": [
+   {
+    "slug": "_10_hp__"
+   }
+  ],
+  "tier": 4,
+  "resistance": 3,
+  "secondary_passives": [
+   {
+    "slug": "land_movement"
+   },
+   {
+    "slug": "optional_cavalry"
+   },
+   {
+    "slug": "support_unit"
+   }
+  ],
+  "medal_rewards_4": [
+   {
+    "slug": "_10_hp__"
+   },
+   {
+    "slug": "elite_medal_resistance"
+   }
+  ],
+  "medal_rewards_6": [
+   {
+    "slug": "_10_hp__"
+   },
+   {
+    "slug": "legend_medal_exalted_resistance"
    }
   ]
  },

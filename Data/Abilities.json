@@ -1258,18 +1258,11 @@
   "icon": "legend_medal_sprint"
  },
  {
-  "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
+  "modifiers": [],
   "description": "Single magical attack at target unit.",
   "name": "Poison Blast",
   "slug": "magic_blast_animist",
-  "damage": "16<damageblight></damageblight> ",
+  "damage": "24<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -1281,6 +1274,14 @@
   "accuracy": "90%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
+  "notes": [
+   {
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
   "icon": "magic_blast_animist"
  },
  {
@@ -1546,17 +1547,12 @@
     "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
     "name": "Piercing",
     "count": 1
-   },
-   {
-    "description": "+1 Range",
-    "name": "Extra Range",
-    "count": 1
    }
   ],
   "description": "Units in a 3-hex line:<bulletlist><bullet>Sustain damage.</bullet><bullet>Have their <hyperlink>Defense Mode</hyperlink> canceled and <hyperlink>Retaliation Attacks</hyperlink> removed.</bullet></bulletlist>",
   "name": "Fire Cannon",
   "slug": "fire_cannon_magelock_cannon",
-  "damage": "30<damagephysical></damagephysical> ",
+  "damage": "35<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -1567,7 +1563,7 @@
   ],
   "accuracy": "Always Hits",
   "actionPoints": "<fullaction></fullaction>",
-  "range": "6",
+  "range": "5",
   "notes": [
    {
     "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
@@ -1872,7 +1868,7 @@
   "description": "Single magical attack at target unit.",
   "name": "Marking Blast",
   "slug": "magic_blast_overseer",
-  "damage": "10<damagefire></damagefire> ",
+  "damage": "22<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -1943,12 +1939,17 @@
     "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
     "name": "Piercing",
     "count": 1
+   },
+   {
+    "description": "+30% <hyperlink>Accuracy</hyperlink> on <hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks.",
+    "name": "Increased Accuracy",
+    "count": 1
    }
   ],
   "description": "Fire Heavy Magelock at target enemy unit.",
   "name": "Fire Heavy Magelock",
   "slug": "fire_heavy_magelock_magelock",
-  "damage": "36<damagephysical></damagephysical> ",
+  "damage": "40<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -3261,7 +3262,7 @@
     "count": 1
    }
   ],
-  "description": "Inflict damage onto targets in a 2-hex cone.",
+  "description": "Inflict damage onto targets in a 3-hex cone.",
   "name": "Jaws of Oblivion",
   "slug": "jaws_of_oblivion_living_fog",
   "damage": "17<damagephysical></damagephysical> ",
@@ -3627,12 +3628,6 @@
    }
   ],
   "icon": "petrify_transmuter"
- },
- {
-  "description": "Can now use <hyperlink>Magic</hyperlink> and <hyperlink>Support</hyperlink> abilities while <hyperlink>Engaged in Melee</hyperlink>.",
-  "name": "Melee Mage",
-  "slug": "melee_mage",
-  "icon": "melee_mage"
  },
  {
   "modifiers": [
@@ -4130,6 +4125,12 @@
   "icon": "chaotic_rebuke"
  },
  {
+  "description": "Can now use <hyperlink>Magic</hyperlink> and <hyperlink>Support</hyperlink> abilities while <hyperlink>Engaged in Melee</hyperlink>.",
+  "name": "Melee Mage",
+  "slug": "melee_mage",
+  "icon": "melee_mage"
+ },
+ {
   "modifiers": [
    {
     "description": "Base 90% chance of inflicting Burning for 3 <turn></turn> Turns.",
@@ -4444,27 +4445,12 @@
     "description": "Base 90% chance of inflicting -10 <happiness></happiness> <hyperlink>Morale</hyperlink>.",
     "name": "Demoralizing Charge Strike",
     "count": 1
-   },
-   {
-    "description": "Base attacks deal +40% damage to Undead units.",
-    "name": "Undead Slayer",
-    "count": 1
-   },
-   {
-    "description": "Base attacks deal +40% damage to Fiend units.",
-    "name": "Fiend Slayer",
-    "count": 1
-   },
-   {
-    "description": "Base attacks deal +40% damage to Magic Origin units.",
-    "name": "Magic Origin Slayer",
-    "count": 1
    }
   ],
   "description": "A Charge attack:<bulletlist><bullet>Gains 20% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet></bulletlist>",
   "name": "Demoralizing Charge Strike",
   "slug": "demoralizing_charge_strike_tyrant_knight",
-  "damage": "35<damagephysical></damagephysical> ",
+  "damage": "31<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -4480,16 +4466,30 @@
   "icon": "charge_strike_primal_mammoth"
  },
  {
+  "notes": [
+   {
+    "note": "Cooldown: 3 <turn></turn>"
+   }
+  ],
+  "description": "Target unit sustains -20 <happiness></happiness> <hyperlink>Morale</hyperlink>.",
+  "name": "Tyrannize",
+  "slug": "tyrannize_tyrant_knight",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "Debuff"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<leaveoneaction></leaveoneaction>",
+  "range": "3",
+  "icon": "tyrannize_tyrant_knight"
+ },
+ {
   "description": "Attacks that hit this unit from within 3 hexes deal 8 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> to the attacker.",
   "name": "Holy Retribution",
   "slug": "holy_retribution",
   "icon": "holy_retribution"
- },
- {
-  "description": "Base attacks deal +40% damage to Undead units.",
-  "name": "Undead Slayer",
-  "slug": "undead_slayer",
-  "icon": "undead_slayer"
  },
  {
   "modifiers": [],
@@ -4757,7 +4757,7 @@
   "description": "Unleashes a magical bolt at target enemy.",
   "name": "Cosmic Bolts",
   "slug": "magic_bolts_lost_wizard",
-  "damage": "7<damagelightning></damagelightning> 7<damagefire></damagefire> 7<damagefrost></damagefrost> ",
+  "damage": "6<damagelightning></damagelightning> 6<damagefire></damagefire> 6<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -4786,6 +4786,9 @@
    },
    {
     "note": "Cooldown: 0 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
    }
   ],
   "description": "Unit gains a forgotten spell, which can then be used as a single action until the end of the turn.",
@@ -6565,7 +6568,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
   "slug": "melee_strike_dragoon",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "20<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -6596,7 +6599,7 @@
   "description": "Fire Magelock Pistol at target unit.",
   "name": "Harrying Shot",
   "slug": "harrying_shot_dragoon",
-  "damage": "28<damagephysical></damagephysical> ",
+  "damage": "36<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -7939,7 +7942,7 @@
     "count": 1
    }
   ],
-  "description": "Unit teleports to target hex dealing damage to adjacent units. Then this unit gains Curse of the Astral Clocktower.",
+  "description": "Unit teleports to target hex dealing damage to adjacent units. Then this unit gains Refuged.",
   "name": "Shattering Refuge",
   "slug": "shattering_refuge_astral_serpent",
   "damage": "28<damagelightning></damagelightning> ",
@@ -9188,18 +9191,11 @@
   "icon": "stunning_flash_spellshield"
  },
  {
-  "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
+  "modifiers": [],
   "description": "Single magical attack at target unit.",
   "name": "Cosmic Blast",
   "slug": "magic_blast_soother",
-  "damage": "5<damagelightning></damagelightning> 5<damagefire></damagefire> 5<damagefrost></damagefrost> ",
+  "damage": "15<damagelightning></damagelightning> 5<damagefire></damagefire> 5<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -9211,6 +9207,14 @@
   "accuracy": "90%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
+  "notes": [
+   {
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
   "icon": "magic_blast_animist"
  },
  {
@@ -9339,14 +9343,14 @@
     "count": 1
    },
    {
-    "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
-    "name": "Breaching",
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
     "count": 1
    },
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
+    "name": "Breaching",
+    "count": 1
    }
   ],
   "description": "A Heavy Charge attack:<bulletlist><bullet>Gains 20% damage per hex traveled, up to 3 hexes.</bullet><bullet>Cancels <hyperlink>Defense Mode</hyperlink>.</bullet><bullet>Removes <hyperlink>Retaliation Attack</hyperlink>.</bullet><bullet>Heavy Charges ignore Charge Resistance.</bullet></bulletlist>",
@@ -9369,6 +9373,11 @@
  },
  {
   "modifiers": [
+   {
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
+   },
    {
     "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
     "name": "Breaching",
@@ -9398,7 +9407,7 @@
   "description": "<bulletlist><bullet>Deals +20% damage to units with Weakened.</bullet><bullet>Attacking units with Weakened grants the unit Regeneration once per turn.</bullet></bulletlist>",
   "name": "Cull the Weak",
   "slug": "cull_the_weak",
-  "icon": "undead_slayer"
+  "icon": "cull_the_weak"
  },
  {
   "modifiers": [
@@ -9416,7 +9425,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
   "slug": "melee_strike_night_guard",
-  "damage": "14<damagephysical></damagephysical> ",
+  "damage": "18<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -9448,7 +9457,7 @@
   "description": "Unleashes a magical bolt at target enemy.",
   "name": "Weakening Bolts",
   "slug": "magic_bolts_warlock",
-  "damage": "8<damagefrost></damagefrost> ",
+  "damage": "12<damagefrost></damagefrost> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -9676,7 +9685,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
   "slug": "melee_strike_halberdier",
-  "damage": "12<damagephysical></damagephysical> ",
+  "damage": "16<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -9696,7 +9705,7 @@
   "description": "Single magical attack at target unit.",
   "name": "Steel Blast",
   "slug": "magic_blast_steelshaper",
-  "damage": "22<damagephysical></damagephysical> ",
+  "damage": "26<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -10008,18 +10017,11 @@
   "icon": "shoot_bow_skeleton_archer"
  },
  {
-  "notes": [
-   {
-    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
-   },
-   {
-    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
-   }
-  ],
+  "modifiers": [],
   "description": "Single magical attack at target unit.",
   "name": "Spirit Blast",
   "slug": "magic_blast_sun_priest",
-  "damage": "16<damagespirit></damagespirit> ",
+  "damage": "24<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -10031,6 +10033,14 @@
   "accuracy": "90%",
   "actionPoints": "<singleuseaction></singleuseaction>",
   "range": "4",
+  "notes": [
+   {
+    "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
+   },
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
   "icon": "magic_blast_animist"
  },
  {
@@ -10127,7 +10137,7 @@
   "description": "Strikes target enemy unit.",
   "name": "Melee Strike",
   "slug": "melee_strike_daylight_spear",
-  "damage": "16<damagephysical></damagephysical> ",
+  "damage": "18<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Melee"
@@ -10189,9 +10199,9 @@
     "count": 1
    },
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
    },
    {
     "description": "Deals an additional 8 <damageBlight></damageBlight> <hyperlink>Blight Damage</hyperlink> on a critical hit.",
@@ -10261,7 +10271,7 @@
   "description": "Single magical attack at target unit.",
   "name": "Poison Blast",
   "slug": "magic_blast_war_shaman",
-  "damage": "14<damageblight></damageblight> ",
+  "damage": "22<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -10324,11 +10334,6 @@
     "count": 5
    },
    {
-    "description": "+1 Range",
-    "name": "Extra Range",
-    "count": 1
-   },
-   {
     "description": "+30% <hyperlink>Accuracy</hyperlink> on <hyperlink>Magic</hyperlink> and <hyperlink>Physical Ranged</hyperlink> attacks.",
     "name": "Increased Accuracy",
     "count": 1
@@ -10337,7 +10342,7 @@
   "description": "Fires ranged projectiles at target enemy unit.",
   "name": "Shoot Bow",
   "slug": "shoot_bow_fury",
-  "damage": "10<damagephysical></damagephysical> ",
+  "damage": "13<damagephysical></damagephysical> ",
   "requisites": [
    {
     "requisite": "Physical Ranged"
@@ -10348,7 +10353,7 @@
   ],
   "accuracy": "90%",
   "actionPoints": "<repeatingaction></repeatingaction>",
-  "range": "5",
+  "range": "4",
   "notes": [
    {
     "note": "Affected by <hyperlink>Line of Sight</hyperlink> rules."
@@ -10507,9 +10512,9 @@
  {
   "modifiers": [
    {
-    "description": "This Unit's Attacks ignore 5 of the target's <defense></defense> <hyperlink>Defense</hyperlink>",
-    "name": "Armor Piercing",
-    "count": 5
+    "description": "Ignore 50% of the target's <defense></defense> <hyperlink>Defense</hyperlink>.",
+    "name": "Piercing",
+    "count": 1
    },
    {
     "description": "Base attacks deal +40% damage to Large Target units.",
@@ -10558,7 +10563,7 @@
   "description": "This unit deals +40% damage to Large Target units.",
   "name": "Giant Slayer",
   "slug": "giant_slayer",
-  "icon": "undead_slayer"
+  "icon": "cull_the_weak"
  },
  {
   "description": "Unit deals +20% damage when adjacent to another friendly unit with <abilityblue>Stand Together</abilityblue>.",
@@ -10603,7 +10608,7 @@
   "description": "Single magical attack at target unit.",
   "name": "Banner Smite",
   "slug": "banner_smite_bannerman",
-  "damage": "14<damagespirit></damagespirit> ",
+  "damage": "23<damagespirit></damagespirit> ",
   "requisites": [
    {
     "requisite": "Base"
@@ -12640,17 +12645,179 @@
   "icon": "launch_ballista_tower"
  },
  {
+  "modifiers": [],
+  "description": "Target enemy unit sustains damage.<br></br>Has +1 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> for each allied Faithful unit.",
+  "name": "Repentance",
+  "slug": "repentance_paragon",
+  "damage": "20<damagespirit></damagespirit> ",
+  "requisites": [
+   {
+    "requisite": "Base"
+   },
+   {
+    "requisite": "Magic"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<singleuseaction></singleuseaction>",
+  "range": "4",
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   }
+  ],
+  "icon": "magic_blast_shrine_of_smiting"
+ },
+ {
+  "notes": [
+   {
+    "note": "Can only be used once per battle."
+   }
+  ],
+  "description": "Target friendly unit gains +5 Bolstered Resistance, +5 Bolstered Defense and +5 Regeneration for 3 turns.",
+  "name": "Blessing of Fortitude",
+  "slug": "blessing_of_fortitude_paragon",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "Support"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "4",
+  "icon": "blessing_of_fortitude_paragon"
+ },
+ {
+  "notes": [
+   {
+    "note": "Can only be used once per battle."
+   }
+  ],
+  "description": "Target friendly unit gains +5 Strengthened, Killing Momentum, Hastened for 3 turns.",
+  "name": "Blessing of Exaltation",
+  "slug": "blessing_of_exaltation_paragon",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "Support"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "4",
+  "icon": "blessing_of_exaltation_paragon"
+ },
+ {
+  "notes": [
+   {
+    "note": "Can only be used once per battle."
+   }
+  ],
+  "description": "Target friendly unit becomes Refuged for 1 turn.",
+  "name": "Blessing of Sanctuary",
+  "slug": "blessing_of_sanctuary_paragon",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "Support"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "4",
+  "icon": "blessing_of_sanctuary_paragon"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Starts on cooldown: 3<turn></turn>"
+   }
+  ],
+  "description": "Enemies in a 2-hex area sustain damage, lose all positive status effects and become Condemned.",
+  "name": "Holy Fire",
+  "slug": "holy_fire_paragon",
+  "damage": "12<damagefire></damagefire> 12<damagespirit></damagespirit> ",
+  "requisites": [
+   {
+    "requisite": "Magic"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<fullaction></fullaction>",
+  "range": "6",
+  "icon": "holy_fire_paragon"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cannot be used when within an enemy <hyperlink>Zone of Control</hyperlink>."
+   },
+   {
+    "note": "Cooldown: 0 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 5<turn></turn>"
+   }
+  ],
+  "description": "Revive target friendly unit with 100% of its <hyperlink><hp></hp> Hit Point</hyperlink> and 1 Action Point.<br></br>Can be used on a living unit to instead fully heal them.",
+  "name": "Divine Will",
+  "slug": "divine_will_paragon",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "Support"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "4",
+  "icon": "divine_will_paragon"
+ },
+ {
+  "notes": [
+   {
+    "note": "Cooldown: 0 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 7<turn></turn>"
+   }
+  ],
+  "description": "Target friendly unit regains their action points.",
+  "name": "Transcendence",
+  "slug": "transcendence_paragon",
+  "damage": "",
+  "requisites": [
+   {
+    "requisite": "Support"
+   }
+  ],
+  "accuracy": "Always Hits",
+  "actionPoints": "<freeaction></freeaction>",
+  "range": "4",
+  "icon": "transcendence_paragon"
+ },
+ {
+  "description": "At the end of this unit's turn, it restores 20 <hyperlink><hp></hp> Hit Point</hyperlink> to all adjacent allies.",
+  "name": "Heavenly Aura",
+  "slug": "heavenly_aura",
+  "icon": "heavenly_aura"
+ },
+ {
   "modifiers": [
    {
-    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
     "name": "Seething Hatred",
     "count": 1
    }
   ],
-  "description": "Target friendly Tier IV-V unit sustains 300 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>. ALL other units within a 2-hex radius of it sustain damage and 3 stacks of Brimstone Flames.",
+  "description": "Target friendly Tier IV-V unit sustains 300 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink>. ALL other units within a 2-hex radius of it sustain damage and 3 stacks of Brimstone Flames. Cannot be used on units that are Steadfast or Immune.",
   "name": "Brimstone Eruption",
   "slug": "brimstone_eruption_brimstone_witch",
-  "damage": "45<damagefire></damagefire> ",
+  "damage": "52<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -12669,7 +12836,7 @@
  {
   "modifiers": [
    {
-    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
     "name": "Seething Hatred",
     "count": 1
    }
@@ -12696,15 +12863,15 @@
  {
   "modifiers": [
    {
-    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
     "name": "Seething Hatred",
     "count": 1
    }
   ],
-  "description": "Target friendly Tier IV-V unit sustains a massive amount of <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> in order to grant the caster +50% Damage and +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> on all attacks and abilities.<br></br>This ability can be used on the caster, allowing the unit to sacrifice its own health.<br></br>This effect stacks, up to 5 times.",
+  "description": "Target friendly Tier IV-V unit sustains a massive amount of <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> in order to grant the caster +50% Damage and +5 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> on all attacks and abilities.<br></br>This ability can be used on the caster, allowing the unit to sacrifice its own health, but not on units that are Steadfast or Immune.<br></br>Stacks up to 5 times.",
   "name": "Ashes to Ashes",
   "slug": "ashes_to_ashes_brimstone_witch",
-  "damage": "400<damagefire></damagefire> ",
+  "damage": "200<damagefire></damagefire> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -12723,7 +12890,7 @@
  {
   "modifiers": [
    {
-    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
     "name": "Seething Hatred",
     "count": 1
    }
@@ -12765,7 +12932,7 @@
     "count": 1
    },
    {
-    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from.",
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
     "name": "Seething Hatred",
     "count": 1
    }
@@ -12793,6 +12960,11 @@
    {
     "description": "This unit receives 12 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> every turn and is unable to heal.",
     "name": "Brimstone Flames",
+    "count": 1
+   },
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
+    "name": "Seething Hatred",
     "count": 1
    }
   ],
@@ -12823,6 +12995,11 @@
    {
     "description": "This unit receives 12 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> every turn and is unable to heal.",
     "name": "Brimstone Flames",
+    "count": 1
+   },
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
+    "name": "Seething Hatred",
     "count": 1
    }
   ],
@@ -12862,7 +13039,13 @@
   "icon": "soul_scorching_catastrophe"
  },
  {
-  "modifiers": [],
+  "modifiers": [
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
+    "name": "Seething Hatred",
+    "count": 1
+   }
+  ],
   "description": "ALL units sustain damage and 1 stack of Brimstone Flames.",
   "name": "Supernova",
   "slug": "supernova_catastrophe",
@@ -12928,6 +13111,11 @@
     "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
     "name": "Breaching",
     "count": 1
+   },
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
+    "name": "Seething Hatred",
+    "count": 1
    }
   ],
   "description": "Target units in a 3-hex long 1-hex wise line sustain damage and 3 stacks of Bleeding.",
@@ -12958,6 +13146,11 @@
    {
     "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
     "name": "Breaching",
+    "count": 1
+   },
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
+    "name": "Seething Hatred",
     "count": 1
    }
   ],
@@ -13019,6 +13212,11 @@
     "description": "This unit receives 12 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> every turn and is unable to heal.",
     "name": "Brimstone Flames",
     "count": 1
+   },
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
+    "name": "Seething Hatred",
+    "count": 1
    }
   ],
   "description": "Units in a 2-hex radius sustain damage and suffer Brimstone Flames.<br></br>Teleport to target hex and repeat this effect.<br></br>All hexes affected erupt and inflict Slowed and Burning to units on them.",
@@ -13053,6 +13251,11 @@
    {
     "description": "Ignore 50% of the target's <resistance></resistance> <hyperlink>Resistance</hyperlink>.",
     "name": "Breaching",
+    "count": 1
+   },
+   {
+    "description": "+2 <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> for each stack of Brimstone Flames this unit is currently suffering from. ",
+    "name": "Seething Hatred",
     "count": 1
    }
   ],
@@ -13364,6 +13567,9 @@
    },
    {
     "note": "Cooldown: 0 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
    }
   ],
   "description": "Unit gains a forgotten spell, which can then be used as a single action until the end of the turn.",
@@ -13550,9 +13756,9 @@
    }
   ],
   "accuracy": "Always Hits",
-  "actionPoints": "<singleuseaction></singleuseaction>",
+  "actionPoints": "<freeaction></freeaction>",
   "range": "4",
-  "icon": "sanctify_sanctify"
+  "icon": "blessing_of_fortitude_paragon"
  },
  {
   "description": "<bulletlist><bullet>Unit becomes Faithful.</bullet><bullet>Non-<hyperlink>Hero</hyperlink> Faithful units gain +40 <happiness></happiness> <hyperlink>Morale</hyperlink> at the start of battle.</bullet></bulletlist>",
@@ -15215,7 +15421,7 @@
     "note": "Cooldown: 4 <turn></turn>"
    }
   ],
-  "description": "Grant Cataclysm or Catastrophe +50% Damage and 5 stacks of Bolstered Defense and Bolstered Resistance.",
+  "description": "Grant Cataclysm or Catastrophe +50% Damage and 5 stacks of Bolstered Defense and Bolstered Resistance",
   "name": "Calamity's Chosen",
   "slug": "calamitys_chosen_calamitys_chosen",
   "damage": "",
@@ -15737,7 +15943,7 @@
  },
  {
   "notes": [],
-  "description": "Tear the veil of reality asunder, causing the following effects to happen at the start of your turn for the rest of this combat: <bulletlist><bullet>3 Cosmic Meteors rain down upon 3 random enemies, dealing 15 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> in a 3-hex radius.</bullet><bullet>The leylines surrounding the battlefield crack, causing ALL units to sustain 24 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Lunar Lightning strikes a random enemy, dealing 100  <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist>",
+  "description": "Tear the veil of reality asunder, causing the following effects to happen at the start of your turn for the rest of this combat: <bulletlist><bullet>3 Cosmic Meteors rain down upon 3 random enemies, dealing 15 <damageSpirit></damageSpirit> <hyperlink>Spirit Damage</hyperlink> <damageFire></damageFire> <hyperlink>Fire Damage</hyperlink> in a 3-hex radius.</bullet><bullet>Cracks the Leylines, causing ALL units to sustain 24 <damagePhysical></damagePhysical> <hyperlink>Physical Damage</hyperlink>.</bullet><bullet>Lunar Lightning strikes a random enemy, dealing 100  <damageFrost></damageFrost> <hyperlink>Frost Damage</hyperlink>.</bullet></bulletlist>",
   "name": "Skybreaker",
   "slug": "skybreaker_skybreaker",
   "damage": "",
@@ -15756,7 +15962,7 @@
     "note": "Cooldown: 2 <turn></turn>"
    }
   ],
-  "description": "Target Non-Hero unit sustains damage.<br></br>All other units in a 2-hex radius sustain 5% of the damage.<br></br>All targets hit are affected with Flames of the Universe.",
+  "description": "Target Non-Hero unit sustains damage.<br></br>All other units in a 2-hex radius sustain 5% of the damage.<br></br>All targets hit are afflicted with Flames of the Universe.",
   "name": "Godslayer's Inferno",
   "slug": "godslayers_inferno_godslayers_inferno",
   "damage": "96<damagephysical></damagephysical> 96<damageblight></damageblight> 96<damagelightning></damagelightning> 96<damagefire></damagefire> 96<damagespirit></damagespirit> 96<damagefrost></damagefrost> ",
@@ -15823,6 +16029,9 @@
    },
    {
     "note": "Cooldown: 0 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
    }
   ],
   "description": "Unit gains a forgotten spell, which can then be used as a single action until the end of the turn.",
@@ -18109,7 +18318,7 @@
   "description": "Deals damage in a 2-hex radius.",
   "name": "Mass Plague",
   "slug": "mass_plague_staff_of_blossoms",
-  "damage": "18<damageblight></damageblight> ",
+  "damage": "15<damageblight></damageblight> ",
   "requisites": [
    {
     "requisite": "Magic"
@@ -19640,6 +19849,9 @@
    },
    {
     "note": "Cooldown: 0 <turn></turn>"
+   },
+   {
+    "note": "Starts on cooldown: 1<turn></turn>"
    }
   ],
   "description": "Unit gains a forgotten spell, which can then be used as a single action until the end of the turn.",

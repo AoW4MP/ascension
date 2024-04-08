@@ -1673,7 +1673,7 @@
   "group_name": "Dark Culture - Hero Skill Group",
   "name": "Cull the Weak",
   "level_name": "<hyperlink>Novice Hero Skill</hyperlink>",
-  "icon": "cull_the_weak",
+  "icon": "cull_the_weak_2",
   "type": "normal",
   "abilities": [
    {

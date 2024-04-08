@@ -1369,6 +1369,13 @@
     "spell_slug": "anointed_people",
     "tier": 5,
     "type": "<caststrategic></caststrategic> <hyperlink>Minor Race Transformation</hyperlink>"
+   },
+   {
+    "description": "Unlocks the Paragon, an offensive Support Unit that focuses on Buffing and powerful effects that becomes exponentially more powerful the longer a fight lasts.",
+    "name": "Paragon",
+    "tier": 5,
+    "unit_slug": "paragon",
+    "type": "<hyperlink>Unit</hyperlink>"
    }
   ],
   "initial_upgrades": [
@@ -1715,13 +1722,6 @@
     "spell_slug": "marked_for_death",
     "tier": 7,
     "type": "<casttactical></casttactical> <hyperlink>Debuff Spell</hyperlink>"
-   },
-   {
-    "description": "Fuse together the remains of 2 Tier III-V Dragon Units into a <hyperlink>Bone Dragon</hyperlink>.",
-    "name": "Wicked Reanimation",
-    "spell_slug": "wicked_reanimation",
-    "tier": 6,
-    "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    }
   ]
  },
@@ -1827,13 +1827,6 @@
     "type": "<caststrategic></caststrategic> <hyperlink>Sustained City Spell</hyperlink>"
    },
    {
-    "description": "<bulletlist><bullet>Replaces defensive towers.</bullet><bullet><hyperlink>Necrotic Spire</hyperlink> heal an allied Undead unit within a 6-hex <range></range> +15 <hyperlink><temphp></temphp> Temporary Hit Points</hyperlink> and makes it become Strengthened each turn.</bullet></bulletlist>",
-    "name": "Necrotic Spires",
-    "tier": 5,
-    "type": "<hyperlink>City Structure</hyperlink>",
-    "upgrade_slug": "necrotic_spires"
-   },
-   {
     "description": "Grants enchanted units:<bulletlist><bullet>+ <hyperlink><hp></hp> Hit Points</hyperlink>.</bullet><bullet>Weakening Aura, which inflicts Weakened to adjacent enemies at the end of the turn.</bullet></bulletlist>",
     "name": "Fetid Legion",
     "spell_slug": "fetid_legion",
@@ -1846,6 +1839,13 @@
     "spell_slug": "wightborn",
     "tier": 6,
     "type": "<caststrategic></caststrategic> <hyperlink>Major Race Transformation</hyperlink>"
+   },
+   {
+    "description": "Fuse together the remains of 2 Tier III-V Dragon Units into a <hyperlink>Bone Dragon</hyperlink>.",
+    "name": "Wicked Reanimation",
+    "spell_slug": "wicked_reanimation",
+    "tier": 6,
+    "type": "<caststrategic></caststrategic> <hyperlink>Summon Spell</hyperlink>"
    }
   ]
  },

@@ -345,7 +345,9 @@
   "id": "rite_of_conjuration",
   "required_xp": 250,
   "description": "Immediately conjure 1 defended <hyperlink>Magic Material</hyperlink> near each <hyperlink>City</hyperlink> in your <hyperlink>Empire</hyperlink>.<br></br>Can be used repeatedly.",
+  "repeat_xp_increase": 0,
   "name": "Rite of Conjuration",
+  "repeat_cost_increase": "",
   "icon": "rite_of_conjuration",
   "required_level": 8,
   "cost": "175<influence></influence> ",
@@ -444,7 +446,7 @@
   "repeat_cost_increase": "50<influence></influence> ",
   "icon": "rite_of_the_astral_summons",
   "required_level": 6,
-  "cost": "250<influence></influence> ",
+  "cost": "200<influence></influence> ",
   "required_affinity": "<arcana></arcana>"
  },
  {
